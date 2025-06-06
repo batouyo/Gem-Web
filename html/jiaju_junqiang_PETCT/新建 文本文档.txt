@@ -1,0 +1,5 @@
+[AI-Enhanced Imaging for Optimizing Advanced Breast Cancer Treatment]
+
+Using local MRI and whole-body PET/CT imaging, we integrate local and global deep features, incorporate clinical data, and employ a multi-modal model to predict overall patient survival. Our focus lies in investigating the fusion of PET/CT and MRI image features, rooted in attention mechanisms, and understanding the correlation of deep features across various modalities. 
+
+An emphasis is also placed on the proficient fusion of attention-based multi-modal deep features with clinical information. Building upon life cycle predictions, we engage in a reverse-search strategy for pinpointing the optimal treatment regimen. With the reinforcement learning approach tailored for enhancing treatment choices, our predictive model serves as both a reward and penalty mechanism, enabling us to realize personalized treatment strategies. This includes employing exhaustive methods to refine treatment choices—spanning drug types, dosages, and administration schedules—and leveraging reinforcement learning for the dynamic adaptation of treatment plans.

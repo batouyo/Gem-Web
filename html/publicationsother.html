@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		
+    	width: 1200px;
+		margin: auto
+	
+	}
+	.publication_body{
+		width: 1200px;
+		height: 100%;
+		margin-left: 140px;
+		margin: auto
+		
+	}
+	.publication_logo{
+		color:green;
+		font-size: 28px;
+		margin-top: 65px;
+		margin-left: 80px;
+		margin-bottom: 20px;
+	}
+		 .li_hengxiang {
+		list-style-type: none;
+		/* float: left */
+  }
+	  ul {
+
+		margin-right: 10px;
+		top: -80px;
+		font-size: 16px;
+		text-align: center;
+		margin: auto
+	  }
+	 .uiList {
+		display: flex;
+		height: 80px;
+		align-items: center;
+	  }
+ 	 .a_hover {
+		 text-decoration: none;
+		 color: black;
+		 margin-left: 60px;
+
+  }	 	 
+	.a_hover:hover {
+		 color:green;
+		text-decoration: underline
+
+
+  }	
+	.publication_container{
+		margin-top: 40px;
+	}
+	
+	.Year_title{
+		font-size: 24px;
+		color: green;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	.pre_publication{
+		font-size: 14px;
+	}
+	li{
+		margin-top: 40px;
+		width: 700px;
+		
+	}
+	table {
+	      border-collapse: collapse;
+	      width: 100%;
+	    }
+	    
+	    th, td {
+	      text-align: left;
+	      padding: 8px;
+	    }
+	    
+	    tr:nth-child(even) {
+	      background-color: #fafafa;
+	    }
+</style>
+<meta charset="utf-8">
+<title>publications</title>
+	
+</head>
+
+<body>
+	<div class="publication_body">
+				<div class='publication_logo'>Publications</div>
+		
+				<div class="navigator">
+						<ul class="uiList">
+							   <li class="li_hengxiang"><a href="publications2024.html" target="_self"  class="a_hover" >2024</a></li>
+							   <li class="li_hengxiang"><a href="publications2023.html" target="_self" 	 class="a_hover" >2023</a></li>
+							   <li class="li_hengxiang"><a href="publications2022.html" target="_self"  class="a_hover" >2022</a></li>
+							   <li class="li_hengxiang"><a href="publicationsother.html" target="_self" class="a_hover" style="color: green">Other Years</a></li>
+						</ul>
+		
+		
+				</div>
+				<div class="Year_title">Other Years</div>
+				<div  class="publication_container">
+					<table id="data-table">
+					    <tr>
+					      <th>Publisher</th>
+					      <th>Volume</th>
+					      <th>Pages</th>
+					      <th>Year</th>
+					      <th>Title</th>
+					      <th>Journal/Conference/Patent</th>
+					      <th>Author</th>
+					    </tr>
+					  </table>
+					
+					<script>
+					    function output(jsonData){
+					        //回调函数的名称(testDemo)需要与 src 中一致，而且要与文件地址中名一致。
+					        console.log(jsonData)
+							 // 获取数据表格
+							    var table = document.getElementById("data-table");
+							
+							    // 遍历每条数据并创建表格行
+							    for (var i = 0; i < jsonData.length; i++) {
+							      // 判断year是否等于2022，如果是则跳过当前数据行
+							      if (jsonData[i].year === "2024"|| jsonData[i].year === "2023"|| jsonData[i].year === "2022") {
+							        continue;
+							      }
+								  // if (jsonData[i].groups === "patent") {
+								  //   continue;
+								  // }
+							
+							      var row = table.insertRow(); // 插入新行
+							
+							     // 创建单元格并填充数据
+							       var publisherCell = row.insertCell(0);
+							       publisherCell.innerHTML = jsonData[i].publisher !== undefined ? jsonData[i].publisher : "";
+							     
+							       var volumeCell = row.insertCell(1);
+							       volumeCell.innerHTML = jsonData[i].volume !== undefined ? jsonData[i].volume : "";
+							     
+							       var pagesCell = row.insertCell(2);
+							       pagesCell.innerHTML = jsonData[i].pages !== undefined ? jsonData[i].pages : "";
+							     
+							       var yearCell = row.insertCell(3);
+							       yearCell.innerHTML = jsonData[i].year !== undefined ? jsonData[i].year : "";
+							     
+							       var titleCell = row.insertCell(4);
+							       titleCell.innerHTML = jsonData[i].title !== undefined ? jsonData[i].title : "";
+							     
+							       var journalOrBooktitleCell = row.insertCell(5);
+							       if (jsonData[i].journal !== undefined) {
+							         journalOrBooktitleCell.innerHTML = jsonData[i].journal;
+							       } else if (jsonData[i].booktitle !== undefined) {
+							         journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
+							       } else if (jsonData[i].groups === "patent") {
+							          journalOrBooktitleCell.innerHTML = "Patent";
+							        }else {
+							         journalOrBooktitleCell.innerHTML = "";
+							       }
+							     
+							       var authorCell = row.insertCell(6);
+							       authorCell.innerHTML = jsonData[i].author !== undefined ? jsonData[i].author : "";
+							     }
+					    }
+					</script>
+					<script type="text/javascript" src="output3.json"></script>
+3
+					
+		
+				</div>
+	
+	</div>
+</body>
+</html>

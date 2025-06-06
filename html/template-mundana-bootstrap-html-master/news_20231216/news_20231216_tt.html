@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<style>
+	.container{
+		width: 1200px;
+		height: 1000px;
+		margin: auto;
+		text-align: center;
+	
+				
+	}
+	.paper_title{
+		font-size: 22px;
+		color: green;
+		width: 1000px;
+		float: left;
+		position: relative;
+		top: 200px;
+		text-align: left;
+		line-height: 30px;
+	}
+	.paper_image{
+		float: left;
+		position: relative;
+		left: 18px;
+		top: 250px;	
+	}
+	.paper_time{
+		color: gainsboro;
+		width: 300px;
+		float: left;
+		font-size: 14px;
+		position: absolute;
+		top: 500px;
+		
+		
+		
+	}
+	.paper_info{
+		width: 900px;
+		text-align: left;
+		position: relative;
+		top: 250px;
+		left: 70px;
+		float:left;
+		font-size: 18px;
+		line-height: 30px;
+		font-size: 15px
+	}
+ .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;
+	margin-top: 300px;
+
+  }
+	#group_info{
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+	#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+
+		margin-top: 2px;
+	}
+	.return_index{
+		color:green;
+		float: left;
+		position: relative;
+		top: 270px;
+		left: 370px;
+		
+	}
+	.return_index_a{
+		text-decoration: none;
+		color: green;
+	}
+	.return_index_a:hover{
+		text-decoration: underline;
+		color: darkgreen;
+	}
+</style>
+<head>
+<meta charset="utf-8">
+<title>GEM</title>
+</head>
+
+<body>
+		<div class="container">
+				<div class="paper_title">
+							Breakthrough research: Imaging differentiation representation learning based on synthetic multisequence MRI was published in Medical Image Analysis, a top journal in the first district of the Chinese Academy of Sciences
+				</div>
+				<div class="paper_image"><img src="new_pic_2.png" width="270px"></div>
+				<div class="paper_time">Published Sat 16 Dec 2023</div>
+				<div class="paper_info">
+					This research aims to address the problem of information redundancy in multi-sequence magnetic resonance imaging (MRI) to improve the reliability of medical diagnosis. By introducing a sequence-to-sequence generation framework called Seg2Seg, the research objectives include generating 3D/4D sequences arbitrarily, ranking the significance of sequences based on a new metric, and extracting the unique information of each sequence by utilizing the model generation capability.<p></p>
+
+					In the field of medical imaging, multi-sequence MRI has been a powerful tool for revealing information within tissues; however, the redundancy of information between sequences has been a challenge that affects the efficient representation of learned models. This challenge poses two major problems: matching of large model training samples is limited, while redundant information between sequences hinders the extraction of diagnostically valuable information. Traditional approaches, such as cropping regions of interest or providing semantic segmentation masks, are employed but still suffer from insufficient global feature association and time-consuming manual labeling. Against this backdrop, researchers Luyi Han, Tao Tan et al, and Ritse Mann (Department of Radiological Sciences, Netherlands Cancer Institute) conducted a study aimed at addressing these challenges by capitalizing on redundancy and imaging disparity information in sequences through an innovative multi-sequence MRI synthesis approach.<p></p>
+
+					The research team introduced the Seg2Seq generator, which enables fast conversion between two arbitrary sequences and successfully extracts the redundant information in each sequence. To cope with the 4D protocol of MRI, the study employed an advanced Long Short-Term Memory (LSTM) mechanism to capture long-term information in 4D MRI. Hyperparameter blocks associated with the target sequence code are used in the network architecture, enabling a single model to generate a variety of sequences. In order to accurately distinguish between imaging differentiation and redundant information, the study generated an imaging differentiation map by comparing the error between the real target sequence and synthetic sequences generated from other sequences.<p></p>
+
+					For Alphabet Recognition, the proposed models Baseline and Baseline+Md were trained, and the results showed an accuracy improvement of 0.262 and 0.369 for X1 and X2, respectively, at a training sample size of 5,000.For MGMT promoter methylation prediction experiments, using the ResNet-18 model, the Comparing the effects of different combinations of input images, the results show that the addition of Md improves the AUC and accuracy, and when all sequences are used, the improvement of AUC reaches 0.023. For breast cancer pCR early prediction experiments, the corresponding Md is used for ResNet-18 training to observe the improvement of the pCR prediction performance, and the results show that in the pre-treatment stage, the model trained with Md in the pCR prediction performance achieved a significant improvement of 0.032 AUC boost in pCR prediction performance.<p></p>
+
+					This study presents an allometric generative model capable of learning imaging difference representations from multi-sequence 3D/4D MRI images to generate missing image sequences. For the first time, the contribution of each sequence in diagnosis is qualitatively revealed, and sequence-specific regions are proposed by imaging difference maps, which can improve the effectiveness of clinical applications such as MGMT promoter methylation status and breast cancer pCR status. The method was demonstrated to be efficient and reliable in the analysis of multi-sequence magnetic resonance images. The researcher, Luyi Han, received a scholarship from the China Scholarship Council (CSC). This research was supported by the Macao Science and Technology Development Fund, and the article was published in "Medical Image Analysis", a top journal of the Chinese Academy of Sciences.<p></p>
+
+					Link to the article:<p></p>
+
+					https://authors.elsevier.com/a/1iBZk4rfPmE0wZ<p></p>
+			
+			</div>
+				<div class="return_index"><a  class="return_index_a" href="../index_info _new.html" >← Back to overview</a></div>
+		</div>
+	
+ <div class="bottom_info"> 
+				  <div  style="width:1200px;height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+						<div class="image_logo"> <img src="../gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
+			  </div>
+</body>
+</html>

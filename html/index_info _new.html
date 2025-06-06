@@ -1,0 +1,463 @@
+	<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gem</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+	@media (max-width: 900px) {
+		.news_lastest_bg{
+			display: none;
+		}
+		
+		.all{
+			width: 100%;
+		}
+		.new_tags{
+		
+
+			
+		}
+		.news {
+   				
+				background-color:red;
+				margin-bottom: 15px;
+			
+		}
+		.info_abstract{
+			width:100px
+		}
+		.news_image{
+			width:100px
+		}
+		.new_info_detail{
+			width:100px
+		}
+}
+	
+	
+
+  * {
+    margin: 0;
+    border: 0;
+	  
+	
+  }
+
+  body {
+	background-color:rgba(127,127, 127, 0.1);
+	
+	 
+  }
+
+  h1 {
+    color: green;
+    font-size: 24px;
+    font-family: 'Arial';
+    background-color: white;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 15px
+	
+  }
+
+  h6 {
+    color: darkseagreen;
+    font-family: 'Arial', sans-serif;
+    margin-left: 15px;
+	background-color: white;
+	
+
+  }
+
+  .news_lastest_bg {
+    background-color:mediumseagreen;
+    height: 550px;
+	margin: auto
+  }
+	.news_lastest_container{
+		margin-right: auto;
+		margin-left: auto;
+		width: 1200px;
+		height: 550px;
+		padding-top: 100px;
+	}
+  .image_news_lastest {
+	
+  }
+	.img_detail{
+		width: 120px;
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		opacity: 0.8;	
+		margin-left: 330px;
+		margin-top: 10px;
+
+	}
+   .introuduce_text {
+		font-size: 50px;
+		width:600px;
+		color: white;
+	   	font-weight: bold;
+	   margin-left: 30px;
+	   float: left;
+  }
+	.introduce_abstract{
+		color: white;
+		width: 600px;
+		font-size: 18px;
+		line-height: 35px;
+		text-align: left;
+		margin-left: 30px;
+		margin-top:160px;
+		
+	}
+  .news {
+    width: 1200px;
+    height: 350px;
+	position: relative;
+    background-color:white;
+	float: left;
+	margin-bottom: 15px;
+	
+
+  }
+
+
+  .date_info {
+    color: black;
+    font-size: 10px;
+	position: relative;
+	left:42%;
+	width: 150px;
+	top: 20%
+	
+
+			
+	
+  }
+
+  .All_news {
+ 	color: green;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;	
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+  }
+
+  .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;	
+	text-align: center;
+	margin: auto
+
+  }
+
+  .news_image {
+    width: 230px;
+    height: 230px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+  }
+
+  .new_info_details {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    bottom: 250px;
+    right: 50px;
+    margin-left: 500px;
+  }
+
+  .new_tags {
+    height: 40px;
+	font-size: 40px;
+	color: green;
+    line-height: 40px;
+    margin-top: 70px;
+	margin-bottom: 50px;
+	 
+  }
+
+  .a_hover {
+    text-decoration: none;
+    color: green;
+    margin-left: 30px;
+
+
+  }
+
+  .a_hover:hover {
+    color: gray;
+    text-decoration: underline 
+  }
+
+  ul {
+    /* width: 1000px; */
+    margin-right: 10px;
+    top: -80px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto
+  }
+
+  .li_hengxiang {
+    list-style-type: none;
+    /* float: left */
+  }
+	#group_info{
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+	#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+		margin-top: 2px;
+	}
+
+
+	.img_detail:hover{
+		color:gray
+			
+			
+	}
+	.info_abstract{
+		font-size: 24px;
+		color: green;
+		text-decoration: none;
+		position: relative;
+		left: 9%;
+		line-height: 38px;
+		width: 600px;
+		float: left;
+		margin-top: 10%;
+	}
+	.info_abstract:hover{
+		font-size: 24px;
+		text-decoration: underline;
+		color:darkgreen;
+	}
+	a{
+		text-decoration:none
+	}
+	.info_abstract_sub{
+		font-size: 14px;
+		position: relative;
+		top: 10%;
+		line-height: 18px;
+		float: left;
+		color: black;
+		font-weight: 200;
+		left: 9%
+	}
+	.more_news{
+		color: white;
+		background-color:mediumseagreen;
+		width:120px;
+		height: 50px;
+		line-height: 50px;
+		position: absolute;	
+		font-size: 18px;
+		border-radius:5px
+	}
+	.more_news_a{
+		color: white;
+	}
+	.all{
+		width: 1200px;
+		margin: auto
+			
+	}
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>HomePages</title>
+	
+
+</head>
+	
+<body>
+
+  	<div class="all" >
+	
+			<div class="news_lastest_bg">
+				<div class="news_lastest_container">
+					<div class="c_left" style="width:600px;float:left">
+								<div class="introuduce_text">Generalized Electric Medicine Group </div>
+								<div class="introduce_abstract">The Generalized electric medicine Group is part of Faculty of Applied Sciences, Macao Polytechnic University. We develop digital solutions to make a difference in healthcare.</div>
+					</div>
+					
+					<div class="c_right" style="float:right;margin-right: 20px;">
+								<div class="image_news_lastest"><img width="450px" height="360px" src="news_20240521/pic_1.png" ></div>   <!-----w:450px  h:360px------>
+								<div > 
+									<a class="img_detail" href="news_20240521/news_20240521_frame .html" target="content">Read more&nbsp></a> 
+								</div>
+						
+					</div>
+					
+					
+				
+					
+					
+					<!----<a  class="img_detail_hover" href="paper_info_frame_AIheisongke.html" target="_blank"  ><div class="img_detail">Read more&nbsp></div></a>---->
+
+				</div>
+	
+			</div>
+
+					
+		
+		<div class="new_tags">News</div>
+		
+		<!------新闻----->
+			<div class="news">
+				<div class="date_info">May 21, 2024, Tue</div>
+				<div class="news_image"><img src="news_20240521/pic_1.png" style="width: 350px;"></div>
+				<div class="new_info_details">
+				  <div class="">
+					  <a  class="info_abstract" href="news_20240521/news_20240521_frame .html"  target="content"  >Macao Polytechnic University research team wins ICME Ground Challenge 2024！！！
+						&nbsp</a></div>
+					 <div class="info_abstract_sub">A research team from Macao Polytechnic University (MPU) has won the ICME Ground Challenge 2024! They won the first place in Track 5 (Video Guidance) and Track 6 (Animal Behavior Recognition).</div>
+				 
+				</div>
+
+			  </div>
+			<div class="news">
+				<div class="date_info">May 20, 2024, Mon</div>
+				<div class="news_image"><img src="news_20240520/pic_2.png" style="width: 350px;"></div>
+				<div class="new_info_details">
+				  <div class="">
+					  <a  class="info_abstract" href="news_20240520/news_20240520_frame .html"  target="content"  >Our CCF-B MICCAI Deep Breast Cancer Symposium is about to open in Morocco!
+&nbsp</a></div>
+					 <div class="info_abstract_sub">We welcome you to guide us through our CCF-B MICCAI deep breast breast cancer workshop.</div>
+				 
+				</div>
+
+			  </div>
+			<div class="news">
+				<div class="date_info">May 19, 2024, Sun</div>
+				<div class="news_image"><img src="news_20240519/pic_1.jpg" style="width: 200px;"></div>
+				<div class="new_info_details">
+				  <div class="">
+					  <a  class="info_abstract" href="news_20240519/news_20240519_frame .html" target="content"  >Four papers from GEM Laboratory, Faculty of Applied Sciences, Macao Polytechnic University, were awarded Early Accepted by MICCAI, the top conference on medical imaging.&nbsp</a></div>
+					 <div class="info_abstract_sub">We are honored to announce that four papers from the GEM Lab team have been early accepted by MICCAI. </div>
+				 
+				</div>
+
+			  </div>
+		<div class="news">
+				<div class="date_info">Apr 04, 2024, Thu</div>
+				<div class="news_image"><img src="news_20240404/pic_1.jpg" style="width: 350px;"></div>
+				<div class="new_info_details">
+				  <div class="">
+					  <a  class="info_abstract" href="news_20240404/news_20240404_frame .html"  target="content"  >《IMPORTANT-Net: Integrated MRI multi-parametric increment fusion generator with attention network for synthesizing absent data》was accepted by Information fusion the top journals of the first district of the Chinese Academy of Sciences, and the impact factor reached 18.6.
+&nbsp</a></div>
+				 
+				</div>
+
+			  </div>
+		
+		<div class="news">
+				<div class="date_info">Feb 29, 2024, Friday</div>
+				<div class="news_image"><img src="news_20240229/pic_1.jpg" style="width: 350px;"></div>
+				<div class="new_info_details">
+				  <div class="">
+					  <a  class="info_abstract" href="news_20240229/news_20240229_frame .html" target="content"  >Researchers from Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences visited MPU to give academic lectures&nbsp</a></div>
+				  <div class="info_abstract_sub">Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.</div>
+				</div>
+
+			  </div>
+		<div class="news">
+				<div class="date_info">Jan 13, 2024, Saturday</div>
+				<div class="news_image"><img src="news_20240113/new_pic.jpg" style="width: 400px;"></div>
+				<div class="new_info_details">
+				  <div class=""><a  class="info_abstract" href="news_20240113/news_20240113_frame .html" target="content"  >熊祥宇博士的前沿研究已被接受在IEEE ICASSP 2024&nbsp</a></div>
+				  <div class="info_abstract_sub">澳門理工大學計算機應用技術博士學位課程研究團隊提出了能夠緩解數據集不足，同時具備分類可解釋性的參數化生成對抗網路。</div>
+				</div>
+
+			  </div>
+		<div class="news">
+				<div class="date_info">Dec 28, 2023,Thursday </div>
+				<div class="news_image"><img src="news_20231228/new_pic.jpg" width="400px"></div>
+				<div class="new_info_details">
+				 <a  class="info_abstract"   href="news_20231228/news_20231228_frame .html" target="content">Macao Polytechnic University launches a project on "Intelligent Echocardiography" to address heart health challenges in the Greater Bay Area.&nbsp</a>
+				  <div class="info_abstract_sub">The Macau Polytechnic University (MPU) has been awarded the Research and Innovation Funding Program of the Macau Science and Technology Development Fund (Fondo de Desenvolvimento Científico e Tecnológico de Macau, FDCT) for the project "Research on Intelligent Multi-Parameter Computational Methods for Echocardiography".</div>
+				</div>
+
+		</div>
+		
+		<div class="news">
+				<div class="date_info">Dec 16, 2023,Saturday </div>
+				<div class="news_image"><img src="news_20231216/new_pic.png" width="400px"></div>
+				<div class="new_info_details">
+				 <a  class="info_abstract"   href="news_20231216/news_20231216_ruijin_frame.html" target="content">Ruijin Hospital of Shanghai Jiaotong University School of Medicine Wins Third Prize in Generative AI Track of "2023 DiMTAIC" Competition&nbsp</a>
+				  <div class="info_abstract_sub">Recently, the final round of "Digital Medical Technology and Application Innovation Competition 2023 (DiMTAIC 2023)", which was jointly organized by Ruijin Hospital of Shanghai Jiao Tong University School of Medicine and Shanghai Artificial Intelligence Laboratory, came to a successful conclusion with the honor roll officially unveiled.</div>
+				</div>
+
+		</div>
+		<div class="news">
+				<div class="date_info">Dec 16, 2023,Saturday </div>
+				<div class="news_image"><img src="news_20231216/new_pic_2.png" width="400px"></div>
+				<div class="new_info_details">
+				 <a  class="info_abstract"   href="news_20231216/news_20231216_tt_frame .html"  target="content">Breakthrough research: Imaging differentiation representation learning based on synthetic multisequence MRI was published in Medical Image Analysis, a top journal in the first district of the Chinese Academy of Sciences!!!&nbsp</a>
+				  <div class="info_abstract_sub"></div>
+				</div>
+
+		</div>
+		<div class="news">
+				<div class="date_info">Dec 14, 2023, Tuesday</div>
+				<div class="news_image"><img src="news_20231214/new_pic.png" width="400px"></div>
+				<div class="new_info_details">
+				 <a  class="info_abstract" href="news_20231214/news_20231214_frame .html" target="content">Macao Polytechnic University approved for prenatal ultrasound diagnosis innovation fund in Guangdong Province.&nbsp</a>
+				  <div class="info_abstract_sub">Macao Polytechnic University, as a leading institution in Macao, has obtained significant support from the Science and Technology Department of Guangdong Province. Their exceptional contributions to the field of prenatal ultrasound diagnosis have led to the approval of nearly one million yuan in funding. This funding will further drive innovation and development in prenatal ultrasound diagnosis technology.</div>
+				</div>
+
+		</div>
+	
+		
+		<!--------------->	
+			  
+		
+			
+			
+	
+
+			
+			<div class="All_news"><div class="more_news"><a class="more_news_a" href="ALL_news_frame.html" target="content">More news</a></div></div>
+
+			
+			  <div class="bottom_info"> 
+				  <div  style="height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+						<div class="image_logo"> <img src="gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
+			  </div>
+
+	
+	</div>
+
+</body>
+
+</html>

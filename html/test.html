@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 1200px;
+			height: 100px;
+			background-color: antiquewhite;
+        }
+        .div1, .div2 {
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .div1 {
+            margin-right: 100px; /* 调整间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1"></div> <!-- 第一个200px的div -->
+        <div class="div2"></div> <!-- 第二个200px的div -->
+    </div>
+</body>
+</html>

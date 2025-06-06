@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<style>
+	.container{
+		width: 1200px;
+		margin: auto;
+		text-align: center;
+	
+				
+	}
+	.paper_title{
+		font-size: 22px;
+		color: green;
+		width: 1000px;
+		float: left;
+		position: relative;
+		top: 200px;
+	}
+	.paper_image{
+		float: left;
+		position: relative;
+		left: 18px;
+		top: 250px;	
+	}
+	.paper_time{
+		color: gainsboro;
+		width: 300px;
+		float: left;
+		font-size: 14px;
+		position: absolute;
+		top: 500px
+		
+		
+		
+	}
+	.paper_info{
+		width: 900px;
+		text-align: left;
+		position: relative;
+		top: 250px;
+		left: 70px;
+		float:left;
+		font-size: 18px;
+		line-height: 30px;
+		font-size: 15px
+	}
+ .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;
+	margin-top: 400px;
+  }
+	#group_info{
+		font-size: 15px;
+
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+
+		margin-top: 2px;
+	}
+	.return_index{
+		color:green;
+		float: left;
+		position: relative;
+		top: 270px;
+		left: 370px;
+		
+	}
+	.return_index_a{
+		text-decoration: none;
+		color: green;
+	}
+	.return_index_a:hover{
+		text-decoration: underline;
+		color: darkgreen;
+	}
+	.project_leaders{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+	
+		
+	}
+	.project_leaders_name{
+		color:black;
+		font-size: 16px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 320px;
+	
+	}
+	.project_example{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+	}
+	.project_example_images{
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+		margin-top: 20px;
+		
+	}
+	.example_text{
+		width:1200px;
+		text-align: center;
+		font-size: 15px;
+		line-height: 30px;
+		float: left;
+		margin-bottom: 150px;
+		
+		
+	}
+</style>
+<head>
+<meta charset="utf-8">
+<title>Research</title>
+</head>
+
+<body>
+		<div class="container">
+					<div class="paper_title">Image Quality Improvement of Mobile Ultrasound Devices</div>
+					<div class="paper_image"><img src="haoming_research_image.png" width="300px" height="200px"></div>
+					<div class="paper_time">Published Wed 06 September 2023</div>
+						<div class="paper_info">Mobile ultrasound devices play a crucial role in emergency and family doctor services, providing valuable diagnostic capabilities in a portable form factor. However, when compared to traditional medical ultrasound equipment, there is still scope for improvement in terms of image quality.
+						<p></p>
+						We propose the Hyper-CycleGAN model as a solution to enhance the image quality of mobile ultrasound devices. This model aims to establish a structure-preserving mapping between low-quality ultrasound images and their corresponding high-quality counterparts. Additionally, we plan to incorporate an attention mechanism into the model to enable it to better focus on important areas within the image, thus further enhancing the diagnostic relevance of the generated high-quality images. By leveraging advanced techniques and algorithms, our approach aims to bridge the gap in image quality between mobile ultrasound devices and traditional medical ultrasound equipment, thereby improving the accuracy and effectiveness of emergency and family doctor services.
+						<p></p>
+							
+						</div>
+					<div class="return_index"><a  class="return_index_a" href="../research_info.html">← Back to overview</a></div>
+					<div class="project_leaders">Project leaders</div>
+					<div class="project_leaders_name">HaomingChen</div>
+					<div class="project_leaders" style="margin-top:50px">Partner Organisations</div>
+					<div class="project_leaders_name">西京医院 </div>
+					<div class="project_example">Project Example</div>
+					<div class="project_example_images" style="float: left">
+						<div class="project_example_images_"><img src="example_6.png" width="700px" ></div>
+
+						<div class="example_text">The first image is a low-resolution handheld ultrasound image, and the following five images are generated with settings for 2, 4, 6, 8, and 10 levels of image clarity.</div>
+
+					</div>
+					<div style="float: left;margin-top: 300px;">
+					<div class="paper_title">A Transducer-adaptive Denoising Model for Medical Ultrasound Imaging</div>
+					<div class="paper_image"><img src="../jiangmingfu_research/jmf.jpg" width="300px" height="200px"></div>
+					<div class="paper_time" style="margin-top: 1370px;">Published Jan 06 Monday 2024</div>
+						<div class="paper_info">
+							Ultrasound imaging is widely used in clinical diagnosis due to its advantages such as safety, non-invasiveness, convenience, and ease of operation. However, actual ultrasound images often suffer from problems such as speckle noise, low signal-to-noise ratio, and low contrast, requiring denoising of the ultrasound images.<P></P>
+
+							During the process of ultrasound image acquisition, due to the reflection, scattering, and refraction characteristics of ultrasound echoes, as well as the heterogeneity and spatially uncertain properties of different parts of the human body, a large number of randomly distributed scattering particles are formed when ultrasound waves penetrate the human body. The interactions between scattering particles generate correlated scattering beams. During the process of echo reflection, interference effects from the interference of reflected echoes and mutual interference between scattering beams cause amplitude enhancement and attenuation due to the different phases of the echoes when different beams overlap. This leads to random fluctuations in the electrical signals in the output after envelope detection by the transducer, and generates speckle particles with different brightness levels in ultrasound images. This type of noise is commonly referred to as multiplicative speckle noise. Additionally, during the operation of the ultrasound device, internal components, circuits, electromagnetic interference, etc., produce additive Gaussian noise. These types of noise collectively contribute to the complex noise in medical ultrasound images.<P></P>
+
+							Currently, researchers have studied denoising methods for medical ultrasound images. However, these methods cannot adaptively denoise the noise generated by different settings of medical ultrasound devices.<P></P>
+
+							To overcome the challenges encountered in denoising ultrasound images, we propose a controllable method for denoising medical ultrasound images. This study mainly utilizes the TATLAB Toolbox to generate simulated noisy ultrasound image datasets and constructs an initial denoising model using the preprocessing of simulated noisy ultrasound images, the multi-level residual atrous spatial pyramid pooling (MRASPP) module, the nonlinear mapping convolutional neural network (NMCNNB) module, and the adaptive noise level and variable denoising intensity module. The model is trained through two rounds of inference.<P></P>
+
+							This method can adapt to a wider range of denoising scenarios, adaptively denoise the images, flexibly adjust the denoising intensity, effectively remove noise from medical ultrasound images, and preserve the details of the images. Compared to existing denoising methods, the average values of SSIM and PSNR have been improved by 1.67% and 1.28%, respectively. A comparison was made between the denoised and original images to evaluate their performance in downstream image classification tasks. After denoising real breast ultrasound images, the ACC and AUC of tumor benign-malignant classification tasks were improved by 1.09% and 2.83%, respectively.<P></P>
+
+							The proposed controllable method for denoising medical ultrasound images, using two rounds of inference, can adaptively select the noise level parameter for effective denoising of ultrasound images formed by different ultrasound devices and settings. This method provides a new approach for denoising other types of medical images.<P></P>
+
+							Please note that the translation and revision have been done to the best of my abilities, but there might still be room for improvement.<P></P>
+						
+							
+						</div>
+					<div class="return_index"><a  class="return_index_a" href="../research_info.html">← Back to overview</a></div>
+					<div class="project_leaders">Project leaders</div>
+					<div class="project_leaders_name">MingfuJiang</div>
+					<div class="project_leaders" style="margin-top:50px">Partner Organisations</div>
+					<div class="project_leaders_name">南京航天航空大学</div>
+					<div class="project_example">Project Example</div>
+					<div class="project_example_images">
+						<div class="project_example_images_"><img src="../jiangmingfu_research/example.png" ></div>
+
+						<div class="example_text"></div>
+			
+					</div>
+			</div>
+			<div style="float: left;margin-top: 300px;">
+					<div class="paper_title">MMCGLANet: Controllable Multi-modality Cross Global Learnable Attention Network forMagnetic Resonance Image Denoising</div>
+					<div class="paper_image"><img src="../jiangmingfu_research/example_2.png" width="300px" ></div>
+					<div class="paper_time" style="margin-top: 1370px;">Published Mar 13 Tuesday 2024</div>
+						<div class="paper_info">
+						Magnetic resonance (MR) is a safe and radiation-free imaging technique used on living subjects, and the images produced by this technique are called MR images. These images enable physicians to diagnose patients accurately and quickly. However, noise caused by mechanical and environmental factors during MR image acquisition affects the quality of MR images, so it is important to remove the noise from MR images to improve the image quality.<P></P>
+
+						MR is a technique that uses signals generated by atomic nuclei resonating within a magnetic field to be reconstructed for imaging. Atomic nuclei in human tissues (containing the base proton or neutron) magnetized in a strong magnetic field, the gradient field to give spatial positioning, radio frequency pulses to stimulate a specific frequency of the hydrogen proton into resonance, accept the excitation of the hydrogen proton chiropteric process releases energy, that is, the magnetic resonance signal, the computer will be the MR signals are collected, according to the intensity of the conversion into black and white grayscale, the composition of two-dimensional or three-dimensional form according to the position, and ultimately the composition of the MR image. . In the process of MRI, different images can be obtained by changing the influencing factors of the MR signal, and these different images are called sequences. Existing filtering methods, transform domain methods, statistical methods, and convolutional neural network (CNN) methods all aim to denoise a single sequence of an image without considering the relationship between multiple different sequences. They do not balance the extraction of high and low dimensional features in MR images and struggle to maintain a good balance between preserving image texture details and denoising intensity.
+							<P></P>
+
+							To overcome these challenges, this work proposes a controlled multimodal cross-global learnable attention network (MMCLANet) for MR image denoising. Our approach preprocesses images into multimodal connections and then uses a cross-global learnable attention network to extract and fuse image features between different modalities and within the same modality. In this process, a controlled noise level map is introduced to flexibly control the denoising intensity. In addition, we introduce a stochastic modality missing mechanism during model training, which can also effectively remove noise from MR images with missing modalities.a
+
+							<P></P>
+
+							Our proposed method outperforms the baseline method and other methods used in this study in terms of SSIM and PSNR. Our model also requires fewer FLOPS than the baseline method, which indicates better computational performance of our method.<P></P>
+
+							We propose a model for multimodal denoising by exploiting the correlation between different sequences (i.e., different modalities) of MR images, which can handle both missing-modality and all-modality denoising tasks, improving the generalization and denoising performance of the model, and which employs a cross-global learnable attention network for multimodal fusion. The method can provide a reference idea for other medical image denoising of the same type.<P></P>
+
+						
+							
+						</div>
+					<div class="return_index"><a  class="return_index_a" href="../research_info.html">← Back to overview</a></div>
+					<div class="project_leaders">Project leaders</div>
+					<div class="project_leaders_name">MingfuJiang</div>
+					<div class="project_leaders" style="margin-top:50px">Partner Organisations</div>
+					<div class="project_leaders_name">南京航天航空大学</div>
+					<div class="project_example">Project Example</div>
+					<div class="project_example_images">
+						<div class="project_example_images_"><img src="../jiangmingfu_research/example_2.png" ></div>
+
+						<div class="example_text">Comparison of denoising effects between other and proposed model. (a)Noise-free image  (b)Proposed (c)BM4D (d)RED (e)RED-WGAN</div>
+			
+					</div>
+			</div>
+			<div class="bottom_info"> 
+					  <div  style="width:1200px;height: 150px;margin: auto">
+							<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+							<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+							<div class="image_logo"> <img src="../gem_logopng.png"  style="height:140px;right: 0" ></div>
+					   </div>
+			 </div>
+		</div>
+</body>
+</html>

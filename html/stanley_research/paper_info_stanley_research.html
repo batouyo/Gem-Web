@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<style>
+	.container{
+		width: 1200px;
+		height: 800px;
+		margin: auto;
+		text-align: center;
+	
+				
+	}
+	.paper_title{
+		font-size: 22px;
+		color: green;
+		width: 1000px;
+		float: left;
+		position: relative;
+		top: 200px;
+	}
+	.paper_image{
+		float: left;
+		position: relative;
+		left: 18px;
+		top: 250px;	
+	}
+	.paper_time{
+		color: gainsboro;
+		width: 300px;
+		float: left;
+		font-size: 14px;
+		position: absolute;
+		top: 500px;
+		
+		
+		
+	}
+	.paper_info{
+		width: 900px;
+		text-align: left;
+		position: relative;
+		top: 250px;
+		left: 70px;
+		float:left;
+		font-size: 18px;
+		line-height: 30px;
+		font-size: 15px
+	}
+ .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;
+	margin-top: 500px;
+  }
+	#group_info{
+		font-size: 15px;
+
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+
+		margin-top: 2px;
+	}
+	.return_index{
+		color:green;
+		float: left;
+		position: relative;
+		top: 270px;
+		left: 370px;
+		
+	}
+	.return_index_a{
+		text-decoration: none;
+		color: green;
+	}
+	.return_index_a:hover{
+		text-decoration: underline;
+		color: darkgreen;
+	}
+		.project_leaders{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+	
+		
+	}
+	.project_leaders_name{
+		color:black;
+		font-size: 16px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 320px;
+	
+	}
+	.project_example{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+	}
+	.project_example_images{
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+		text-align: center;
+		margin-top: 20px;
+		
+	}
+	.project_example_images_{
+		float: left;
+		margin-right: 15px;
+	}
+</style>
+<head>
+<meta charset="utf-8">
+<title>paper_info</title>
+</head>
+
+<body>
+		<div class="container">
+				<div class="paper_title">Video-based animal behaviour recognition</div>
+				<div class="paper_image"><img src="example_1.png"  width="300px" height="197px"></div>
+				<div class="paper_time">Published Wed 06 September 2023</div>
+				<div class="paper_info">With the increasing demand for animal products, there has been a growing focus on animal welfare analysis, particularly in the context of social interactions within commercial farms. Disruptive inter-animal behaviors, such as tail-biting and stepping on others, not only impact animal welfare but also reduce the productivity of the farms. Detecting and preventing such behaviors has become a significant concern. While commercial farms have historically used RFID sensors for monitoring, these techniques can be expensive. As a result, researchers have explored alternative solutions, such as video-based animal behavior recognition.<p></p>
+
+Recent advancements in artificial intelligence, including Multiple Object Tracking (MOT), Joint Detection and Embedding (JDE), and Look Once (YOLO), have demonstrated that video surveillance can provide a low-cost and sustainable solution. The latest technique, MSQNet, has eliminated the need for actor-specific data, unlocking unlimited possibilities. However, further improvements are necessary to enhance the models in the domain of multi-class classification in video-based recognition.<p></p>
+
+To address this, a novel strategy is proposed. Additional information from the available dataset, such as the Animal Kingdom dataset, can be incorporated into the model from the ground up. By adding an additional class to the dataset, the model can better classify actions and also perform bonus animal class classification, enabling the classification of two different aspects. However, simply adding an additional class may not yield optimal results. Hence, another method called multi-phase transfer learning is introduced, inspired by human learning stages. The model is initially trained only on action annotations using TimesformerInit, and subsequently, the animal class is introduced.<p></p>
+
+Research has shown that introducing an additional class, in this case, the animal class, and employing multi-phase transfer learning does not significantly improve the precision of action recognition compared to the default model (~74%). However, the precision of animal class classification is better than that of action recognition. When solely incorporating the two classes into the model, the model's performance saturates at around 72%, indicating that the multi-phase transfer approach maintains the original precision while enabling the classification of additional animal behaviors and animal types.<p></p>
+
+Multi-phase transfer learning allows the model to retain previously learned patterns, and without it, the model's performance would degrade. This approach enhances the model's capabilities in classifying animal behaviors while also considering the type of animal involved.<p></p>
+
+Overall, these advancements in video-based animal behavior recognition, along with the incorporation of additional classes and multi-phase transfer learning, have the potential to greatly improve the assessment of animal welfare and behavior in commercial farms.<p></p>
+	
+</div>
+				<div class="return_index"><a  class="return_index_a" href="../research_info.html" >← Back to overview</a></div>
+				<div class="project_leaders">Project leaders</div>
+				<div class="project_leaders_name">Stanley</div>
+				<div class="project_example">Project Example</div>
+				<div class="project_example_images">
+					<div>
+  								<iframe width="720px" height="400px" src="https://www.youtube.com/embed/kvhhQyt693Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+					
+			</div>
+		</div>
+
+	
+	
+	 <div class="bottom_info"> 
+				  <div  style="width:1200px;height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+						<div class="image_logo"> <img src="../gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
+			  </div>
+</body>
+</html>

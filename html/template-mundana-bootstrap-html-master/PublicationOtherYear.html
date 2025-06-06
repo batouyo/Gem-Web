@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../web_logo.png">
+<link rel="icon" type="image/png" href="../web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Research</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+	<style>
+		/* 通用样式 */
+		.nav-link:hover {
+			color: #EA2F65;
+		}
+	
+		.nav-link.active:hover {
+			color: #EA2F65;
+		}
+	
+		#data-table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+	
+		#data-table th, #data-table td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+	
+		/* 添加间隔行颜色 */
+		#data-table tr:nth-child(odd) {
+			background-color: #f9f9f9; /* 浅灰色用于奇数行 */
+		}
+	
+		#data-table tr:nth-child(even) {
+			background-color: #ffffff; /* 白色用于偶数行 */
+		}
+	
+		/* 响应式设计 */
+		@media screen and (max-width: 600px) {
+			/* 隐藏表格的所有头部（标题行） */
+			#data-table th {
+				display: none;
+			}
+	
+			/* 每行表现为块级元素 */
+			#data-table, #data-table tbody, #data-table tr, #data-table td {
+				display: block;
+				width: 100%;
+			}
+	
+			/* 设置数据标签，左侧显示 */
+			#data-table td {
+				text-align: left; /* 左对齐 */
+				position: relative;
+				border-bottom: none; /* 移除默认底部边框 */
+			}
+	
+			/* 在数据前添加标签，仅在必要时显示 */
+			#data-table td:before {
+				content: attr(data-label);
+				position: absolute;
+				left: 0;
+				width: 50%; /* 标签宽度 */
+				padding-right: 10px; /* 右侧内边距 */
+				white-space: nowrap; /* 避免换行 */
+				font-weight: bold;
+				text-align: right; /* 标签右对齐 */
+			}
+	
+			/* 在每个记录后添加分割线 */
+			#data-table tr {
+				border-bottom: 1px solid #ddd; /* 添加分割线 */
+			}
+	
+			/* 隐藏 Publisher, Volume, Pages 列 */
+			#data-table td:nth-child(1),  /* 第一列 Publisher */
+			#data-table td:nth-child(2),  /* 第二列 Volume */
+			#data-table td:nth-child(3),
+			#data-table td:nth-child(4) { /* 第三列 Pages */
+				display: none;
+			}
+		}
+	</style>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="./index.html" style="color: rgb(94, 134, 94);"><img src="../gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="./index.html">Homepage</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Publication2024.html">Publications<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+					<a class="nav-link" href="./Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Contact.html">Contact</a>
+				</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row justify-content-between">
+				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 36px;" >Publications</p>
+					</p>
+
+
+					<div class="d-flex align-items-center">
+						
+						<!-- <small class="ml-2"><span class="text-muted d-block">Mar &nbsp;09&nbsp; 2023&nbsp;,Thu</span>
+						</small> -->
+					</div>
+				
+				</div>
+					<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; ">
+						<!-- <img src="./news_20230309/rong_2.jpg" > -->
+					
+					<!-- <div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div> -->
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container ">
+    <div class="row">
+        <ul class="nav w-100">
+            <li class="nav-item col-12 col-md-3">
+                <a href="Publication2024.html" class="nav-link " >2024</a>
+            </li>
+            <li class="nav-item col-12 col-md-3">
+                <a href="Publication2023.html" class="nav-link " >2023</a>
+            </li>
+            <li class="nav-item col-12 col-md-3">
+                <a href="Publication2022.html" class="nav-link active" >2022</a>
+            </li>
+            <li class="nav-item col-12 col-md-3">
+                <a href="PublicationOtherYear.html" class="nav-link active" aria-current="page" style="color: #EA2F65;">Other Years</a>
+            </li>
+        </ul>  
+    </div>
+</div>
+<div class="container pt-4 pb-4" >
+	<div class="row justify-content-center">
+		
+		<table id="data-table">
+			<tr>
+			  <th>Publisher</th>
+			  <th>Volume</th>
+			  <th>Pages</th>
+			  <th>Year</th>
+			  <th>Title</th>
+			  <th>Journal/Conference/Patent</th>
+			  <th>Author</th>
+			</tr>
+		  </table>
+		
+		<script>
+			function output(jsonData){
+				//回调函数的名称(testDemo)需要与 src 中一致，而且要与文件地址中名一致。
+				console.log(jsonData)
+				 // 获取数据表格
+					var table = document.getElementById("data-table");
+				
+					// 遍历每条数据并创建表格行
+					for (var i = 0; i < jsonData.length; i++) {
+					  // 判断year是否等于2022，如果是则跳过当前数据行
+					  if (jsonData[i].year === "2024"|| jsonData[i].year === "2023"|| jsonData[i].year === "2022") {
+						continue;
+					  }
+					  // if (jsonData[i].groups === "patent") {
+					  //   continue;
+					  // }
+				
+					  var row = table.insertRow(); // 插入新行
+				
+					  // 创建单元格并填充数据
+						var publisherCell = row.insertCell(0);
+						publisherCell.innerHTML = jsonData[i].publisher !== undefined ? jsonData[i].publisher : "";
+					  
+						var volumeCell = row.insertCell(1);
+						volumeCell.innerHTML = jsonData[i].volume !== undefined ? jsonData[i].volume : "";
+					  
+						var pagesCell = row.insertCell(2);
+						pagesCell.innerHTML = jsonData[i].pages !== undefined ? jsonData[i].pages : "";
+					  
+						var yearCell = row.insertCell(3);
+						yearCell.innerHTML = jsonData[i].year !== undefined ? jsonData[i].year : "";
+					  
+						var titleCell = row.insertCell(4);
+						titleCell.innerHTML = jsonData[i].title !== undefined ? jsonData[i].title : "";
+					  
+						var journalOrBooktitleCell = row.insertCell(5);
+						if (jsonData[i].journal !== undefined) {
+						  journalOrBooktitleCell.innerHTML = jsonData[i].journal;
+						} else if (jsonData[i].booktitle !== undefined) {
+						  journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
+						} else if (jsonData[i].groups === "patent") {
+						  journalOrBooktitleCell.innerHTML = "Patent";
+						} else {
+						  journalOrBooktitleCell.innerHTML = "";
+						}
+					  
+						var authorCell = row.insertCell(6);
+						authorCell.innerHTML = jsonData[i].author !== undefined ? jsonData[i].author : "";
+					  }
+			}
+		</script>
+		<script type="text/javascript" src="../output3.json"></script>
+
+		
+
+	</div>
+
+</div>
+    
+    
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>

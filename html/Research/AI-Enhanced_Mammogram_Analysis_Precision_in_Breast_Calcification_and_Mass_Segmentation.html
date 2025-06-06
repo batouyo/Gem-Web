@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="..//web_logo.png">
+<link rel="icon" type="image/png" href="../web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Research</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="../assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="../index.html" style="color: green;"><img src="../gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.html">Homepage</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Publication2024.html">Publications</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../Vancancies.html">Vacancies</a>
+				</li>   
+				<li class="nav-item">
+				<a class="nav-link" href="../Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+				<a class="nav-link" href="../Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row justify-content-between">
+				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
+					
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">AI-Enhanced Multi-class Segmentation for Mammography: Advancing Breast Cancer Detection
+
+
+					</h1>
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 18px;font-weight: bold;" >Project Leaders </p>
+						<p class="text-danger" style="font-size: 14px;" >Rongsheng Wang</p>
+						<p class="text-danger" style="font-size: 14px;" >Jiaju Huang</p>
+						<!-- <p class="text-danger" style="font-size: 18px;font-weight: bold;" >Partner Organisations  </p>
+						<p class="text-danger" style="font-size: 14px;" > 深圳市人民医院</p>
+						<p class="text-danger" style="font-size: 14px;" > 中山大学附属第五医院 </p> -->
+
+
+					</p>
+				
+				</div>
+				<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; padding-top: 10%;;padding-bottom: 10%;">
+					<img src="../rongsheng_research/breast_cancer_seg_cla.png" >
+					<!-- <div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<article class="article-post" style="color:rgba(0, 0,0, 0.8)">
+				Breast cancer remains one of the most prevalent malignancies worldwide, claiming numerous lives annually. Early and accurate detection through efficient, cost-effective methods is paramount in reducing its impact. While mammography has been foundational in breast cancer screening by offering a non-invasive approach to identify potential abnormalities, there remains a pressing need to improve both its accuracy and efficiency, particularly in the analysis of mammary ductal images and the detection of critical indicators like calcifications and masses.
+				The interpretation of mammograms requires specialized expertise, and with the limited availability of skilled radiologists coupled with growing demand for screenings, the development of reliable automated solutions has become essential. Our project addresses this challenge by integrating advanced deep learning techniques into mammographic image analysis.
+				<p></p>
+				<p>Our Approach</p>
+
+
+				<p>We have adapted the widely acclaimed U-Net architecture specifically for detailed multi-class segmentation of mammographic images. Our solution focuses on enhancing the detection and classification of calcifications and masses—critical indicators of potential malignancies whose precise identification is essential for effective treatment planning.</p>
+			
+				<p>Key Innovations:</p>
+				<p>1.Multi-class Pretraining:** We leverage extensive multi-class pretraining to equip our model with a comprehensive understanding of diverse image attributes and abnormalities. This enables more nuanced and accurate image segmentation across various tissue types and potential anomalies.</p>
+				<p>
+					2.SAM Prompt Engineering:** By incorporating the Segment Anything Model (SAM) prompt engineering, we significantly enhance the model's convergence rate while improving its robustness and precision. This enables the detection of subtle structures and anomalies within the images that might otherwise be overlooked.</p>
+		
+				<p>3.Modified U-Net Architecture:** Our state-of-the-art deep learning model employs a modified version of U-Net specifically tailored for the challenges of mammographic analysis, allowing for detailed segmentation and classification of both ductal structures and breast tissue abnormalities.</p>	
+				<p>Impact and Results</p>
+				<p>The integration of AI in mammographic image analysis represents a significant advancement in breast cancer screening. Our approach improves performance on new analytical tasks while maintaining robust performance on previously learned tasks, consistently outperforming existing methods.</p>
+				<p>Early detection through our precise image analysis system not only helps halt disease progression but also significantly enhances patient survival rates. The project's outcomes have the potential to reduce the workload on radiologists, provide timely and accurate diagnoses, and ultimately improve the overall effectiveness of breast cancer management through:</p>
+				<p>Enhanced detection of subtle abnormalities in mammary ductal images</p>
+				<p>More precise segmentation and classification of calcifications and masses</p>	
+				<p>Reduced false positives and negatives in mammographic screenings</p>
+					<p> Accelerated analysis time without compromising accuracy	</p>
+
+				<p>Through this comprehensive approach to AI-enhanced mammogram analysis, we're working toward a future where breast cancer can be detected earlier, classified more accurately, and treated more effectively.</p>
+			
+			
+			</article>
+
+
+
+			
+		
+		</div>
+	</div>
+</div>
+    
+
+
+
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			
+
+			
+	
+
+		
+			<div class="border p-5 bg-lightblue" style="margin-top: 40px;">
+				
+			
+				<div class="row justify-content-between">
+					
+				
+						
+							 
+							<div class="col-md-12 mt-2">
+								<a href="../all_research.html" class="btn btn-success btn-block">
+									Return
+								</a>
+								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+							</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="../assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>

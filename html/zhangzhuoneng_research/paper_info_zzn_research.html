@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<style>
+	.container{
+		width: 1200px;
+		height: 800px;
+		margin: auto;
+		text-align: center;
+	
+				
+	}
+	.paper_title{
+		font-size: 22px;
+		color: green;
+		width: 1100px;
+		float: left;
+		position: relative;
+		top: 200px;
+	}
+	.paper_image{
+		float: left;
+		position: relative;
+		left: 18px;
+		top: 250px;	
+	}
+	.paper_time{
+		color: gainsboro;
+		width: 300px;
+		float: left;
+		font-size: 14px;
+		position: absolute;
+		top: 500px
+		
+		
+		
+	}
+	.paper_info{
+		width: 900px;
+		text-align: left;
+		position: relative;
+		top: 250px;
+		left: 70px;
+		float:left;
+		font-size: 18px;
+		line-height: 30px;
+		font-size: 15px
+	}
+ .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;
+	margin-top: 500px;
+  }
+	#group_info{
+		font-size: 15px;
+
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+
+		margin-top: 2px;
+	}
+	.return_index{
+		color:green;
+		float: left;
+		position: relative;
+		top: 270px;
+		left: 370px;
+		
+	}
+	.return_index_a{
+		text-decoration: none;
+		color: green;
+	}
+	.return_index_a:hover{
+		text-decoration: underline;
+		color: darkgreen;
+	}
+	.project_leaders{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+	
+		
+	}
+	.project_leaders_name{
+		color:black;
+		font-size: 16px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 320px;
+		margin-bottom: 50px
+	
+	}
+	.project_example{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+	}
+	.project_example_images{
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+		margin-top: 20px;
+		
+	}
+	.example_text{
+		width:1200px;
+		text-align: center;
+		font-size: 15px;
+		line-height: 30px;
+		float: left;
+		margin-bottom: 50px
+		
+		
+	}
+
+</style>
+<head>
+<meta charset="utf-8">
+<title>paper_info</title>
+</head>	
+
+<body>
+		<div class="container">
+				<div class="paper_title">MRI imaging analysis aimed at enhancing MRI quality and reducing MRI imaging time</div>
+				<div class="paper_image"><img src="APT_FAST.png"  width="300px" height="197px"></div>
+				<div class="paper_time">Published Wed 06 September 2023</div>
+				<!-- <div class="paper_info">
+					Tumors are a leading cause of death in humans, underscoring the critical importance of early detection and diagnosis through imaging techniques. Magnetic Resonance Imaging (MRI) has emerged as a valuable tool for tumor screening and detection due to its non-invasive nature, absence of radiation, and high spatial resolution.<P></P>
+
+Therefore, our primary research objective is to develop a comprehensive and unified model specifically designed for the analysis of magnetic resonance (MR) tumor images. This ambitious undertaking aims to provide a multifaceted solution that concurrently addresses various pivotal tasks integral to tumor characterization. These tasks include, but are not limited to, precise tumor segmentation, nuanced classification to discern between benign and malignant manifestations, and sophisticated classification of tumors based on molecular attributes. Our overarching objective is to devise a model of notable sophistication and versatility, capable of comprehensively enhancing the diagnostic capabilities within the realm of tumor analysis and making substantive contributions to the field of medical imaging research.<P></P>
+
+The specific research route is illustrated in Figure 2. The universal model we are developing supports multiple forms of MR input, such as T1, T1w, T2, Flair, DWI, DCE, and ADC. Additionally, it accommodates multiple organ sites, including the brain, chest, and abdomen. In terms of output, the universal model supports various tasks, such as tumor segmentation, classification of benign and malignant tumors, classification of tumor molecular characteristics, and prediction of biochemical recurrence.<P></P>
+
+Our aim is to design a model that is not only versatile in terms of input variations and organ sites but also capable of performing diverse tasks related to tumor analysis. By encompassing a wide range of tumor-related aspects, our research endeavors to provide clinicians with a powerful tool that aids in accurate diagnosis, prognosis, and treatment planning.<P></P>
+
+Through our research, we strive to advance the field of medical imaging by developing a sophisticated and comprehensive model that can effectively analyze MR tumor images. By enabling precise segmentation, accurate classification, and molecular characterization of tumors, we aim to enhance the overall understanding and management of tumors, ultimately improving patient outcomes.<P></P>
+					
+				
+				</div> -->
+				<div class="paper_info">
+					<p style="font-size: 18px;color: green;position: relative;;top: -20px;">APT fast imaging</p>
+					<p style="position: relative;;top: -20px;"> Reducing the acquisition time of the Amide Proton Transfer (APT) technique is crucial for its widespread application. One way to reduce the scanning time is by decreasing the frequency offsets used during image acquisition, which might compromise the quantification of the APT effect. In our study, we develop a deep learning-based model that can reconstruct dense frequency offsets from sparse ones, potentially reducing scanning time. We propose using convLSTM to extract both short and long-range spatial and frequency features of APT imaging sequences. Our proposed model outperforms other seq2seq models, achieving superior reconstruction with a peak signal-to-noise ratio of 45.8 (95% confidence interval (CI)): [44.9 46.7]), and a structural similarity index of 0.989 (95% CI:[0.987 0.993]) for the tumor region. We have integrated a weighted layer into our model to evaluate the impact of individual frequency offsets on the reconstruction process. The weights assigned to the frequency offset at ± 6.5 ppm, 0 ppm, and 3.5 ppm demonstrate higher significance as learned by the model. Experimental results demonstrate that our proposed model effectively reconstructs dense APT imaging sequences (+7 to -7 with 0.5 ppm as interval) from data with 21 frequency offsets, reducing scanning time by 25%. This work presents a method for lowering the APT imaging time, offering potential guidance for parameter settings in physical devices during APT imaging and serving as a valuable reference for clinicians.</p>
+				
+				</div>
+			
+				
+				<div style="margin-top: 100px; float: left">
+					<div class="paper_title">Execution of downstream task analysis, such as whole-omics and tumor segmentation, among others.</div>
+					<div class="paper_image"><img src="yqh_example_2.png"  width="300px" height="197px"></div>
+					<div class="paper_time" style="margin-top: 600px">Published Wed 06 September 2023</div>
+					<div class="paper_info" style="margin-bottom: 100px;">
+						<p style="font-size: 18px;color: green;position: relative;;top: -20px;">APT Segmentation</p>
+						<p>As a new magnetic resonance imaging technology with a unique contrast mechanism, Amide Proton Transfer Weighted (APTw) imaging has shown its potential in the diagnosis, treatment evaluation, and prognosis prediction of breast cancer. The signal contrast between the lesion and the surrounding glandular tissue is low on the anatomical images obtained using the APTw imaging sequence in comparison to conventional anatomical dynamic contrast-enhanced MR images, which leads to subjective and inconsistent identification of the lesion for clinicians. However, breast lesion regions and their surrounding glandular tissues exhibit different APT effects, which can be utilized to enhance the segmentation accuracy of breast lesion regions on acquired anatomical images of the APTw sequence. Therefore, this paper proposes a breast lesion region segmentation network based on the model that incorporates APTw parameter map fitting and pathological classification for automatic lesion region segmentation. In addition, this paper demonstrates the importance of each frequency in APTw imaging for clinical tasks. It improves the interpretability of the network, allowing clinicians to understand its functionality better. We conducted experiments on 164 cases of originally acquired images of the APTw sequence, with lesion regions being jointly labeled as ground truth by three senior radiologists. The results show that the proposed method performs well in lesion region segmentation on images of APT sequence. Compared with these advanced methods such as U-Net, SAM, and TransBTS, our method achieves higher accuracy. Additionally, the model's interpretable contribution to different frequency offsets aligns with clinical observations.</p>
+					
+					</div>
+						
+						
+
+						<div class="paper_image"><img src="zhangzhuoneng_research_image.jpg"  width="300px" height="197px"></div>
+						<div class="paper_time" style="margin-top: 520px">Published Wed 06 September 2023</div>
+						<div class="paper_info">
+							<p style="font-size: 18px;color: green;position: relative;;top: -20px;">CLIP-Driven Universal Model for Tumor Detection Based on Magnetic Resonance Images</p>
+							<p>Tumors are a leading cause of death in humans, underscoring the critical importance of early detection and diagnosis through imaging techniques. Magnetic Resonance Imaging (MRI) has emerged as a valuable tool for tumor screening and detection due to its non-invasive nature, absence of radiation, and high spatial resolution.
+								Therefore, our primary research objective is to develop a comprehensive and unified model specifically designed for the analysis of magnetic resonance (MR) tumor images. This ambitious undertaking aims to provide a multifaceted solution that concurrently addresses various pivotal tasks integral to tumor characterization. These tasks include, but are not limited to, precise tumor segmentation, nuanced classification to discern between benign and malignant manifestations, and sophisticated classification of tumors based on molecular attributes. Our overarching objective is to devise a model of notable sophistication and versatility, capable of comprehensively enhancing the diagnostic capabilities within the realm of tumor analysis and making substantive contributions to the field of medical imaging research.
+								The specific research route is illustrated in Figure 2. The universal model we are developing supports multiple forms of MR input, such as T1, T1w, T2, Flair, DWI, DCE, and ADC. Additionally, it accommodates multiple organ sites, including the brain, chest, and abdomen. In terms of output, the universal model supports various tasks, such as tumor segmentation, classification of benign and malignant tumors, classification of tumor molecular characteristics, and prediction of biochemical recurrence.
+								Our aim is to design a model that is not only versatile in terms of input variations and organ sites but also capable of performing diverse tasks related to tumor analysis. By encompassing a wide range of tumor-related aspects, our research endeavors to provide clinicians with a powerful tool that aids in accurate diagnosis, prognosis, and treatment planning.
+								Through our research, we strive to advance the field of medical imaging by developing a sophisticated and comprehensive model that can effectively analyze MR tumor images. By enabling precise segmentation, accurate classification, and molecular characterization of tumors, we aim to enhance the overall understanding and management of tumors, ultimately improving patient outcomes.</p>
+						</div>return_index
+					
+			
+				</div>
+				<div class="return_index"><a  class="return_index_a" href="../research_info.html"  >← Back to overview</a></div>
+				<div class="project_leaders">Project  leaders</div>
+				<div class="project_leaders_name">ZhuonengZhang  <P></P> QiuhuiYang</div>	
+			
+				
+				<div class="project_leaders">Partner Organisations</div>
+				<div class="project_leaders_name">National Cancer Center <P></P>National Clinical Research Center for Cancer<p></p>Cancer Hospital & Shenzhen Hospital</div>
+					
+				
+		
+			
+				<div class="project_example">Project Example</div>
+				
+	
+	
+	 <div class="bottom_info"> 
+				  <div  style="width:1200px;height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+						<div class="image_logo"> <img src="../gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
+			  </div>
+</body>
+</html>
