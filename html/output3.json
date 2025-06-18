@@ -1234,7 +1234,7 @@ output(
     "note": "US Patent 12,100,170",
     "month": "September~24",
     "year": "2024",
-    "author": "Tan, Tao and Cziria, Bal{\\'a}zs P{\\'e}ter and Tegzes, P{\\'a}l and Avinash, Gopal Biligeri and Gonzalez, German Guillermo Vera and Ferenczi, Lehel Mih{\\'a}ly and Herczeg, Zita and Soni, Ravi and Dibyajyoti, PATI",
+    "author": "Tan, Tao and Cziria, Balazs Peter and Tegzes, Pal and Avinash, Gopal Biligeri and Gonzalez, German Guillermo Vera and Ferenczi, Lehel Mihaly and Herczeg, Zita and Soni, Ravi and Dibyajyoti, PATI",
     "title": "Multi-layer image registration",
     "ENTRYTYPE": "misc",
     "ID": "tan2024multi"
@@ -1375,7 +1375,7 @@ output(
     "note": "US Patent 12,051,178",
     "month": "July~30",
     "year": "2024",
-    "author": "Tan, Tao and Tegzes, P{\\'a}l and T{\\\"o}r{\\\"o}k, Levente Imre and Ferenczi, Lehel and Avinash, Gopal B and Rusk{\\'o}, L{\\'a}szl{\\'o} and Rao, Gireesha Chinthamani and Younis, Khaled and Ghose, Soumya",
+    "author": "Tan, Tao and Tegzes, Pal and Torok, Levente Imre and Ferenczi, Lehel and Avinash, Gopal B and Rusko, Laszlo and Rao, Gireesha Chinthamani and Younis, Khaled and Ghose, Soumya",
     "title": "Image harmonization for deep learning model optimization",
     "ENTRYTYPE": "misc",
     "ID": "tan2024image"
@@ -1417,7 +1417,7 @@ output(
     "pages": "1236792",
     "volume": "11",
     "journal": "Frontiers in Physics",
-    "author": "Czipczer, Vanda and Kolozsv{\\'a}ri, Bernadett and De{\\'a}k-Karancsi, Borb{\\'a}la and Capala, Marta E and Pearson, Rachel A and Borz{\\'a}si, Em{\\H{o}}ke and Egy{\\\"u}d, Zs{\\'o}fia and Ga{\\'a}l, Szilvia and Kelemen, Gy{\\\"o}ngyi and K{\\'o}sz{\\'o}, Ren{\\'a}ta and others",
+    "author": "Czipczer, Vanda and Kolozsvari, Bernadett and Deak-Karancsi, Borbala and Capala, Marta E and Pearson, Rachel A and Borzasi, EmHoke and Egyud, Zsofia and Gaal, Szilvia and Kelemen, Gyongyi and Koszo, Renata and others",
     "title": "Comprehensive deep learning-based framework for automatic organs-at-risk segmentation in head-and-neck and pelvis for MR-guided radiation therapy planning",
     "ENTRYTYPE": "article",
     "ID": "czipczer2023comprehensive"
@@ -1454,7 +1454,7 @@ output(
     "publisher": "Google Patents",
     "month": "September~28",
     "year": "2023",
-    "author": "Rusk{\\'o}, L{\\'a}szl{\\'o} and Czipczer, Vanda and Kolozsv{\\'a}ri, Bernadett and Zs{\\'a}mboki, Rich{\\'a}rd and Tan, Tao and Cziria, Bal{\\'a}zs P{\\'e}ter and R{\\'a}dics, Attila M{\\'a}rk and Ferenczi, Lehel and Mian, Fei and Yi, Hongxiang and others",
+    "author": "Rusko, Laszlo and Czipczer, Vanda and Kolozsvari, Bernadett and Zsamboki, Richard and Tan, Tao and Cziria, Balazs Peter and Radics, Attila Mark and Ferenczi, Lehel and Mian, Fei and Yi, Hongxiang and others",
     "title": "Systems and methods for segmenting objects in medical images",
     "ENTRYTYPE": "misc",
     "ID": "rusko2023systems"
@@ -1508,7 +1508,7 @@ output(
     "publisher": "Google Patents",
     "month": "October~26",
     "year": "2023",
-    "author": "Tan, Tao and Avinash, Gopal B and Fejes, M{\\'a}t{\\'e} and Soni, Ravi and Szab{\\'o}, D{\\'a}niel Attila and Mullick, Rakesh and Melapudi, Vikram and Shriram, Krishna Seetharam and Ranjan, Sohan Rashmi and Das, Bipul and others",
+    "author": "Tan, Tao and Avinash, Gopal B and Fejes, Mate and Soni, Ravi and Szabo, Daniel Attila and Mullick, Rakesh and Melapudi, Vikram and Shriram, Krishna Seetharam and Ranjan, Sohan Rashmi and Das, Bipul and others",
     "title": "Multimodality image processing techniques for training image data generation and usage thereof for developing mono-modality image inferencing models",
     "ENTRYTYPE": "misc",
     "ID": "tan2023multimodality"
@@ -1519,7 +1519,7 @@ output(
     "pages": "1236792",
     "volume": "11",
     "journal": "Frontiers in Physics",
-    "author": "Czipczer, Vanda and Kolozsv{\\'a}ri, Bernadett and De{\\'a}k-Karancsi, Borb{\\'a}la and Capala, Marta E and Pearson, Rachel A and Borz{\\'a}si, Em{\\H{o}}ke and Egy{\\\"u}d, Zs{\\'o}fia and Ga{\\'a}l, Szilvia and Kelemen, Gy{\\\"o}ngyi and K{\\'o}sz{\\'o}, Ren{\\'a}ta and others",
+    "author": "Czipczer, Vanda and Kolozsvari, Bernadett and Deak-Karancsi, Borbala and Capala, Marta E and Pearson, Rachel A and Borzasi, EmHoke and Egyud, Zsofia and Gaal, Szilvia and Kelemen, Gyongyi and Koszo, Renata and others",
     "title": "Comprehensive deep learning-based framework for automatic organs-at-risk segmentation in head-and-neck and pelvis for MR-guided radiation therapy planning",
     "ENTRYTYPE": "article",
     "ID": "czipczer2023comprehensive"
@@ -1633,7 +1633,7 @@ output(
   {
     "year": "2024",
     "journal": "arXiv preprint arXiv:2401.09336",
-    "author": "Han, Luyi and Tan, Tao and Zhang, Tianyu and Gao, Yuan and Wang, Xin and Longo, Valentina and Ventura-D{\\'\\i}az, Sof{\\'\\i}a and D'Angelo, Anna and Teuwen, Jonas and Mann, Ritse",
+    "author": "Han, Luyi and Tan, Tao and Zhang, Tianyu and Gao, Yuan and Wang, Xin and Longo, Valentina and Ventura-Diaz, Sofia and D'Angelo, Anna and Teuwen, Jonas and Mann, Ritse",
     "title": "To deform or not: treatment-aware longitudinal registration for breast DCE-MRI during neoadjuvant chemotherapy via unsupervised keypoints detection",
     "ENTRYTYPE": "article",
     "ID": "han2024deform"
@@ -1743,7 +1743,7 @@ output(
     "volume": "10",
     "journal": "Heliyon",
     "author": "Li, Jiaoyan and Xie, Kaihong and Xu, Minxian and Wang, Ye and Huang, Yinghong and Tan, Tao and Xie, Hui",
-    "title": "Significance of N6-methyladenosine RNA methylation regulators in diagnosis and subtype classification of primary Sj{\\\"o}gren\u2019s syndrome",
+    "title": "Significance of N6-methyladenosine RNA methylation regulators in diagnosis and subtype classification of primary Sjogren\u2019s syndrome",
     "ENTRYTYPE": "article",
     "ID": "li2024significance"
   },
@@ -1767,7 +1767,7 @@ output(
     "publisher": "Google Patents",
     "month": "March~7",
     "year": "2024",
-    "author": "Tan, Tao and Fejes, M{\\'a}t{\\'e} and Avinash, Gopal and Soni, Ravi and Das, Bipul and Mullick, Rakesh and Tegzes, P{\\'a}l and Ferenczi, Lehel and Melapudi, Vikram and Shriram, Krishna Seetharam and others",
+    "author": "Tan, Tao and Fejes, Mate and Avinash, Gopal and Soni, Ravi and Das, Bipul and Mullick, Rakesh and Tegzes, Pal and Ferenczi, Lehel and Melapudi, Vikram and Shriram, Krishna Seetharam and others",
     "title": "System and methods for inferring thickness of object classes of interest in two-dimensional medical images using deep neural networks",
     "ENTRYTYPE": "misc",
     "ID": "tan2024system"
@@ -1823,7 +1823,7 @@ output(
     "note": "US Patent App. 18/046,347",
     "month": "April~18",
     "year": "2024",
-    "author": "Tan, Tao and Yang, Hongxu and Avinash, Gopal Biligeri and Cziria, Bal{\\'a}zs P{\\'e}ter and Tegzes, P{\\'a}l and Dong, Xiaomeng and Soni, Ravi and Ferenczi, Lehel Mih{\\'a}ly and Rusko, Laszlo",
+    "author": "Tan, Tao and Yang, Hongxu and Avinash, Gopal Biligeri and Cziria, Balazs Peter and Tegzes, Pal and Dong, Xiaomeng and Soni, Ravi and Ferenczi, Lehel Mihaly and Rusko, Laszlo",
     "title": "DEEP LEARNING IMAGE ANALYSIS WITH INCREASED MODULARITY AND REDUCED FOOTPRINT",
     "ENTRYTYPE": "misc",
     "ID": "tan2024deep"
@@ -1841,7 +1841,7 @@ output(
     "publisher": "Google Patents",
     "month": "April~18",
     "year": "2024",
-    "author": "Cziria, Bal{\\'a}zs P and Gonzalez, German Guillermo Vera and Tan, Tao and Tegzes, Pal and Wanek, Justin M and Avinash, Gopal B and Herczeg, Zita and Soni, Ravi and Rao, Gireesha Chinthamani",
+    "author": "Cziria, Balazs P and Gonzalez, German Guillermo Vera and Tan, Tao and Tegzes, Pal and Wanek, Justin M and Avinash, Gopal B and Herczeg, Zita and Soni, Ravi and Rao, Gireesha Chinthamani",
     "title": "Artificial Intelligence-Based Dual Energy X-Ray Image Motion Correction Training Method and System",
     "ENTRYTYPE": "misc",
     "ID": "cziria2024artificial"
@@ -1875,7 +1875,7 @@ output(
     "volume": "10",
     "journal": "Heliyon",
     "author": "Xie, Hui and Deng, Yin-mei and Li, Jiao-yan and Xie, Kai-hong and Tao, Tan and Zhang, Jian-fang",
-    "title": "Predicting the risk of primary Sj{\\\"o}gren's syndrome with key N7-methylguanosine-related genes: A novel XGBoost model",
+    "title": "Predicting the risk of primary Sjogren's syndrome with key N7-methylguanosine-related genes: A novel XGBoost model",
     "ENTRYTYPE": "article",
     "ID": "xie2024predicting"
   },
@@ -1929,7 +1929,7 @@ output(
     "pages": "1--12",
     "booktitle": "Proceedings of the International Conference on Computer Vision and Deep Learning",
     "author": "Li, Jiaoyan and Xie, Kaihong and Tan, Tao and Xie, Hui",
-    "title": "Machine Learning Model for Predicting Risk of Primary Sj? gren's syndrome using N7-methylguanosine-related Genes",
+    "title": "Machine Learning Model for Predicting Risk of Primary Sjogren's syndrome using N7-methylguanosine-related Genes",
     "ENTRYTYPE": "inproceedings",
     "ID": "li2024machine"
   },
@@ -1955,7 +1955,7 @@ output(
     "note": "US Patent App. 18/064,541",
     "month": "June~13",
     "year": "2024",
-    "author": "Yang, Hongxu and Avinash, Gopal Biligeri and Ferenczi, Lehel Mih{\\'a}ly and Dong, Xiaomeng and Aboobacker, Najib Akram Maheen and Rao, Gireesha Chinthamani and Tan, Tao and Vera Gonzalez, German Guillermo",
+    "author": "Yang, Hongxu and Avinash, Gopal Biligeri and Ferenczi, Lehel Mihaly and Dong, Xiaomeng and Aboobacker, Najib Akram Maheen and Rao, Gireesha Chinthamani and Tan, Tao and Vera Gonzalez, German Guillermo",
     "title": "DEEP LEARNING IMAGE PROCESSING",
     "ENTRYTYPE": "misc",
     "ID": "yang2024deep"
