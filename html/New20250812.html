@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./web_logo.png">
+<link rel="icon" type="image/png" href="./web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>New</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="./index.html" style="color: green;"><img src="./gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./publications2024.html">Publications</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<li class="nav-item">
+					<a class="nav-link" href="./Vancancies.html">Vacancies</a>
+				</li>   
+				<a class="nav-link" href="./Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+				<a class="nav-link" href="./Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row">
+				<div class="col-md-12 text-center pt-4 pb-4">
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 24px;" >News</p>
+					</p>
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">The research team of Macao Polytechnic University developed a general ultrasound AI framework-PerceptGuide, to lead a new paradigm of multi organ and multi task diagnosis.</h1>
+					<div class="d-flex align-items-center justify-content-center">
+						<small class="ml-2"><span class="text-muted d-block">Aug &nbsp;12&nbsp; 2025&nbsp;, Tue.</span></small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<article class="article-post" style="color:rgba(0, 0,0, 0.8); line-height: 1.8; font-size: 16.5px;">
+			<p style="text-indent: 2em; margin-bottom: 1.5rem;">Linzehui, a doctoral student at the school of Applied Sciences of the Macao Polytechnic University, and other members of the research team, in conjunction with Case Western Reserve University, Shenzhen Institute of advanced technology of the Chinese Academy of Sciences, Sun Yat sen University, Shenzhen University and Shenzhen duying Medical Technology Co., Ltd., have successfully developed a universal ultrasonic AI framework called perceptguide. The framework innovatively introduces the "orchestration learning" paradigm, and realizes high-precision lesion segmentation and classification of ultrasound images of various organs (such as breast, thyroid, heart, liver, etc.) through the guidance of multi-dimensional prompt words.</p>
+			<p style="text-indent: 2em; margin-bottom: 1.5rem;">This breakthrough research achievement has been received by medical image analysis, a top journal in the field of medical image computing (with an impact factor of more than 10), which marks the transition of ultrasound AI from the era of "specialized model" to the era of "universal framework", and provides a potential solution for the deployment and application of clinical AI</p>
+            <div style="text-align: center;">
+                <img src="./news_20250812/images_1.png" ></img>
+            </div>
+            <p style="text-indent: 2em; margin-bottom: 1.5rem;">In clinical diagnosis, ultrasound is widely used in the examination of multiple organs because of its non-invasive, portable and real-time characteristics. However, the ultrasound images of different organs have great differences in texture, structure and artifacts, which leads to the traditional AI model can only be "disease specific", that is, a model can only deal with one organ or one task (such as only segmentation or classification). If we want to deploy AI auxiliary diagnosis covering multiple organs in clinic, we need to develop and maintain dozens of independent models, which is not only expensive to calculate, but also complex and difficult to expand.</p>
+            <p style="text-indent: 2em; margin-bottom: 1.5rem;">To meet this challenge, perceptguide came into being. It is a unified and automatic learning framework, which can flexibly process images from 16 public datasets of 9 different organs in a single model, and simultaneously perform the two core tasks of segmentation and classification. Its core innovation lies in a "hyper perception module" guided by cue words. The module can understand four key words: object, task, input and position, and dynamically adjust the internal attention mechanism of the model according to these instructions, so that it can focus on the most critical image features for different scenes like an experienced doctor.</p>
+            <div style="text-align: center;">
+                <img src="./news_20250812/images_2.png" ></img>
+            </div>
+            <div class="p-3 mb-4" style="background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #03A87C;">
+                <p style="font-weight: 500; margin-bottom: 1rem;">The perceptguide framework mainly has the following four technological innovations:</p>
+                <ul style="padding-left: 2rem; list-style-type: circle;">
+                    <li><p style="margin-bottom: 1rem;">General multi organ and multi task framework: for the first time, a single model is implemented to deal with the segmentation and classification tasks of nine different organs. Its comprehensive performance significantly exceeds that of the specialized model trained separately for each organ, while significantly reducing the total number of parameters and complexity of model deployment.</p></li>
+                    <li><p style="margin-bottom: 1rem;"> Super perception module guided by cue word: the original cue word mechanism gives the model unprecedented flexibility. The doctor or system only needs to give simple instructions (such as "classify thyroid nodules"), and the model can automatically call the corresponding prior knowledge to accurately complete the task.</p></li>
+                    <li><p style="margin-bottom: 1rem;">Downstream synchronization technology of attention matching: for new data or new tasks that may appear in the future, the framework designs an efficient fine-tuning scheme. It only needs to update a few parameters related to the prompt word to quickly adapt to the new data, which greatly improves the generalization ability and scalability of the model.</p></li>
+                    <li><p style="margin-bottom: 1rem;"> Building a large-scale multi center benchmark data set: the team has integrated and standardized 16 public ultrasound data sets, and built the largest public multi task, multi organ ultrasound data set M ² -us, which provides a valuable benchmark platform for the follow-up study of general ultrasound AI.</p></li>
+                </ul>
+            </div>
+		</article>
+        
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					
+						
+							
+							
+							<div class="col-md-12 mt-2">
+								<a href="index.html" class="btn btn-success btn-block">
+									Return
+								</a>
+								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+							</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>
