@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./web_logo.png">
+<link rel="icon" type="image/png" href="./web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>New</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="./index.html" style="color: green;"><img src="./gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./publications2024.html">Publications</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<li class="nav-item">
+					<a class="nav-link" href="./Vancancies.html">Vacancies</a>
+				</li>   
+				<a class="nav-link" href="./Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+				<a class="nav-link" href="./Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row">
+				<div class="col-md-12 text-center pt-4 pb-4">
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 24px;" >News</p>
+					</p>
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">Unified multimodal medical image sequence conversion to achieve zero sample domain adaptation.</h1>
+					<div class="d-flex align-items-center justify-content-center">
+						<small class="ml-2"><span class="text-muted d-block">Aug &nbsp;19&nbsp; 2025&nbsp;, Tue.</span></small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<article class="article-post" style="color:rgba(0, 0,0, 0.8); line-height: 1.8; font-size: 16.5px;">
+			<p style="text-indent: 2em; margin-bottom: 1.5rem;">With the rapid accumulation of multimodal medical image data sets, it has become an urgent need for clinical and scientific research to develop a model that can carry out sequence conversion across multimodal data. However, the existing multimodal image transformation methods usually rely on task specific architecture or discrete domain labels, which have obvious limitations in scalability and generalization.</p>
+			<p style="text-indent: 2em; margin-bottom: 1.5rem;">On August 11, 2025, Tan Tao team of the Macao Polytechnic University and ritse Mann team of the medical center of the University of nemegen in the Netherlands published a research paper entitled "all in one medical image to image translation" in cell reports methods, a journal of cell press. This study proposes an eva-i2i framework driven by contrast language image pre training (dclip) with DICOM semantic tags, which can realize image conversion between different modes in a single model, and has the potential of zero sample domain adaptation, and can be directly deployed to clinical tasks without fine-tuning.</p>
+            <div style="text-align: center;">
+                <img src="./news_20250819/images.2.jpg" ></img>
+            </div>
+            <p style="text-indent: 2em; margin-bottom: 1.5rem;">The research team noted that the traditional multimodal image conversion method usually takes different imaging modes or sequences as independent domains and distinguishes them by independent thermal coding. When this method is extended to new domains, the coding length will increase continuously, and the fine-grained semantic differences between different domains cannot be captured. To this end, the research team proposed the eva-i2i (every domain all at once image to image) framework, which converts the information of organs, modes, sequences, etc. of each scanned image into natural language prompts to define the image domain. This hint driven representation can not only flexibly distinguish fine-grained semantic differences, but also easily extend to unknown domains.</p>
+            <p style="text-indent: 2em; margin-bottom: 1.5rem;">Based on 7 public data sets and a total of 27950 3D scans (covering brain, breast, abdomen, pelvic cavity and other parts), the research team jointly trained all known modes at one time. The image generated by the model is superior to the existing baseline method in quality, and also performs well in image conversion of external data sets. More importantly, the model also shows the potential of zero sample domain adaptation on external data, which can transform unknown domains into known domains, and expand its potential application range. In addition, in downstream tasks such as cross modal registration, classification and segmentation, the model does not need to be fine tuned in the target domain, and can achieve the same or even better performance on the external dataset as the fine tuning method. This provides a plug and play solution for the common problem of cross modal domain adaptation in clinic.</p>
+            <div style="text-align: center;">
+                <img src="./news_20250819/images_1.jpg" ></img>
+            </div>
+            <p style="text-indent: 2em; margin-bottom: 1.5rem;">The eva-i2i model proposed by the research team provides an extensible new paradigm for constructing a universal and multimodal medical image conversion model. Through DICOM semantic prompt coding, the model not only overcomes the inherent limitations of the single hot coding, but also provides a potential solution for image data standardization and analysis across centers and imaging protocols. This research result is expected to be applied in clinical practice, and help doctors achieve efficient image domain adaptation between different imaging protocols and devices, so as to improve diagnostic consistency and cross agency collaboration efficiency.</p>
+		</article>
+        
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					
+						
+							
+							
+							<div class="col-md-12 mt-2">
+								<a href="index.html" class="btn btn-success btn-block">
+									Return
+								</a>
+								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+							</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>
