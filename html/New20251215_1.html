@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./web_logo.png">
+<link rel="icon" type="image/png" href="./web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Mammo-AGE Published in Nature Communications</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="./assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="./index.html" style="color: green;"><img src="./gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./publications2024.html">Publications</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<li class="nav-item">
+					<a class="nav-link" href="./Vancancies.html">Vacancies</a>
+				</li>   
+				<a class="nav-link" href="./Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+				<a class="nav-link" href="./Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./Contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row">
+				<div class="col-md-12 text-center pt-4 pb-4">
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 24px;">News</p>
+					</p>
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">Lab Breakthrough in Nature Communications: Mammo-AGE Unlocks a New “Breast Health Clock”</h1>
+					<div class="d-flex align-items-center justify-content-center">
+						<small class="ml-2"><span class="text-muted d-block">Dec.&nbsp;15&nbsp; 2025&nbsp;, Mon.</span></small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<article class="article-post" style="color:rgba(0, 0,0, 0.8)">
+					<p>Recently, the Intelligent Medical Computing Laboratory at Macao Polytechnic University has published its latest research, <em>Mammo-AGE: deep learning estimation of breast age from mammograms</em>, in Nature Communications (IF=15.7). This marks a significant breakthrough at the international frontier of intelligent medical imaging analysis and early tumor screening.</p>
+					<figure class="text-center my-4">
+						<img src="./news_20251215/image1.png" class="img-fluid rounded shadow-sm" alt="Mammo-AGE published in Nature Communications">
+					</figure>
+					
+					<p><strong>Core Innovation: AI-driven “Breast Age Clock”</strong></p>
+					<p>Addressing clinical needs in breast health assessment and early screening for breast cancer, this work proposes the Mammo-AGE deep learning model and achieves three key advances:</p>
+					
+					<ol>
+						<li><strong>Accurate, non-invasive breast age estimation</strong><br/>Using only routine four-view mammograms (bilateral CC and MLO) without additional clinical data, the model precisely infers biological breast age. It integrates multi-view fusion and ensemble learning: an Instance-Bag Transformer aggregates aging features across views; five mainstream backbones (including ResNet-18 and EfficientNet-B0) are ensembled; multi-task learning with breast density prediction and a composite loss (POE and MVL) ensures physiologically coherent aging patterns. Trained and externally validated on five large global datasets (95,826 images; women aged 18–98), Mammo-AGE achieves a mean absolute error of 4.2–6.1 years and a correlation with chronological age up to 0.89, demonstrating strong stability and generalization.</li>
+						<li><strong>Interpretable health risk biomarker</strong><br/>The bias-corrected <em>Breast Age Gap</em> (estimated age minus chronological age) serves as a novel biomarker of breast health. Findings show breast cancer patients have significantly higher age gaps than healthy controls; each 1-year increase in age gap raises future cancer risk by 1.3%–2.2%. Longitudinal validation indicates lower health probability in high-gap populations (log-rank test p&lt;0.0001). Occlusion sensitivity analysis produces saliency maps focusing on glandular tissue, vasculature, and skin thickness—making AI decisions visible and interpretable.</li>
+						<li><strong>Clinical translation across scenarios</strong><br/>After fine-tuning, the model performs strongly in diagnosis and short-/long-term risk prediction. On internal and external datasets (including CSAW-CC and CMMD), AUPRC and AUROC outperform mainstream methods, remaining efficient even in limited data settings. Compared to DNA methylation clocks requiring tissue/blood samples, Mammo-AGE leverages routine screening images—non-invasive, low-cost, and easily scalable—integrating directly into current workflows to quantify high-risk identification and personalize screening intervals.</li>
+					</ol>
+
+					<div class="mt-3">
+						<p class="mb-1"><span class="badge badge-success">Publication</span></p>
+						<ul class="list-unstyled">
+							<li><i class="fas fa-link mr-2"></i>DOI: <a href="https://doi.org/10.1038/s41467-025-65923-5" target="_blank" rel="noopener">10.1038/s41467-025-65923-5</a></li>
+						</ul>
+					</div>
+
+					<p class="mt-4">Looking ahead, our laboratory will continue to advance the clinical deployment of Mammo-AGE, further explore the relationship between breast aging and other breast diseases, and expand AI applications in multi-organ imaging analysis and precision oncology.</p>
+			</article>
+
+
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					
+						
+							
+							
+							<div class="col-md-12 mt-2">
+								<a href="index.html" class="btn btn-success btn-block">
+									Return
+								</a>
+								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+							</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>
