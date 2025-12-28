@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="..//web_logo.png">
+<link rel="icon" type="image/png" href="../web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Research</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="../assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+	<a class="navbar-brand" href="../../index.html" style="color: green;"><img src="../gem_logopng.png" style="height:50px"></a>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+		<ul class="navbar-nav mr-auto d-flex align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.html">Homepage</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../all_research.html">Research</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Publication2024.html">Publications</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../Demo_show.html">Demo-solutions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../Vancancies.html">Vacancies</a>
+				</li> 
+				<li class="nav-item">
+				<a class="nav-link" href="../Partners.html">Partners</a>
+				</li>            
+				<li class="nav-item">
+				<a class="nav-link" href="../Education.html">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="../Contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+</nav>
+<!-- End Navbar -->
+    
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row justify-content-center">
+				<div>/href</div>
+                <div class="col-md-12 pt-6 pb-6 pr-6 align-self-center text-center">				
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">Tree-Diffusion: Octree-Based Conditional Diffusion Model for Small Bowel Skeleton Generation with Geometric Direction Modeling</h1>
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 18px;font-weight: bold;" >Project Leaders</p>
+						<p class="text-danger" style="font-size: 14px;" >Zhichao Liang</p>
+					</p>
+				
+				</div>
+				<!-- <div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; padding-top: 10%;;padding-bottom: 10%;">
+					<img src="../liangzhichao_research/1" >
+					<div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header -->
+    
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<article class="article-post">
+				<div class="p-4 p-md-5 bg-light rounded shadow-sm">
+					<div class="mb-3">
+						<span class="badge badge-primary">Overview</span>
+					</div>
+					<p class="lead mb-3" style="color:rgba(0,0,0,0.85); text-align: justify;">Accurate anatomical evaluation of the gastrointestinal tract is essential for clinical applications such as fistula localization, lesion mapping, and radiotherapy planning. A bowel topological skeleton provides an interpretable centerline-like representation of the intestinal trajectory, enabling regional annotation, shape registration, and clinically meaningful localization along the bowel path. However, small bowel anatomy is exceptionally challenging: it is long (up to ~6 m), tightly coiled, highly variable across subjects, and frequently exhibits self-contact and deformation, making complete 3D skeleton tracing extremely time-consuming and error-prone for clinicians.</p>
+					<p class="mb-3" style="color:rgba(0,0,0,0.85); text-align: justify;">While deep learning has achieved strong performance for small bowel segmentation, direct skeleton extraction remains difficult. Existing approaches often depend on manual skeleton labels and are vulnerable to topological failures in self-contact or low-contrast regions, leading to fragmented tracks, spurious loops, or incomplete paths. Moreover, skeletons (sparse 3D curves) and masks (dense volumetric regions) differ substantially in representation and feature distributions, complicating unified modeling.</p>
+					<div class="mb-3">
+						<h6 class="mb-2"><i class="fas fa-bullseye mr-2"></i>Key Requirements</h6>
+						<ul class="mb-3" style="margin-left: 1rem;">
+							<li>Preserve a single continuous, anatomically valid path</li>
+							<li>Reduce dependence on manual skeleton annotations</li>
+							<li>Remain computationally efficient for large 3D volumes</li>
+						</ul>
+					</div>
+					<p class="mb-3" style="color:rgba(0,0,0,0.85);">We propose Tree-Diffusion, an octree-based conditional diffusion framework that generates anatomically plausible and directionally consistent small-bowel skeletons from segmentation masks.</p>
+					<div class="mb-3">
+						<h6 class="mb-2"><i class="fas fa-cogs mr-2"></i>Core Innovations</h6>
+						<ol class="mb-3" style="margin-left: 1rem;">
+							<li><strong>Topology-simulation pipeline</strong>: We synthesize anatomically consistent skeleton-mask pairs as geometric priors, substantially reducing reliance on manual skeleton labeling.</li>
+							<li><strong>Octree latent representation with cross-domain alignment</strong>: A compact latent space via a VAE with hierarchical octree sparse encoding captures sparse geometry and global direction; octree-domain and image-domain modules jointly preserve local directionality and global shape consistency.</li>
+						</ol>
+					</div>
+					<div class="border rounded p-3 bg-white">
+						<p class="mb-0" style="color:rgba(0,0,0,0.85);">Across four large-scale abdominal CT datasets, Tree-Diffusion achieves superior topological completeness, geometric accuracy, and generalization compared with prior skeletonization pipelines, while remaining efficient through sparse octree modeling.</p>
+					</div>
+				</div>
+			</article>		
+		</div>
+	</div>
+</div>
+    
+
+<div class="container">
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row justify-content-between">
+				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 24px; padding-bottom:-200px !important;font-weight: bold;" >Project Example</p>
+					</p>
+
+				
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container pt-4 pb-4">
+	<div class="row justify-content-center">
+		
+		<div class="col-md-12 col-lg-8">
+			<img src="../liangzhichao_research/image2.png">
+			<div></div>
+			
+			<div class="border p-5 bg-lightblue" style="margin-top: 40px;">
+			
+				<div class="row justify-content-between">
+					
+				
+						
+							 
+							<div class="col-md-12 mt-2">
+								<a href="../all_research.html" class="btn btn-success btn-block">
+									Return
+								</a>
+								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+							</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+<div class="container mt-5">
+	<footer class="bg-white border-top p-3 text-muted small">
+	<div class="row align-items-center justify-content-between">
+		<div>
+            <span class="navbar-brand mr-2"  style="color: #03A87C "><strong>Generalized Electric Medicine Group</strong></span> 
+			
+		</div>
+		<div>
+			The Generalized Electric Medicine is part of the Macao polytechnic university.
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- End Footer -->
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="../assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>

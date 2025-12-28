@@ -2282,4 +2282,12 @@ output(
     "ENTRYTYPE": "article",
     "ID": "wang2024synergy"
   }
+  ,{
+    "year": "2025",
+    "journal": "IEEE International Conference on Bioinformatics and Biomedicine",
+    "author": "Liang, Zhichao and Li, Fan and Jia, Dengqiang and Duan, Yaofei and Xie, Xinyu and Sun, Kaicong and Cui, Zhiming and Tan, Tao and Shen, Dinggang",
+    "title": "Tree-Diffusion: Octree-Based Conditional Diffusion Model for Small Bowel Skeleton Generation with Geometric Direction Modeling",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "liang2025treediffusion"
+  }
 ])
