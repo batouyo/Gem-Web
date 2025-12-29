@@ -2290,4 +2290,12 @@ output(
     "ENTRYTYPE": "inproceedings",
     "ID": "liang2025treediffusion"
   }
+  ,{
+    "year": "2025",
+    "journal": "IEEE International Conference on Bioinformatics and Biomedicine",
+    "author": "Jie Gao, Ieong Weng San, Xiangmin Luo, Zhengxuan Chen, Tao Tan, Yue Sun.",
+    "title": "Advancing Clinical Generalization in Remote Photoplethysmography via Age-Specific Physiological Features",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "liang2025treediffusion"
+  }
 ])
