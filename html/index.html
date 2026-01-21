@@ -13,6 +13,17 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- Main CSS -->
 <link href="./assets/css/main.css" rel="stylesheet"/>
+<style>
+	/* Equalize Main News card heights and ensure consistent layout */
+	.main-news .card { min-height: 220px; display: flex; flex-direction: column; }
+	.main-news .card .card-body { display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
+	.main-news .card .d-flex.flex-row.align-items-start.mb-3 { display: flex; align-items: flex-start; gap: 12px; }
+	.main-news .card img { max-height: 140px; width: auto; }
+	@media (max-width: 991.98px) {
+		.main-news .card { min-height: unset; }
+		.main-news .card img { max-height: 120px; }
+	}
+</style>
 </head>
 <body>
 <!--------------------------------------
@@ -24,7 +35,7 @@ NAVBAR
 	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+	<div class="navbar-collapse collapse" id="navbarColor02">
 		<ul class="navbar-nav mr-auto d-flex align-items-center">
 			<li class="nav-item">
 			<a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a>
@@ -93,9 +104,67 @@ MAIN
 --------------------------------------->
 
 <!-- Main News -->>
-<div class="container pt-4 pb-4">
+<div class="container pt-4 pb-4 main-news">
 	<div class="row">
 		<div class="col-lg-6">
+				<div class="card border-0 mb-4 box-shadow">
+					<div class="card-body px-0 pb-0 d-flex flex-column">
+						<div class="d-flex flex-row align-items-start mb-3">
+							<div class="mr-3" style="flex-shrink: 0; width: 120px;">
+								<img src="./news_20260121/image2.png" class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+							</div>
+							<h2 class="h4 font-weight-bold mb-0">
+								<a class="text-dark" href="./New20260121_2.html">The laboratory added two more international journal papers: promoting fair and credible medical imaging AI and intelligent radiotherapy</a>
+							</h2>
+						</div>
+						<div>
+							<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Jan.&nbsp;21&nbsp; 2026&nbsp;, Wed.</small>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-4 box-shadow">
+					<div class="card-body px-0 pb-0 d-flex flex-column">
+						<div class="d-flex flex-row align-items-start mb-3">
+							<div class="mr-3" style="flex-shrink: 0; width: 120px;">
+								<img src="./news_20260121/image1.png" class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
+							</div>
+							<h2 class="h4 font-weight-bold mb-0">
+								<a class="text-dark" href="./New20260121_1.html">Many laboratory achievements were published in international top journals: promoting trusted medical imaging AI to clinical practice</a>
+							</h2>
+						</div>
+						<div>
+							<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Jan.&nbsp;21&nbsp; 2026&nbsp;, Wed.</small>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-4 box-shadow">
+					<div class="card-body px-0 pb-0 d-flex flex-column">
+						<div class="d-flex flex-row align-items-start mb-3">
+							
+							<h2 class="h4 font-weight-bold mb-0">
+								<a class="text-dark" href="./New20251202_1.html">Dr. Tao Tan of Macao Polytechnic University presented at the international breast forum to discuss the application of AI in breast cancer diagnosis and treatment</a>
+							</h2>
+						</div>
+						<div>
+							<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Dec. &nbsp;15&nbsp; 2025&nbsp;, Mon.</small>
+						</div>
+					</div>
+				</div>
+			<!-- moved some cards to the right column for balanced layout -->
+		</div>
+		<div class="col-lg-6">
+			<div class="card border-0 mb-4 box-shadow">
+				<div class="card-body px-0 pb-0 d-flex flex-column">
+					<div class="d-flex flex-row align-items-start mb-3">
+						<h2 class="h4 font-weight-bold mb-0">
+							<a class="text-dark" href="./New20251215_2.html">Good News: Transducer-Adaptive Denoising for Ultrasound Imaging Accepted by IEEE TAI</a>
+						</h2>
+					</div>
+					<div>
+						<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Dec. &nbsp;15&nbsp; 2025&nbsp;, Mon.</small>
+					</div>
+				</div>
+			</div>
 			<div class="card border-0 mb-4 box-shadow">
 				<div class="card-body px-0 pb-0 d-flex flex-column">
 					<h2 class="h4 font-weight-bold mb-2">
@@ -121,63 +190,7 @@ MAIN
 					</div>
 				</div>
 			</div>
-			<div class="card border-0 mb-4 box-shadow">
-				<div class="card-body px-0 pb-0 d-flex flex-column">
-					<div class="d-flex flex-row align-items-start mb-3">
-						<div class="mr-3" style="flex-shrink: 0; width: 120px;">
-							<img src="./news_20251202/image1.jpg" class="img-fluid" style="width: 100%; height: auto; object-fit: contain;">
-						</div>
-						<h2 class="h4 font-weight-bold mb-0">
-							<a class="text-dark" href="./New20251202_2.html">IEEE EMBS Webinar: Video-based Remote Physiological Measurement</a>
-						</h2>
-					</div>
-					<div>
-						<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Dec. &nbsp;10&nbsp; 2025&nbsp;, Wed.</small>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="card border-0 mb-4 box-shadow">
-				<div class="card-body px-0 pb-0 d-flex flex-column">
-					<div class="d-flex flex-row align-items-start mb-3">
-						<h2 class="h4 font-weight-bold mb-0">
-							<a class="text-dark" href="./New20251215_2.html">Good News: Transducer-Adaptive Denoising for Ultrasound Imaging Accepted by IEEE TAI</a>
-						</h2>
-					</div>
-					<div>
-						<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Dec. &nbsp;15&nbsp; 2025&nbsp;, Mon.</small>
-					</div>
-				</div>
-			</div>
-			<div class="card border-0 mb-4 box-shadow">
-				<div class="card-body px-0 pb-0 d-flex flex-column">
-					<div class="d-flex flex-row align-items-start mb-3">
-						<h2 class="h4 font-weight-bold mb-0">
-							<a class="text-dark" href="./New20251202_1.html">Dr. Tao Tan of Macao Polytechnic University presented at the international breast forum to discuss the application of AI in breast cancer diagnosis and treatment</a>
-						</h2>
-					</div>
-					<div>
-						<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Dec. &nbsp;02&nbsp; 2025&nbsp;, Tue.</small>
-					</div>
-				</div>
-			</div>
-			<div class="card border-0 mb-4 box-shadow">
-				<div class="text-center">
-					<img src="./news_20251109/image2.png" class="img-fluid" style="width: 100%; max-height: 150px; object-fit: contain;">
-				</div>
-				<div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-					<h2 class="h4 font-weight-bold">
-						<a class="text-dark" href="./New20251109_1.html">Four papers from the intelligent medical Computing Laboratory of Macao Polytechnic University were selected into AAAI 2026</a>
-					</h2>
-					<!-- <p class="card-text" style="color: #6c757d;">
-						MICCAI is an authoritative academic conference in the field of medical imaging computing and computer-aided intervention worldwide, known for its strict evaluation criteria and fierce competition, and has significant academic influence internationally. At the important competition "HECKTOR 2025" held during the conference, the Intelligent Medical Computing Laboratory team of Macao Polytechnic University stood out from numerous international top teams and won the championship with innovative technology and outstanding scientific research strength.
-					</p> -->
-					<div>
-						<small class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Nov. &nbsp;09&nbsp; 2025&nbsp;, Sun.</small>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 
@@ -227,6 +240,26 @@ MAIN
 	<div class="row justify-content-between">
 		<div class="col-md-12">
 			<h5 class="font-weight-bold spanborder"><span>History News</span></h5>
+
+			<!-- Added: IEEE EMBS Webinar moved from Main News -->
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+						<a class="text-dark" href="./New20251202_2.html" style="font-size: 16px;">IEEE EMBS Webinar: Video-based Remote Physiological Measurement</a>
+					</h2>
+					<small class="text-muted">Dec. &nbsp;10&nbsp; 2025&nbsp;, Wed.</small>
+				</div>
+				<img height="100" src="./news_20251202/image1.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+						<a class="text-dark" href="./New20251109_1.html" style="font-size: 16px;">Four papers from the intelligent medical Computing Laboratory of Macao Polytechnic University were selected into AAAI 2026</a>
+					</h2>
+					<small class="text-muted">Nov. &nbsp;09&nbsp; 2025&nbsp;, Sun.</small>
+				</div>
+				<img height="100" src="./news_20251109/image2.png">
+			</div>
 
 			<div class="mb-3 d-flex justify-content-between">
 				<div class="pr-3">
