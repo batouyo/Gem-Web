@@ -172,100 +172,230 @@ HEADER
 <!--------------------------------------
 MAIN
 --------------------------------------->
-<div class="container ">
-    <div class="row">
-        <ul class="nav w-100">
-            <li class="nav-item col-12 col-md-3">
-                <a href="./Publication2025.html" class="nav-link active" aria-current="page" style="color: #EA2F65;">2025</a>
-            </li>
-            <li class="nav-item col-12 col-md-3">
-                <a href="./Publication2024.html" class="nav-link">2024</a>
-            </li>
-            <li class="nav-item col-12 col-md-3">
-                <a href="./Publication2023.html" class="nav-link">2023</a>
-            </li>
-            <!-- <li class="nav-item col-12 col-md-3">
-                <a href="./Publication2022.html" class="nav-link">2022</a>
-            </li> -->
-            <li class="nav-item col-12 col-md-3">
-                <a href="./PublicationOtherYear.html" class="nav-link">Other Years</a>
-            </li>
-        </ul>  
-    </div>
-</div>
+
 <div class="container pt-4 pb-4" >
 	<div class="row justify-content-center">
-		
-		<table id="data-table">
-			<tr>
-			  <th>Publisher</th>
-			  <th>Volume</th>
-			  <th>Pages</th>
-			  <th>Year</th>
-			  <th>Title</th>
-			  <th>Journal/Conference/Patent</th>
-			  <th>Author</th>
-			</tr>
-		  </table>
-		
-		<script>
-			function output(jsonData){
-				//回调函数的名称(testDemo)需要与 src 中一致，而且要与文件地址中名一致。
-				console.log(jsonData)
-				 // 获取数据表格
-					var table = document.getElementById("data-table");
-				
-					// 遍历每条数据并创建表格行
-					for (var i = 0; i < jsonData.length; i++) {
-					  // 判断year是否等于2022，如果是则跳过当前数据行
-					  if (jsonData[i].year !== "2025") {
-						continue;
-					  }
-					  // if (jsonData[i].groups === "patent") {
-					  //   continue;
-					  // }
-				
-					  var row = table.insertRow(); // 插入新行
-				
-					  // 创建单元格并填充数据
-						var publisherCell = row.insertCell(0);
-						publisherCell.innerHTML = jsonData[i].publisher !== undefined ? jsonData[i].publisher : "";
-					  
-						var volumeCell = row.insertCell(1);
-						volumeCell.innerHTML = jsonData[i].volume !== undefined ? jsonData[i].volume : "";
-					  
-						var pagesCell = row.insertCell(2);
-						pagesCell.innerHTML = jsonData[i].pages !== undefined ? jsonData[i].pages : "";
-					  
-						var yearCell = row.insertCell(3);
-						yearCell.innerHTML = jsonData[i].year !== undefined ? jsonData[i].year : "";
-					  
-						var titleCell = row.insertCell(4);
-						titleCell.innerHTML = jsonData[i].title !== undefined ? jsonData[i].title : "";
-					  
-						var journalOrBooktitleCell = row.insertCell(5);
-						if (jsonData[i].journal !== undefined) {
-						  journalOrBooktitleCell.innerHTML = jsonData[i].journal;
-						} else if (jsonData[i].booktitle !== undefined) {
-						  journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
-						} else if (jsonData[i].groups === "patent") {
-						  journalOrBooktitleCell.innerHTML = "Patent";
-						} else {
-						  journalOrBooktitleCell.innerHTML = "";
-						}
-					  
-						var authorCell = row.insertCell(6);
-						authorCell.innerHTML = jsonData[i].author !== undefined ? jsonData[i].author : "";
-					  }
-			}
-		</script>
-		<script type="text/javascript" src="./output3.json"></script>
+		<div class="w-100">
+			<!-- Controls: year + journal filters, search, per-page -->
+			<div class="d-flex mb-3 align-items-center" style="gap:8px;">
+				<select id="filter-year" class="form-control" style="width:130px;">
+					<option value="">All Years</option>
+				</select>
+				<select id="filter-journal" class="form-control" style="flex:0 0 45%;">
+					<option value="">All Journals</option>
+				</select>
+				<input id="search-input" class="form-control" placeholder="Search Title or Author" style="flex:1;">
+				<select id="per-page" class="form-control" style="width:90px;">
+					<option value="5">5</option>
+					<option value="10" selected>10</option>
+					<option value="20">20</option>
+				</select>
+				<button id="reset-filters" class="btn" style="background:#03a87c;border-color:#03a87c;color:#fff;">Reset</button>
+			</div>
 
-		
+			<table id="publications-table" class="table table-striped">
+				<thead>
+					<tr>
+						<th style="width:80px">Year</th>
+						<th>Journal</th>
+						<th>Title</th>
+						<th>Author</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
 
+			<nav id="pub-pagination" class="d-flex justify-content-center mt-2" aria-label="Publications pagination"></nav>
+		</div>
 	</div>
-
 </div>
+
+<script src="./papers_info.js"></script>
+<script>
+// Static searchable, filterable, paginated publications list (data from JSON file)
+(function(){
+	var rawData = [];
+	var filtered = [];
+	var currentPage = 1;
+	var perPage = 10;
+	var debounceTimer = null;
+
+	function normalize(item){
+		return {
+			year: String(item.Year || ""),
+			journal: item.Journal || "",
+			title: item.Title || "",
+			author: item.Author || ""
+		};
+	}
+	// compare years descending (non-numeric years treated as -Infinity)
+	function compareYearsDesc(a,b){
+		var ya = parseInt(a.year, 10);
+		var yb = parseInt(b.year, 10);
+		if(isNaN(ya)) ya = -Infinity;
+		if(isNaN(yb)) yb = -Infinity;
+		return yb - ya;
+	}
+
+	function loadData(){
+		// Prefer a JS-assigned global (works on file://). If not present, fall back to fetch (requires HTTP).
+		if(window.PAPERS_JSON && Array.isArray(window.PAPERS_JSON)){
+			rawData = window.PAPERS_JSON.map(normalize);
+			// default sort new -> old
+			rawData.sort(compareYearsDesc);
+			buildFilterOptions();
+			applyFiltersAndRender();
+			return;
+		}
+		fetch('./papers_info_2026-01-12_18-47-12.json').then(function(r){ return r.json(); }).then(function(json){
+			rawData = json.map(normalize);
+			// default sort new -> old
+			rawData.sort(compareYearsDesc);
+			buildFilterOptions();
+			applyFiltersAndRender();
+		}).catch(function(err){
+			console.error('Failed to load publications JSON via fetch (this often happens when opening the file over file://).');
+			console.error('Options: 1) Serve the site over HTTP (e.g. `python -m http.server` in the project root).');
+			console.error('         2) Convert the JSON into a JS file that assigns window.PAPERS_JSON and include it before this script.');
+			console.error(err);
+		});
+	}
+
+	function buildFilterOptions(){
+		var yearSet = {};
+		var journalSet = {};
+		for(var i=0;i<rawData.length;i++){
+			yearSet[rawData[i].year] = true;
+			if(rawData[i].journal) journalSet[rawData[i].journal] = true;
+		}
+		var years = Object.keys(yearSet).filter(function(y){ return y !== ""; }).sort().reverse();
+		var journals = Object.keys(journalSet).sort();
+
+		var yearSel = document.getElementById('filter-year');
+		years.forEach(function(y){
+			var o = document.createElement('option');
+			o.value = y;
+			o.textContent = y;
+			yearSel.appendChild(o);
+		});
+		var journalSel = document.getElementById('filter-journal');
+		journals.forEach(function(j){
+			var o = document.createElement('option');
+			o.value = j;
+			o.textContent = j;
+			journalSel.appendChild(o);
+		});
+	}
+
+	function applyFiltersAndRender(){
+		var year = document.getElementById('filter-year').value;
+		var journal = document.getElementById('filter-journal').value;
+		var q = document.getElementById('search-input').value.trim().toLowerCase();
+		perPage = parseInt(document.getElementById('per-page').value, 10) || 10;
+
+		filtered = rawData.filter(function(it){
+			if(year && it.year !== year) return false;
+			if(journal && it.journal !== journal) return false;
+			if(q){
+				return (it.title && it.title.toLowerCase().indexOf(q) !== -1) ||
+				       (it.author && it.author.toLowerCase().indexOf(q) !== -1);
+			}
+			return true;
+		});
+		currentPage = 1;
+		renderPage(currentPage);
+	}
+
+	function renderPage(page){
+		page = Math.max(1, page);
+		var total = filtered.length;
+		var totalPages = Math.max(1, Math.ceil(total / perPage));
+		if(page > totalPages) page = totalPages;
+		currentPage = page;
+
+		var tbody = document.querySelector('#publications-table tbody');
+		tbody.innerHTML = '';
+		var start = (page-1)*perPage;
+		var end = Math.min(start + perPage, total);
+		for(var i=start;i<end;i++){
+			var it = filtered[i];
+			var tr = document.createElement('tr');
+			var tdYear = document.createElement('td'); tdYear.textContent = it.year; tr.appendChild(tdYear);
+			var tdJournal = document.createElement('td'); tdJournal.textContent = it.journal; tr.appendChild(tdJournal);
+			var tdTitle = document.createElement('td'); tdTitle.textContent = it.title; tr.appendChild(tdTitle);
+			var tdAuthor = document.createElement('td'); tdAuthor.textContent = it.author; tr.appendChild(tdAuthor);
+			tbody.appendChild(tr);
+		}
+
+		renderPaginationControls(page, totalPages);
+	}
+
+	function renderPaginationControls(page, totalPages){
+		var container = document.getElementById('pub-pagination');
+		container.innerHTML = '';
+		var info = document.createElement('div');
+		info.className = 'text-muted mb-2';
+		info.style.textAlign = 'center';
+		info.textContent = 'Page ' + page + ' / ' + totalPages + ' (' + filtered.length + ' items)';
+		container.appendChild(info);
+
+		var ul = document.createElement('ul');
+		ul.className = 'pagination justify-content-center';
+
+		function makePageLi(p, label, disabled){
+			var li = document.createElement('li');
+			li.className = 'page-item' + (disabled ? ' disabled' : '') + (p===page ? ' active' : '');
+			var a = document.createElement('a');
+			a.className = 'page-link';
+			a.href = '#';
+			a.textContent = label || String(p);
+			a.addEventListener('click', function(e){ e.preventDefault(); if(!disabled) renderPage(p); });
+			li.appendChild(a);
+			return li;
+		}
+
+		// First page
+		ul.appendChild(makePageLi(1, 'First', page===1));
+		// Prev
+		ul.appendChild(makePageLi(Math.max(1, page-1), '«', page===1));
+		// show up to 7 page numbers centered around current
+		var start = Math.max(1, page - 3);
+		var end = Math.min(totalPages, page + 3);
+		for(var p = start; p<=end; p++){
+			ul.appendChild(makePageLi(p, String(p), false));
+		}
+		// Next
+		ul.appendChild(makePageLi(Math.min(totalPages, page+1), '»', page===totalPages));
+		// Last page
+		ul.appendChild(makePageLi(totalPages, 'Last', page===totalPages));
+		container.appendChild(ul);
+	}
+
+	// event wiring
+	function wireEvents(){
+		document.getElementById('filter-year').addEventListener('change', applyFiltersAndRender);
+		document.getElementById('filter-journal').addEventListener('change', applyFiltersAndRender);
+		document.getElementById('per-page').addEventListener('change', function(){ applyFiltersAndRender(); });
+		document.getElementById('reset-filters').addEventListener('click', function(){
+			document.getElementById('filter-year').value = '';
+			document.getElementById('filter-journal').value = '';
+			document.getElementById('search-input').value = '';
+			document.getElementById('per-page').value = '10';
+			applyFiltersAndRender();
+		});
+		document.getElementById('search-input').addEventListener('input', function(){
+			clearTimeout(debounceTimer);
+			debounceTimer = setTimeout(applyFiltersAndRender, 250);
+		});
+	}
+
+	if(document.readyState === 'loading'){
+		document.addEventListener('DOMContentLoaded', function(){ wireEvents(); loadData(); });
+	} else {
+		wireEvents(); loadData();
+	}
+})();
+</script>
     
     
 

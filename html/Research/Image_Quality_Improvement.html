@@ -13,6 +13,51 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- Main CSS -->
 <link href="../assets/css/main.css" rel="stylesheet"/>
+<style>
+	/* Page-specific styles for partner organisations */
+	.partner-section .partner-title {
+		font-size: 16px;
+		font-weight: 700;
+		color: #055160;
+		margin: 0 0 6px 0;
+	}
+	.partner-section .partner-list {
+		color: rgba(0,0,0,0.75);
+		font-size: 14px;
+		line-height: 1.6;
+		margin: 0;
+		white-space: pre-line;
+	}
+	@media (max-width: 767.98px) {
+		.partner-section .partner-title { font-size: 15px; }
+		.partner-section .partner-list { font-size: 13px; }
+	}
+	/* Center header area and occupy image space when image removed */
+	.jumbotron .header-center { min-height: 220px; display:flex; align-items:center; justify-content:center; }
+	.jumbotron .header-inner { max-width: 860px; text-align:center; }
+	.jumbotron .header-inner .partner-title { margin-top: 10px; }
+	.jumbotron .header-inner .partner-list { margin-top: 6px; }
+	@media (max-width: 991.98px) {
+		.jumbotron .header-center { min-height: auto; padding: 24px 12px; }
+		.jumbotron .header-inner { max-width: 100%; }
+	}
+	/* add top offset to account for fixed navbar so title isn't hidden */
+	.jumbotron .header-center { padding-top: 80px; }
+	@media (max-width: 991.98px) {
+		.jumbotron .header-center { padding-top: 28px; }
+	}
+	/* Reduce vertical spacing between consecutive sections on this page */
+	.jumbotron { margin-bottom: 8px; padding-top: 12px; padding-bottom: 12px; }
+	.container.pt-4.pb-4 { padding-top: 12px !important; padding-bottom: 12px !important; }
+	/* Specific smaller gap between the second and third major sections */
+	/* target the container following the second jumbotron by selector order */
+	.jumbotron + .container { margin-top: 4px; padding-top: 8px; }
+	@media (max-width: 767.98px) {
+		.jumbotron { padding-top: 12px; padding-bottom: 12px; }
+		.container.pt-4.pb-4 { padding-top: 12px !important; padding-bottom: 12px !important; }
+		.jumbotron + .container { margin-top: 6px; padding-top: 10px; }
+	}
+</style>
 </head>
 <body>
 <!--------------------------------------
@@ -24,7 +69,7 @@ NAVBAR
 	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+	<div class="navbar-collapse collapse" id="navbarColor02">
 		<ul class="navbar-nav mr-auto d-flex align-items-center">
 			<li class="nav-item">
 				<a class="nav-link" href="../index.html">Homepage</a>
@@ -248,46 +293,44 @@ MAIN
 	</div>
 </div>
 
-<!-----------------------第三个----------------------------------------------
 
-
--------------------------------------------------------------------------------->
-
+<!-- 第三个 -->
 <div class="container">
 	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
-			<div class="row justify-content-between">
-				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
-				
-					<h1 class="display-4 secondfont mb-3 font-weight-bold">ADbNet: Adaptive Dual-branch Network for Denoising and Artifact Removal in MR Images
+			<div class="row header-center">
+				<div class="col-12 header-inner">					
+					<h1 class="display-4 secondfont mb-3 font-weight-bold">
+						Adaptive Dual-branch Network for Denoising and Artifact Removal in MR Images
 					</h1>
-					<p class="text-uppercase font-weight-bold">
-						<p class="text-danger" style="font-size: 18px;font-weight: bold;" >Project Leaders</p>
-						<p class="text-danger" style="font-size: 14px;" > Mingfu Jiang </p>
-						<p class="text-danger" style="font-size: 18px;font-weight: bold;" >Partner Organisations</p>
-						<p class="text-danger" style="font-size: 14px;" >南京航天航空大學 </p>
-					</p>
-				
-				</div>
-				<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; padding-top: 10%;;padding-bottom: 10%;">
-					<img src="../jiangmingfu_research/ADbNet.png" >
-					<!-- <div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div> -->
+					<div class="text-uppercase font-weight-bold">
+						<p class="text-danger" style="font-size: 18px;font-weight: bold;">Project Leaders</p>
+						<p style="color: black;">Mingfu Jiang</p>
+					</div>
+					<div class="partner-section" aria-label="Partner Organisations">
+						<p class="text-danger" style="font-size: 18px;font-weight: bold;">Partner Organisations</p>
+						<div class="partner-list">南京航天航空大學</div>
+					</div>			
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-
 <div class="container pt-4 pb-4">
 	<div class="row justify-content-center">
-		
 		<div class="col-md-12 col-lg-8">
 			<article class="article-post" style="color:rgba(0, 0,0, 0.8)">
-				Magnetic resonance (MR) images are crucial for diagnosis, but noise and artifacts can reduce image quality and affect diagnostic accuracy. Previous studies have mostly dealt with denoising or artifact removal separately, ignoring pixel correlation and noise level changes, relying on manual parameter adjustment, and lacking uncertainty evaluation, which limits practical applications. To address these issues, we propose an Adaptive Dual-branch Network for Denoising and Artifact Removal in MR Images (ADbNet) that includes two branches: denoising and artifact removal. The heterogeneous window transformer branch is used for remote and short-range feature modeling and achieves adaptive denoising while preserving complex structures and textures. The improved UNet branch is used to remove artifacts from MR images. The last two branches are integrated through an attention based fusion module to improve image quality. In the inference stage, calculate uncertainty helps doctors determine the reliability of the results. Our experimental results on the Brats2021 and OpenNeuro datasets show that the PSNR, SSIM and NMSE values of ADbNet are 27.23 ± 1.02 dB, 0.9132±0.0134 and 0.0753±0.0093, 27.13 ± 1.32 dB, 0.9121 ± 0.0458 and 0.0765±0.0091, respectively. Compared with state-of-the-art methods, ADbNet exhibits excellent performance in denoising and artifact removal tasks. The improved image joint uncertainty map was applied to downstream task medical image segmentation. The segmentation results showed that the average Dice values of MSD brain dataset T1n, T1c, T2f, and T2w modalities increased by 2.27%, 1.33%, 1.37%, and 1.04%, respectively. For the T2w and Adc sequences of the Prostate dataset, the average Dice values increased by 1.11% and 1.18%, respectively, indicating an improvement in segmentation performance.<p></p>		
+				<p>Magnetic resonance (MR) images are essential for clinical diagnosis, yet their quality is often compromised by noise and artifacts, which can obscure anatomical details and reduce diagnostic accuracy. Existing deep learning approaches frequently address denoising and artifact removal as separate tasks, overlook pixel correlations and varying noise levels, require manual parameter tuning, and lack uncertainty evaluation, thereby limiting their practical utility in clinical settings.</p>
+                <p>This study aims to develop an Adaptive Dual-branch Network (ADbNet) for simultaneous denoising and artifact removal in MR images. The model is designed to adaptively handle varying noise and artifact levels, preserve complex structural details, and provide uncertainty estimates for the processed outputs to enhance reliability in downstream clinical tasks such as image segmentation.</p>
+				<P>ADbNet integrates two specialized branches: a Heterogeneous Window Transformer Network (HWTNet) for adaptive denoising using both local and global feature modeling, and an improved U-Net based Artifact Removal Network (ARNet). Each branch is coupled with an estimation subnetwork—Noise Estimation Subnetwork (NES) and Artifact Estimation Subnetwork (AES)—to dynamically assess and adapt to input-specific degradation levels. The outputs of both branches are fused via an attention-based fusion module. Uncertainty is quantified during inference using Monte Carlo dropout. The model was trained and tested on 2000 brain MR scans from the Brats2021 dataset and 22 subject scans from the OpenNeuro dataset, incorporating synthetic Rician noise and real motion artifacts. Downstream segmentation performance was evaluated on the Medical Segmentation Decathlon (MSD) brain dataset (1666 cases) and a prostate MR dataset (203 examinations).
+					On the Brats2021 and OpenNeuro test sets, ADbNet achieved PSNR values of 27.23 ± 1.02 dB and 27.13 ± 1.32 dB, SSIM values of 0.9132 ± 0.0134 and 0.9121 ± 0.0458, and NMSE values of 0.0753 ± 0.0093 and 0.0765 ± 0.0091, respectively. For the downstream segmentation task, the denoised and artifact-corrected outputs led to average Dice score improvements of 2.27%, 1.33%, 1.37%, and 1.04% for T1n, T1c, T2f, and T2w MR modalities in the MSD brain dataset, and 1.11% and 1.18% for T2w and ADC sequences in the prostate dataset.
+				</P>
+				<p>ADbNet effectively integrates adaptive denoising and artifact removal within a unified framework, significantly enhancing MR image quality and downstream segmentation accuracy. ADbNet explicitly accounts for spatially-varying noise characteristics and motion-induced artifacts commonly encountered in modern MRI systems. The incorporation of uncertainty estimation provides additional insight into result reliability, making the model a promising tool for clinical image enhancement and analysis. Future work will focus on computational optimization and extension to other anatomical regions.</p>
+                <figure>
+					<img src="../jiangmingfu_research/ADbNet.png">
+				</figure>
 			</article>
-			
-		
 		</div>
 	</div>
 </div>
@@ -295,35 +338,21 @@ MAIN
 
 
 <div class="container pt-4 pb-4">
-	<div class="row justify-content-center">
-		
+	<div class="row justify-content-center">	
 		<div class="col-md-12 col-lg-8">
-	
-			
-			
-			
 			<div class="border p-5 bg-lightblue" style="margin-top: 40px;">
-			
 				<div class="row justify-content-between">
-					
-				
-						
-							 
-							<div class="col-md-12 mt-2">
-								<a href="../all_research.html" class="btn btn-success btn-block">
-									Return
-								</a>
-								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
-							</div>
-					
+					<div class="col-md-12 mt-2">
+						<a href="../all_research.html" class="btn btn-success btn-block">
+							Return
+						</a>
+						<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
+					</div>	
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
 
 <!-- End Main -->
     

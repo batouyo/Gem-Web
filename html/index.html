@@ -14,15 +14,77 @@
 <!-- Main CSS -->
 <link href="./assets/css/main.css" rel="stylesheet"/>
 <style>
-	/* Equalize Main News card heights and ensure consistent layout */
-	.main-news .card { min-height: 220px; display: flex; flex-direction: column; }
-	.main-news .card .card-body { display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
-	.main-news .card .d-flex.flex-row.align-items-start.mb-3 { display: flex; align-items: flex-start; gap: 12px; }
-	.main-news .card img { max-height: 140px; width: auto; }
+	/* Enhanced Main News card visuals */
+	.main-news .card {
+		min-height: 220px;
+		display: flex;
+		flex-direction: column;
+		border-radius: 12px;
+		overflow: hidden;
+		background: #ffffff;
+		transition: transform .16s ease, box-shadow .16s ease;
+	}
+	.main-news .card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 12px 30px rgba(3, 168, 124, 0.12);
+	}
+	.main-news .card .card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+		padding: 18px;
+	}
+	.main-news .card .d-flex.flex-row.align-items-start.mb-3 {
+		display: flex;
+		align-items: flex-start;
+		gap: 14px;
+	}
+	.main-news .card img {
+		max-height: 140px;
+		width: auto;
+		border-radius: 8px;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+	}
+	.main-news .card h2 a {
+		color: #0b3b2e;
+		text-decoration: none;
+		font-size: 1.05rem;
+		font-weight: 700;
+	}
+	.main-news .card h2 a:hover {
+		color: #037a5e;
+		text-decoration: underline;
+	}
+	.main-news .card .meta small {
+		color: #6c757d;
+		font-size: 0.92rem;
+		display: block;
+		margin-top: 8px;
+	}
 	@media (max-width: 991.98px) {
 		.main-news .card { min-height: unset; }
 		.main-news .card img { max-height: 120px; }
+		.main-news .card .card-body { padding: 14px; }
 	}
+	/* History pagination styles */
+	#history-pagination { margin-top: 12px; }
+	#history-pagination .page-item .page-link {
+		color: #037a5e;
+		border-radius: 6px;
+		padding: 6px 10px;
+		border: 1px solid #e6e6e6;
+		margin: 0 4px;
+	}
+	#history-pagination .page-item.active .page-link {
+		background: #03A87C;
+		color: #fff;
+		border-color: #03A87C;
+	}
+	/* Hide history items by default to avoid flash of all items before JS runs */
+	#history-list > .history-item { display: none; }
+	/* layout for history item when visible */
+	.history-item { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
 </style>
 </head>
 <body>
@@ -103,7 +165,7 @@ HEADER
 MAIN
 --------------------------------------->
 
-<!-- Main News -->>
+<!-- Main News -->
 <div class="container pt-4 pb-4 main-news">
 	<div class="row">
 		<div class="col-lg-6">
@@ -240,356 +302,13 @@ MAIN
 	<div class="row justify-content-between">
 		<div class="col-md-12">
 			<h5 class="font-weight-bold spanborder"><span>History News</span></h5>
+			<div id="history-list">
 
 			<!-- Added: IEEE EMBS Webinar moved from Main News -->
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251202_2.html" style="font-size: 16px;">IEEE EMBS Webinar: Video-based Remote Physiological Measurement</a>
-					</h2>
-					<small class="text-muted">Dec. &nbsp;10&nbsp; 2025&nbsp;, Wed.</small>
-				</div>
-				<img height="100" src="./news_20251202/image1.jpg">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251109_1.html" style="font-size: 16px;">Four papers from the intelligent medical Computing Laboratory of Macao Polytechnic University were selected into AAAI 2026</a>
-					</h2>
-					<small class="text-muted">Nov. &nbsp;09&nbsp; 2025&nbsp;, Sun.</small>
-				</div>
-				<img height="100" src="./news_20251109/image2.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251109_2.html" style="font-size: 16px;">Dr. Tao Tan from Macao Polytechnic University has collaborated with his team to develop a multi-time-point AI risk model for mammography screening, capable of predicting both short- and long-term breast cancer risk</a>
-					</h2>
-					<small class="text-muted">Nov. &nbsp;09&nbsp; 2025&nbsp;, Sun.</small>
-				</div>
-				<img height="100" src="./news_20251109/image1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251102_1.html" style="font-size: 16px;">Research Outcome Participated by the Research Team of Faculty of Applied Sciences, Macao Polytechnic University Was Accepted by Nature Biomedical Engineering</a>
-					</h2>
-					<small class="text-muted">Nov. &nbsp;02&nbsp; 2025&nbsp;, Sun.</small>
-				</div>
-				<img height="100" src="./news_20251102/image1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251109_3.html" style="font-size: 16px;">Nuo'er Long, a graduate student of Macao Polytechnic University, successfully published an article in the international top journal TMM</a>
-					</h2>
-					<small class="text-muted">Nov. &nbsp;09&nbsp; 2025&nbsp;, Sun.</small>
-				</div>
-				<img height="100" src="./news_20251109/image3.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20251025.html" style="font-size: 16px;">Macao Polytechnic University collaborates with the Netherlands Cancer Institute to win the HECKTOR 2025 International Head and Neck Tumor Imaging Analysis Challenge championship</a>
-					</h2>
-					<small class="text-muted">Aug &nbsp;12&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-				<img height="100" src="./news_20251025/image.png">
-
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250902.html" style="font-size: 16px;">Focus on remote health monitoring: three papers of the Macao Polytechnic team published in international journals</a>
-					</h2>
-					<small class="text-muted">Sep. &nbsp;03&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250819.html" style="font-size: 16px;">Unified multimodal medical image sequence conversion to achieve zero sample domain adaptation</a>
-					</h2>
-					<small class="text-muted">Aug &nbsp;12&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-				<img height="100" src="./news_20250819/images_1.jpg">
-
-			</div>
-
 			
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250812.html" style="font-size: 16px;">The research team of Macao Polytechnic University developed a general ultrasound AI framework-PerceptGuide, to lead a new paradigm of multi organ and multi task diagnosis</a>
-					</h2>
-					<small class="text-muted">Aug &nbsp;12&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-				<img height="100" src="./news_20250812/images_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250805.html" style="font-size: 16px;">GEM Team - A New Era of AI-Enabled Fetal Ultrasound Imaging</a>
-					</h2>
-					<small class="text-muted">Aug &nbsp;05&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-				<img height="100" src="./news_20250805/images_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250718.html" style="font-size: 16px;">A joint research team from Macao Polytechnic University has developed a new AI model to accurately predict the efficacy of neoadjuvant therapy for breast cancer</a>
-					</h2>
-					<small class="text-muted">Jul &nbsp;18&nbsp; 2025&nbsp;, Fri.</small>
-				</div>
-				<img height="100" src="./news_20250718/image_1.png">
-			</div>
-
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250628.html" style="font-size: 16px;">Medical Imaging Workshop on AI medicine</a>
-					</h2>
-					<small class="text-muted">Jun &nbsp;28&nbsp; 2025&nbsp;, Sat.</small>
-				</div>
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250627.html" style="font-size: 16px;">Macao Polytechnic University and Sun Yat-sen University jointly developed clinical AI model</a>
-					</h2>
-					<small class="text-muted">Jun &nbsp;27&nbsp; 2025&nbsp;, Fri.</small>
-				</div>
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250618.html" style="font-size: 16px;">16 high-level papers from GEMLab laboratory of Macao Polytechnic University selected for MICCAI 2025</a>
-					</h2>
-					<small class="text-muted">Jun &nbsp;18&nbsp; 2025&nbsp;, Wed.</small>
-				</div>
-				<img height="100" src="./news_20250618/image_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250506.html" style="font-size: 16px;">The BIG&AI4ONCO team, with participation from Tao Tan, has won the Global Mammography Challenge, marking new progress in AI-powered breast cancer screening</a>
-					</h2>
-					<small class="text-muted">May &nbsp;06&nbsp; 2025&nbsp;, Tue.</small>
-				</div>
-				<img height="100" src="./news_20250506/image_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250407.html" style="font-size: 16px;">Experts work together to develop treatment of retinopathy of prematurity</a>
-					</h2>
-					<small class="text-muted">Apr &nbsp;07&nbsp; 2025&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20250407/image_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250317.html" style="font-size: 16px;">Zehui Lin's challenge proposal was accepted by CCFB MICCAl 2025. Universal UltraSound Image Challenge: Multi-Organ Classification and Segmentation
-							, The UUSIC 2025, Helping to Create a New Chapter in the Ultrasound</a>
-					</h2>
-					<small class="text-muted">Mar &nbsp;17&nbsp; 2025&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20250317/image_1.png">
-			</div>
-
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250303.html" style="font-size: 16px;">MPU Student Yanfeng Li's CVPR Paper Accepted, Marking a Major Research Breakthrough</a>
-					</h2>
-					<small class="text-muted">Mar &nbsp;03&nbsp; 2025&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20250303/image_1.png">
-			</div>	
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-						<a class="text-dark" href="./New20250303_2.html" style="font-size: 16px;">HuiLanFengYun Project Wins Bronze Award at the 14th "Challenge Cup" National Finals</a>
-					</h2>
-					<small class="text-muted">Mar &nbsp;03&nbsp; 2025&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20250303/image_2.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20241201.html" style="font-size: 16px;">Exciting News from Our Research Team! </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Oct &nbsp;3&nbsp; 2024&nbsp;, Thu.</small>
-				</div>
-				<img height="120" src="./news_20241201/image_1.jpg">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20241124.html" style="font-size: 16px;">Dr. Sun Yue was awarded the editorial board of Scientific Data, helping a new chapter of scientific research data sharing </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Nov &nbsp;11&nbsp; 2024&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20241124/image_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20241111.html" style="font-size: 16px;">The scientific research achievements of Macao Polytechnic University were published in the international authoritative journal Nature communication.</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Nov &nbsp;11&nbsp; 2024&nbsp;, Mon.</small>
-				</div>
-				<img height="120" src="./news_20241111/image_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20241013.html" style="font-size: 16px;">Xin Wang shows excellence by winning the Young Scientist Award at the 2024 MICCAI Annual Meeting </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Oct &nbsp;13&nbsp; 2024&nbsp;, Sun.</small>
-				</div>
-				<img height="120" src="./news_20241013/image_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20241003.html" style="font-size: 16px;">Macao Polytechnic University student team wins Jingdong Health AI Global Healthcare Competition </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Aug &nbsp;16&nbsp; 2024&nbsp;, Fri.</small>
-				</div>
-				<img height="120" src="./news_20241003/image_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240816.html" style="font-size: 16px;">The award-winning project "animal key point detection for posture estimation" of the Macao Polytechnic University stood out in the 19th national computer innovation competition for college students across the Taiwan Strait and Hong Kong and Macao, and won the first prize of the undergraduate group. </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Aug &nbsp;16&nbsp; 2024&nbsp;, Fri.</small>
-				</div>
-				<img height="120" src="./news_20240816/image_2.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240816_2.html" style="font-size: 16px;">3MT-Net: A Multi-modal Multi-task Model for Breast Cancer and Pathological Subtype Classification Based on a Multicenter Study》was accepted by JCR Q1 journal with an impact factor of 6.7 </a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Aug &nbsp;16&nbsp; 2024&nbsp;, Fri.</small>
-				</div>
-				<img height="120" src="./news_20240816/image_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240521.html" style="font-size: 16px;"> Macao Polytechnic University research team wins ICME Grand Challenge 2024</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">May &nbsp;19&nbsp; 2024&nbsp;, Sun.</small>
-				</div>
-				<img height="120" src="./news_20240521/pic_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240520.html" style="font-size: 16px;"> Our CCF-B MICCAI Deep Breast Cancer Symposium is about to open in Morocco!</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">May &nbsp;19&nbsp; 2024&nbsp;, Sun.</small>
-				</div>
-				<img height="120" src="./news_20240520/pic_1.png">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240519.html" style="font-size: 16px;"> Four Papers from GEM Lab Early Accepted by MICCAI</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">May &nbsp;19&nbsp; 2024&nbsp;, Sun.</small>
-				</div>
-				<img height="120" src="./news_20240519/pic_1.jpg">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240404.html" style="font-size: 16px;"> IMPORTANT-Net Paper Accepted by Top CAS Journal with Impact Factor of 18</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Apr &nbsp;04&nbsp; 2024&nbsp;, Thu.</small>
-				</div>
-				<img height="120" src="./news_20240404/pic_1.jpg">
-			</div>
-			<div class="mb-3 d-flex justify-content-between">
-				<div class="pr-3">
-					<h2 class="mb-1 h4 font-weight-bold">
-					<a class="text-dark" href="./New20240229.html" style="font-size: 16px;"> Researchers from Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences visited MPU to give academic lectures</a>
-					</h2>
-					<!-- <p>
-						Macau Polytechnic University recently welcomed the visit of Professor Wang Shanshan, a researcher and doctoral supervisor of Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences.
-					</p> -->
-				
-					<small class="text-muted">Feb &nbsp;29&nbsp; 2024&nbsp;, Fri.</small>
-				</div>
-				<img height="120" src="./news_20240229/pic_1.jpg">
-			</div>
-
 			
-
+			</div> <!-- end #history-list -->
+			<nav id="history-pagination" aria-label="History pagination" class="d-flex justify-content-center mt-3"></nav>
 		</div>
 
 	</div>
@@ -627,5 +346,120 @@ JAVASCRIPTS
 <script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/functions.js" type="text/javascript"></script>
+<script src="./news/history_news.js"></script>
+<script>
+// Render history news from window.HISTORY_NEWS and paginate (pure static)
+(function(){
+  var perPage = 5;
+  function buildListAndPaginate(){
+    var container = document.getElementById('history-list');
+    var pagination = document.getElementById('history-pagination');
+    if(!container || !pagination) return;
+    var data = window.HISTORY_NEWS || [];
+    // build items
+    container.innerHTML = '';
+    data.forEach(function(item){
+      var wrap = document.createElement('div');
+      wrap.className = 'mb-3 history-item justify-content-between';
+      var left = document.createElement('div');
+      left.className = 'pr-3';
+      var h2 = document.createElement('h2');
+      h2.className = 'mb-1 h4 font-weight-bold';
+      var a = document.createElement('a');
+      a.className = 'text-dark';
+      a.style.fontSize = '16px';
+      a.href = item.href;
+      a.textContent = item.title;
+      h2.appendChild(a);
+      var small = document.createElement('small');
+      small.className = 'text-muted';
+      small.textContent = item.date;
+      left.appendChild(h2);
+      left.appendChild(small);
+      // only add image element when image exists to avoid broken image icons
+      wrap.appendChild(left);
+      if(item.img){
+        var img = document.createElement('img');
+        img.height = 100;
+        img.src = item.img;
+        img.alt = item.title || '';
+        wrap.appendChild(img);
+      }
+      container.appendChild(wrap);
+    });
+
+    var items = Array.prototype.slice.call(container.querySelectorAll('.history-item'));
+    var total = items.length;
+    var totalPages = Math.max(1, Math.ceil(total / perPage));
+
+    function renderPage(page, doScroll){
+      // doScroll: optional boolean, when true scrolls history into view (default true)
+      if(typeof doScroll === 'undefined') doScroll = true;
+      page = Math.min(Math.max(1, page), totalPages);
+      var start = (page-1)*perPage;
+      var end = start + perPage;
+      items.forEach(function(it, idx){
+        it.style.display = (idx>=start && idx<end) ? 'flex' : 'none';
+      });
+      // build pagination controls
+      pagination.innerHTML = '';
+      var info = document.createElement('div');
+      info.className = 'text-muted mb-2';
+      info.style.textAlign = 'center';
+      info.id = 'history-page-info';
+      info.textContent = 'Page ' + page + ' / ' + totalPages;
+      pagination.appendChild(info);
+      var ul = document.createElement('ul');
+      ul.className = 'pagination justify-content-center';
+      // prev
+      var prev = document.createElement('li');
+      prev.className = 'page-item' + (page===1 ? ' disabled':'');
+      var prevA = document.createElement('a');
+      prevA.className = 'page-link';
+      prevA.href = '#';
+      prevA.innerHTML = '&laquo;';
+      prevA.addEventListener('click', function(e){ e.preventDefault(); if(page>1) renderPage(page-1, true); });
+      prev.appendChild(prevA);
+      ul.appendChild(prev);
+      for(var p=1;p<=totalPages;p++){
+        (function(p){
+          var li = document.createElement('li');
+          li.className = 'page-item' + (p===page ? ' active':'');
+          var aPage = document.createElement('a');
+          aPage.className = 'page-link';
+          aPage.href = '#';
+          aPage.textContent = p;
+          aPage.addEventListener('click', function(e){ e.preventDefault(); renderPage(p, true); });
+          li.appendChild(aPage);
+          ul.appendChild(li);
+        })(p);
+      }
+      var next = document.createElement('li');
+      next.className = 'page-item' + (page===totalPages ? ' disabled':'');
+      var nextA = document.createElement('a');
+      nextA.className = 'page-link';
+      nextA.href = '#';
+      nextA.innerHTML = '&raquo;';
+      nextA.addEventListener('click', function(e){ e.preventDefault(); if(page<totalPages) renderPage(page+1, true); });
+      next.appendChild(nextA);
+      ul.appendChild(next);
+      pagination.appendChild(ul);
+      // scroll into view only when requested (e.g., user-initiated page change)
+      if(doScroll){
+        var top = container.getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    }
+    // initial render: do not auto-scroll
+    renderPage(1, false);
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', buildListAndPaginate);
+  } else {
+    buildListAndPaginate();
+  }
+})();
+</script>
+
 </body>
 </html>
