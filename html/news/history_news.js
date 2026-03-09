@@ -1,4 +1,8 @@
 window.HISTORY_NEWS = [
+  {"title":"Good News: Transducer-Adaptive Denoising for Ultrasound Imaging Accepted by IEEE TAI","href":"./New20251215_2.html","date":"Dec. 15 2025, Mon."},
+  {"title":"Lab Breakthrough in Nature Communications: Mammo-AGE Unlocks a New \"Breast Health Clock\"","href":"./New20251215_1.html","date":"Dec. 15 2025, Mon.","img":"./news_20251215/image1.png"},
+  {"title":"Dr. Tao Tan of Macao Polytechnic University presented at the international breast forum to discuss the application of AI in breast cancer diagnosis and treatment","href":"./New20251202_1.html","date":"Dec. 15 2025, Mon."},
+  {"title":"Intelligent Medical Computing Laboratory Secures Three Major Funded Research Projects","href":"./New20260107-1.html","date":"Jan. 07 2026, Tue."},
   {"title":"IEEE EMBS Webinar: Video-based Remote Physiological Measurement","href":"./New20251202_2.html","date":"Dec. 10 2025, Wed.","img":"./news_20251202/image1.jpg"},
   {"title":"Four papers from the intelligent medical Computing Laboratory of Macao Polytechnic University were selected into AAAI 2026","href":"./New20251109_1.html","date":"Nov. 09 2025, Sun.","img":"./news_20251109/image2.png"},
   {"title":"Dr. Tao Tan from Macao Polytechnic University has collaborated with his team to develop a multi-time-point AI risk model for mammography screening, capable of predicting both short- and long-term breast cancer risk","href":"./New20251109_2.html","date":"Nov. 09 2025, Sun.","img":"./news_20251109/image1.png"},

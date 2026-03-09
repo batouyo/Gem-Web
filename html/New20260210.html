@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+2<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -36,6 +36,35 @@
 	.news-hero .news-meta { text-align: left; display: block; margin-top: 6px; color: #6c757d; font-size: 0.95rem; }
 	.article-post h3 { margin-top: 0; }
 	.article-post ul { padding-left: 1.1rem; }
+	
+	/* Fix spacing - use most specific selectors to override Bootstrap */
+	div.jumbotron.jumbotron-fluid { 
+		padding: 0.5rem 0 !important; 
+		margin-bottom: 0 !important; 
+		min-height: auto !important;
+	}
+	div.jumbotron.jumbotron-fluid .h-100 {
+		height: auto !important;
+	}
+	.container.pt-4 { 
+		padding-top: 0.25rem !important; 
+	}
+	
+	/* Fix image gap - remove all margins */
+	div.article-post img {
+		display: block !important;
+		margin: 0 auto !important;
+		max-width: 100%;
+		border-radius: 8px;
+		vertical-align: top;
+		line-height: 1;
+	}
+	
+	/* Reduce paragraph margins to zero */
+	div.article-post p { 
+		margin: 0 !important; 
+		line-height: 1.4;
+	}
 
 	/* Responsive scaling to avoid overflow on small screens */
 	@media (max-width: 991.98px) {
@@ -153,18 +182,14 @@ MAIN
 	<div class="row justify-content-center">
 		
 		<div class="col-md-12 col-lg-8">
-			<article class="article-post" style="color:rgba(0, 0,0, 0.8)">
-					<p>The laboratory added two more international journal papers: promoting fair and credible medical imaging AI and intelligent radiotherapy</p>
-					<p>Our lab is pleased to share three publications in leading international journals, further demonstrating the team's continued breakthroughs in medical imaging intelligence, radiotherapy planning and trusted AI, covering key clinical application scenarios such as the fairness of CT multi organ segmentation, the automatic delineation of nasopharyngeal carcinoma in radiotherapy plans, and the intelligent diagnosis of retinal diseases in infants and young children. These achievements focus on the goal of "more reliable, fairer and closer to clinical process", and promote medical AI to be available and deployable in the real world.</p>
-
-					<h3>Recent representative achievements：</h3>
-				<ul>
-						<li><strong>“Demographic-Aware Deep Learning for Multi-Organ Segmentation: Mitigating Gender and Age Biases in CT Image”</strong> <span class="journal-name">Medical Physics</span><br/>This work addresses a growing concern in clinical AI: performance disparities across patient subgroups. By introducing a demographic-aware deep learning approach, the study aims to reduce gender- and age-related biases in CT-based multi-organ segmentation, promoting more equitable and reliable model behavior across diverse populations.</li>
-						<li><strong>“M3SegNet: A Multi-Modal and Multi-Branch Framework for Nasopharyngeal Carcinoma Segmentation in Radiotherapy Planning”</strong> <span class="journal-name">IEEE Journal of Biomedical and Health Informatics (J-BHI)</span><br/>This study presents M3SegNet, a multi-modal and multi-branch framework designed for nasopharyngeal carcinoma (NPC) segmentation in radiotherapy planning. By leveraging complementary information from multiple modalities and structured branch learning, the work targets robust and clinically practical delineation to support treatment planning.</li>
-						<li><strong>“SABPI-Net: A Structure-aware Bidirectional Proxy Interaction Network for Infantile Retinal Disease Diagnosis”</strong> <span class="journal-name">IEEE Transactions on Medical Imaging (TMI)</span><br/>In this work, we develop SABPI-Net, a structure-aware network that models bidirectional proxy interactions to strengthen diagnostic performance for infantile retinal diseases. The approach emphasizes anatomical structure and interaction modeling, aiming to enhance accuracy and robustness under challenging pediatric imaging conditions.</li>
-				</ul>
-
-					<p>We will continue to promote the research and verification of medical imaging AI in terms of generalization, interpretation, reliability and deployment, promote intelligent algorithms to truly serve clinical decision-making and treatment process, and form a high-quality transformation from scientific research innovation to clinical value.</p>
+			<article class="article-post" style="color:rgba(0, 0,0, 0.8);">
+                <p>Our laboratory has published a review article in The Innovation entitled "Prompt mechanisms in medical imaging: A comprehensive survey", published online on January 29, 2026 (DOI: 10.1016/j.xinn.2026.101271).</p>
+                <p>Published by Cell Press, The Innovation is a high-impact interdisciplinary journal featuring cutting-edge research and authoritative reviews bridging science and real-world applications. The journal reports a 2024 Impact Factor of 25.7 and a CiteScore of 53.4, highlighting its strong international visibility and influence.</p>
+                <p>This survey reviews prompt mechanisms in medical imaging—covering textual prompts, visual prompts, and learnable embeddings—and discusses how prompts empower foundation models across key tasks such as image generation, segmentation, and classification, especially under practical clinical constraints like data scarcity, distribution shift, and the need for robust generalization.</p>
+                <div>
+                    <img src="./news_20260210/image2.png" alt="Prompt mechanisms in medical imaging: A comprehensive survey" style="display:block;margin:0 auto;max-width:100%;">                
+                </div>
+                <p>As the leading team, the intelligent medical Computing Laboratory of Macau Polytechnic University has long focused on the cross research of AI and medical imaging. The publication of this review is not only a systematic review of the technology in the field, but also a concentrated embodiment of the concept of laboratory technology - upgrading AI from an "executive tool" to an "intelligent assistant for understanding clinical situations". In the future, the team will continue to promote the deep integration of prompt mechanism and clinical needs, and carry out technology transformation in the direction of early screening of breast cancer and multimodal disease diagnosis, so as to inject new momentum into the development of smart medicine in Macao and the Greater Bay region.</p>
 			</article>
 
 

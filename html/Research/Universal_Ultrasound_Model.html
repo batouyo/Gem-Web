@@ -5,7 +5,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="..//web_logo.png">
 <link rel="icon" type="image/png" href="../web_logo.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>Research</title>
+<title>Universal Ultrasound Model - UniUSNet</title>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
@@ -13,18 +13,282 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- Main CSS -->
 <link href="../assets/css/main.css" rel="stylesheet"/>
+<style>
+/* Custom Styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.author-info {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.author-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.affiliation {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+.content-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.dataset-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: #e9ecef;
+    transform: scale(1.02);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.stat-label {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.architecture-diagram {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.architecture-diagram img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.result-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-left: 4px solid #667eea;
+}
+
+.result-title {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.btn-pdf { background: #e74c3c; color: white; }
+.btn-arxiv { background: #b71540; color: white; }
+.btn-code { background: #2c3e50; color: white; }
+.btn-video { background: #c0392b; color: white; }
+.btn-github { background: #333; color: white; }
+
+.btn-pdf:hover { background: #c0392b; }
+.btn-arxiv:hover { background: #8e1040; }
+.btn-code:hover { background: #1a252f; }
+.btn-video:hover { background: #a93226; }
+.btn-github:hover { background: #1a1a1a; }
+
+.paper-citation {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 0.85em;
+    overflow-x: auto;
+}
+
+.acknowledgement {
+    background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid #ffc107;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.features-list li:before {
+    content: "✓";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .link-buttons {
+        flex-direction: column;
+    }
+    
+    .link-btn {
+        justify-content: center;
+    }
+}
+</style>
 </head>
 <body>
 <!--------------------------------------
-NAVBAR
+HERO SECTION
 --------------------------------------->
-<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="hero-title">UniUSNet</h1>
+                <p class="hero-subtitle">
+                    A Promptable Framework for Universal Ultrasound Disease Prediction and Tissue Segmentation
+                </p>
+                <div class="mt-4">
+                    <span class="badge badge-light mr-2" style="font-size: 1em; padding: 10px 15px;">
+                        <i class="fas fa-microscope mr-2"></i>Medical AI
+                    </span>
+                    <span class="badge badge-light mr-2" style="font-size: 1em; padding: 10px 15px;">
+                        <i class="fas fa-brain mr-2"></i>Deep Learning
+                    </span>
+                    <span class="badge badge-light" style="font-size: 1em; padding: 10px 15px;">
+                        <i class="fas fa-image mr-2"></i>Ultrasound Imaging
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                <div class="author-info" style="background: rgba(255,255,255,0.95);">
+                    <h5 class="mb-3" style="color: #667eea;">
+                        <i class="fas fa-users mr-2"></i>Project Leaders
+                    </h5>
+                    <p class="author-name mb-2">
+                        <a href="https://zehui-lin.github.io/" style="color: #2c3e50; text-decoration: none;">
+                            Zehui Lin
+                        </a>
+                    </p>
+                    <p class="affiliation mb-2">
+                        Faculty of Applied Sciences<br>
+                        Macao Polytechnic University
+                    </p>
+                    <hr style="margin: 15px 0;">
+                    <div class="text-center">
+                        <p class="mb-2"><strong>Co-Authors:</strong></p>
+                        <p class="affiliation small">
+                            Zhuoneng Zhang, Xindi Hu, Zhifan Gao, Xin Yang,<br>
+                            Yue Sun, Dong Ni, Tao Tan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+NAVABR
+--------------------------------------->
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top" style="box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
 <div class="container">
 	<a class="navbar-brand" href="../../index.html" style="color: green;"><img src="../gem_logopng.png" style="height:50px"></a>
 	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="navbar-collapse collapse" id="navbarColor02" style="">
+	<div class="navbar-collapse collapse" id="navbarColor02">
 		<ul class="navbar-nav mr-auto d-flex align-items-center">
 			<li class="nav-item">
 				<a class="nav-link" href="../index.html">Homepage</a>
@@ -59,107 +323,359 @@ NAVBAR
 </div>
 </nav>
 <!-- End Navbar -->
-    
+
 <!--------------------------------------
-HEADER
+ABSTRACT SECTION
 --------------------------------------->
-<div class="container">
-	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-		<div class="h-100 tofront">
-			<div class="row justify-content-between">
-				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
-					
-					<h1 class="display-4 secondfont mb-3 font-weight-bold">Universal Ultrasound Model
-
-
-					</h1>
-					<p class="text-uppercase font-weight-bold">
-						<p class="text-danger" style="font-size: 18px;font-weight: bold;" >Project Leaders </p>
-						<p class="text-danger" style="font-size: 14px;" > Zehui Lin</p>
-						<!-- <p class="text-danger" style="font-size: 18px;font-weight: bold;" >Partner Organisations  </p>
-						<p class="text-danger" style="font-size: 14px;" > 深圳市人民医院</p>
-						<p class="text-danger" style="font-size: 14px;" > 中山大学附属第五医院 </p> -->
-
-
-					</p>
-				
-				</div>
-				<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; padding-top: 10%;;padding-bottom: 10%;">
-					<img src="../zehui_research/zehui_image_202403.jpg" >
-					<!-- <div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- End Header -->
-    
-<!--------------------------------------
-MAIN
---------------------------------------->
-<div class="container pt-4 pb-4">
-	<div class="row justify-content-center">
-		
-		<div class="col-md-12 col-lg-8">
-			<article class="article-post" style="color:rgba(0, 0,0, 0.8)">
-				Ultrasound is widely used in clinical practice due to its affordability, portability, and safety. However, current AI research often overlooks combined disease prediction and tissue segmentation. We propose UniUSNet, a universal framework for ultrasound image classification and segmentation. This model handles various ultrasound types, anatomical positions, and input formats, excelling in both segmentation and classification tasks. Trained on a comprehensive dataset with over 9.7K annotations from 7 distinct anatomical positions, our model matches state-of-the-art performance and surpasses single-dataset and ablated models. Zero-shot and fine-tuning experiments show strong generalization and adaptability with minimal fine-tuning. We plan to expand our dataset and refine the prompting mechanism
-			</article>
-			
-		
-		</div>
-	</div>
-</div>
-    
 
 <div class="container">
-	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-		<div class="h-100 tofront">
-			<div class="row justify-content-between">
-				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
-					<p class="text-uppercase font-weight-bold">
-						<p class="text-danger" style="font-size: 24px; padding-bottom:-200px !important;" >Project Example</p>
-					</p>
-
-				
-				</div>
-				
-			</div>
-		</div>
-	</div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-file-alt mr-2"></i>Abstract
+                </h2>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+                    Ultrasound is widely used in clinical practice due to its affordability, portability, and safety. 
+                    However, current AI research often overlooks combined disease prediction and tissue segmentation. 
+                    We propose <strong>UniUSNet</strong>, a universal framework for ultrasound image classification and segmentation. 
+                    This model handles various ultrasound types, anatomical positions, and input formats, excelling in both 
+                    segmentation and classification tasks.
+                </p>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+                    Trained on a comprehensive dataset with over <strong>9.7K annotations</strong> from 7 distinct anatomical positions, 
+                    our model matches state-of-the-art performance and surpasses single-dataset and ablated models. 
+                    Zero-shot and fine-tuning experiments show strong generalization and adaptability with minimal fine-tuning.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
+<!--------------------------------------
+KEY FEATURES
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-star mr-2"></i>Key Features
+                </h2>
+                <ul class="features-list">
+                    <li><strong>Universal Framework</strong> - Handles both disease prediction and tissue segmentation tasks</li>
+                    <li><strong>Multi-Anatomical Support</strong> - Works across 7 different anatomical positions</li>
+                    <li><strong>Versatile Input Handling</strong> - Supports various ultrasound types and input formats</li>
+                    <li><strong>State-of-the-Art Performance</strong> - Matches or exceeds current best methods</li>
+                    <li><strong>Strong Generalization</strong> - Excellent zero-shot and fine-tuning capabilities</li>
+                    <li><strong>Parameter Efficient</strong> - 66% fewer parameters than some comparable models</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+DATASET SECTION
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-database mr-2"></i>The BroadUS-9.7K Dataset
+                </h2>
+                <div class="dataset-highlight">
+                    <p style="font-size: 1.2em; font-weight: 600;">
+                        The BroadUS-9.7K dataset contains 9.7K annotations of 6.9K ultrasound images 
+                        from 7 different anatomical positions.
+                    </p>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="stat-box">
+                            <div class="stat-number">9.7K+</div>
+                            <div class="stat-label">Annotations</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-box">
+                            <div class="stat-number">6.9K</div>
+                            <div class="stat-label">Ultrasound Images</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-box">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Anatomical Positions</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h4 style="color: #2c3e50; margin-bottom: 15px;">
+                        <i class="fas fa-layer-group mr-2"></i>Dataset Breakdown
+                    </h4>
+                    <p style="color: #555; line-height: 1.8;">
+                        The dataset includes diverse annotations covering various imaging natures, anatomical positions, 
+                        tasks (segmentation and classification), and input types. Note that breast images can contain 
+                        both segmentation and classification labels, and images with segmentation labels can form 
+                        three different input types.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+ARCHITECTURE SECTION
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs mr-2"></i>Architecture
+                </h2>
+                <div class="architecture-diagram">
+                    <div style="background: white; padding: 20px; border-radius: 10px;">
+                        <p style="font-size: 1.1em; color: #555; margin-bottom: 15px;">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            The architecture of UniUSNet is a general encoder-decoder model that uses prompts 
+                            to simultaneously handle multiple ultrasound tasks like segmentation and classification.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4 style="color: #2c3e50; margin-bottom: 15px;">
+                            <i class="fas fa-expand-arrows-alt mr-2"></i>Encoder
+                        </h4>
+                        <p style="color: #555; line-height: 1.8;">
+                            The encoder extracts hierarchical features from ultrasound images, capturing both 
+                            low-level details and high-level semantic information essential for medical image analysis.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="color: #2c3e50; margin-bottom: 15px;">
+                            <i class="fas fa-tools mr-2"></i>Task-Specific Decoders
+                        </h4>
+                        <p style="color: #555; line-height: 1.8;">
+                            Task-specific decoders are enhanced by four types of prompts—<strong>nature</strong>, 
+                            <strong>position</strong>, <strong>task</strong>, and <strong>type</strong>—added to each 
+                            transformer layer via prompt projection embedding.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-4 p-3" style="background: #f0f4ff; border-radius: 8px;">
+                    <h5 style="color: #667eea; margin-bottom: 10px;">
+                        <i class="fas fa-lightbulb mr-2"></i>Prompt Engineering
+                    </h5>
+                    <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                        The innovative prompting mechanism boosts the model's versatility and performance, 
+                        enabling it to adapt to different ultrasound imaging conditions and analysis requirements 
+                        without extensive retraining.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+RESULTS SECTION
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar mr-2"></i>Results
+                </h2>
+                
+                <div class="result-section">
+                    <div class="result-title">
+                        <i class="fas fa-trophy mr-2"></i>R1: Overall Performance Comparison
+                    </div>
+                    <p style="color: #555; line-height: 1.8;">
+                        SAM's official weights perform poorly in zero-shot inference (37.12%) due to the domain gap 
+                        between natural and medical images. SAMUS improves performance (80.65%) but doesn't surpass 
+                        the Single model. Our automatic prompt model, with <strong>66% fewer parameters</strong>, achieves 
+                        similar segmentation results (80.01%). Ablation studies reveal that UniUSNet (79.89%) outperforms 
+                        both the ablation version (78.46%) and Single (78.43%) models, proving the effectiveness of prompts.
+                    </p>
+                </div>
+                
+                <div class="result-section">
+                    <div class="result-title">
+                        <i class="fas fa-eye mr-2"></i>R2: Segmentation Results
+                    </div>
+                    <p style="color: #555; line-height: 1.8;">
+                        Segmentation results reveal that UniUSNet outperforms SAM and other models by effectively 
+                        using nature and position prompts for deeper task understanding. Visual comparisons show 
+                        more accurate tissue boundaries and lesion delineation.
+                    </p>
+                </div>
+                
+                <div class="result-section">
+                    <div class="result-title">
+                        <i class="fas fa-project-diagram mr-2"></i>R3: Feature Distribution Analysis
+                    </div>
+                    <p style="color: #555; line-height: 1.8;">
+                        t-SNE visualization of feature distributions across BUS-BRA, BUSIS, and UDIAT datasets shows 
+                        that the Single model has a clear domain shift, while UniUSNet w/o prompt reduces this shift, 
+                        indicating better domain adaptation. Prompts further minimize the domain offset.
+                    </p>
+                </div>
+                
+                <div class="result-section">
+                    <div class="result-title">
+                        <i class="fas fa-sliders-h mr-2"></i>R4: Adapter Performance
+                    </div>
+                    <p style="color: #555; line-height: 1.8;">
+                        On the BUSI dataset, UniUSNet w/o prompt and UniUSNet outperform the Single model, 
+                        demonstrating better generalization and prompt effectiveness. Additionally, the Adapter setup, 
+                        with minimal fine-tuning, surpasses the Scratch setup, showcasing our model's adaptability 
+                        to new datasets efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+LINKS SECTION
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-link mr-2"></i>Resources
+                </h2>
+                <div class="link-buttons">
+                    <a href="https://doi.org/10.1109/BIBM62325.2024.10822429" class="link-btn btn-pdf" target="_blank">
+                        <i class="fas fa-file-pdf mr-2"></i>Paper (IEEE)
+                    </a>
+                    <a href="https://arxiv.org/abs/2406.01154" class="link-btn btn-arxiv" target="_blank">
+                        <i class="fas fa-book mr-2"></i>arXiv
+                    </a>
+                    <a href="https://github.com/Zehui-Lin/UniUSNet" class="link-btn btn-github" target="_blank">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="https://youtu.be/8OoQN1Yky0E" class="link-btn btn-video" target="_blank">
+                        <i class="fas fa-video mr-2"></i>Video
+                    </a>
+                </div>
+                
+                <div class="mt-4">
+                    <h4 style="color: #2c3e50; margin-bottom: 15px;">
+                        <i class="fas fa-code-branch mr-2"></i>Additional Resources
+                    </h4>
+                    <p style="color: #555; line-height: 1.8;">
+                        We provide a detailed data processing method for the BroadUS-9.7K dataset, as well as 
+                        data demos for checking whether the data format is prepared properly and for quickly 
+                        starting experiments or inferences. Pretrained models can be downloaded from our GitHub repository.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+CITATION SECTION
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-quote-right mr-2"></i>Citation
+                </h2>
+                <p style="color: #555; margin-bottom: 15px;">
+                    If you find this work useful for your research, please cite:
+                </p>
+                <div class="paper-citation">
+<pre>@inproceedings{lin2024uniusnet,
+  title={UniUSNet: A Promptable Framework for Universal Ultrasound Disease Prediction and Tissue Segmentation},
+  author={Lin, Zehui and Zhang, Zhuoneng and Hu, Xindi and Gao, Zhifan and Yang, Xin and Sun, Yue and Ni, Dong and Tan, Tao},
+  booktitle={2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  pages={3501--3504},
+  year={2024},
+  organization={IEEE}
+}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+ACKNOWLEDGEMENTS
+--------------------------------------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <div class="acknowledgement">
+                <h4 style="color: #856404; margin-bottom: 15px;">
+                    <i class="fas fa-hands-helping mr-2"></i>Acknowledgements
+                </h4>
+                <p style="color: #555; margin-bottom: 0;">
+                    This work was supported by Science and Technology Development Fund of Macao 
+                    (0021/2022/AGJ) and Science and Technology Development Fund of Macao (0041/2023/RIB2).
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------
+PROJECT GALLERY & NAVIGATION
+--------------------------------------->
 
 <div class="container pt-4 pb-4">
-	<div class="row justify-content-center">
-		
-		<div class="col-md-12 col-lg-8">
-			<img src="../zehui_research/zehui_image_202403.jpg" >
-			
-	
-
-		
-			<div class="border p-5 bg-lightblue" style="margin-top: 40px;">
-				
-			
-				<div class="row justify-content-between">
-					
-				
-						
-							 
-							<div class="col-md-12 mt-2">
-								<a href="../all_research.html" class="btn btn-success btn-block">
-									Return
-								</a>
-								<!-- <button type="submit" class="btn btn-success btn-block"></button> -->
-							</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <div class="content-card">
+                <h2 class="section-title">
+                    <i class="fas fa-images mr-2"></i>Project Gallery
+                </h2>
+                <div class="text-center">
+                    <img src="../zehui_research/zehui_image_202403.jpg" alt="UniUSNet Project" 
+                         style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="display: none; padding: 40px; background: #f8f9fa; border-radius: 10px;">
+                        <i class="fas fa-image" style="font-size: 3em; color: #dee2e6; margin-bottom: 15px;"></i>
+                        <p style="color: #6c757d;">Project image would be displayed here</p>
+                    </div>
+                </div>
+                
+                <div class="border p-5 bg-lightblue" style="margin-top: 40px;">
+                    <div class="row justify-content-between">
+                        <div class="col-md-12 mt-2">
+                            <a href="../all_research.html" class="btn btn-success btn-block" style="font-size: 1.1em; padding: 15px;">
+                                <i class="fas fa-arrow-left mr-2"></i>Return to Research
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 
 <!-- End Main -->
     
