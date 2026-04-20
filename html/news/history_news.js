@@ -1,4 +1,5 @@
 window.HISTORY_NEWS = [
+  {"title":"The laboratory added two more international journal papers: promoting fair and credible medical imaging AI and intelligent radiotherapy","href":"./New20260121_2.html","date":"Jan. 21 2026, Wed.","img":"./news_20260121/image2.png"},
   {"title":"Good News: Transducer-Adaptive Denoising for Ultrasound Imaging Accepted by IEEE TAI","href":"./New20251215_2.html","date":"Dec. 15 2025, Mon."},
   {"title":"Lab Breakthrough in Nature Communications: Mammo-AGE Unlocks a New \"Breast Health Clock\"","href":"./New20251215_1.html","date":"Dec. 15 2025, Mon.","img":"./news_20251215/image1.png"},
   {"title":"Dr. Tao Tan of Macao Polytechnic University presented at the international breast forum to discuss the application of AI in breast cancer diagnosis and treatment","href":"./New20251202_1.html","date":"Dec. 15 2025, Mon."},
