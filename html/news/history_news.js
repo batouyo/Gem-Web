@@ -1,4 +1,5 @@
 window.HISTORY_NEWS = [
+  {"title":"DRFMamba Accepted for Publication in IEEE Transactions on Multimedia","href":"./New20260131.html","date":"Jan. 31 2026, Fri.","img":"./news_20260131/image.png"},
   {"title":"The laboratory added two more international journal papers: promoting fair and credible medical imaging AI and intelligent radiotherapy","href":"./New20260121_2.html","date":"Jan. 21 2026, Wed.","img":"./news_20260121/image2.png"},
   {"title":"Many laboratory achievements were published in international top journals: promoting trusted medical imaging AI to clinical practice","href":"./New20260121_1.html","date":"Jan. 21 2026, Wed.","img":"./news_20260121/image1.png"},
   {"title":"Good News: Transducer-Adaptive Denoising for Ultrasound Imaging Accepted by IEEE TAI","href":"./New20251215_2.html","date":"Dec. 15 2025, Mon."},
@@ -14,7 +15,7 @@ window.HISTORY_NEWS = [
   {"title":"Focus on remote health monitoring: three papers of the Macao Polytechnic team published in international journals","href":"./New20250902.html","date":"Sep. 03 2025, Tue.","img":""},
   {"title":"Unified multimodal medical image sequence conversion to achieve zero sample domain adaptation","href":"./New20250819.html","date":"Aug. 12 2025, Tue.","img":"./news_20250819/images_1.jpg"},
   {"title":"The research team of Macao Polytechnic University developed a general ultrasound AI framework-PerceptGuide, to lead a new paradigm of multi organ and multi task diagnosis","href":"./New20250812.html","date":"Aug. 12 2025, Tue.","img":"./news_20250812/images_1.png"},
-  {"title":"GEM Team - A New Era of AI-Enabled Fetal Ultrasound Imaging","href":"./New20250805.html","date":"Aug. 05 2025, Tue.","img":"./news_20250805/images_1.png"},
+  {"title":"IMCL Team - A New Era of AI-Enabled Fetal Ultrasound Imaging","href":"./New20250805.html","date":"Aug. 05 2025, Tue.","img":"./news_20250805/images_1.png"},
   {"title":"A joint research team from Macao Polytechnic University has developed a new AI model to accurately predict the efficacy of neoadjuvant therapy for breast cancer","href":"./New20250718.html","date":"Jul. 18 2025, Fri.","img":"./news_20250718/image_1.png"},
   {"title":"Medical Imaging Workshop on AI medicine","href":"./New20250628.html","date":"Jun. 28 2025, Sat.","img":""},
   {"title":"Macao Polytechnic University and Sun Yat-sen University jointly developed clinical AI model","href":"./New20250627.html","date":"Jun. 27 2025, Fri.","img":""},
@@ -33,7 +34,7 @@ window.HISTORY_NEWS = [
   {"title":"3MT-Net accepted by JCR Q1 journal with IF 6.7","href":"./New20240816_2.html","date":"Aug. 16 2024, Fri.","img":"./news_20240816/image_1.png"},
   {"title":"Macao Polytechnic University research team wins ICME Grand Challenge 2024","href":"./New20240521.html","date":"May. 19 2024, Sun.","img":"./news_20240521/pic_1.png"},
   {"title":"Our CCF-B MICCAI Deep Breast Cancer Symposium is about to open in Morocco!","href":"./New20240520.html","date":"May. 19 2024, Sun.","img":"./news_20240520/pic_1.png"},
-  {"title":"Four Papers from GEM Lab Early Accepted by MICCAI","href":"./New20240519.html","date":"May. 19 2024, Sun.","img":"./news_20240519/pic_1.jpg"},
+  {"title":"Four Papers from IMCL (Intelligent Medical Computing Laboratory) Early Accepted by MICCAI","href":"./New20240519.html","date":"May. 19 2024, Sun.","img":"./news_20240519/pic_1.jpg"},
   {"title":"IMPORTANT-Net Paper Accepted by Top CAS Journal with Impact Factor of 18","href":"./New20240404.html","date":"Apr. 04 2024, Thu.","img":"./news_20240404/pic_1.jpg"},
   {"title":"Researchers from Shenzhen Institute of Advanced Technology visited MPU","href":"./New20240229.html","date":"Feb. 29 2024, Fri.","img":"./news_20240229/pic_1.jpg"}
 ];

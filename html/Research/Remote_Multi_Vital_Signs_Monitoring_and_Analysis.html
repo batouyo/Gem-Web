@@ -1,0 +1,693 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../web_logo.png">
+<link rel="icon" type="image/png" href="../web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Remote Multi-Vital Signs Monitoring and Analysis | IMCL Research</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
+<meta name="description" content="Project page for Remote Multi-Vital Signs Monitoring and Analysis." />
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="../assets/css/main.css" rel="stylesheet"/>
+<style>
+:root {
+    --gem-accent: #03a87c;
+    --gem-accent-dark: #0b3b2e;
+    --gem-surface: #f4fbf7;
+    --gem-surface-soft: #f8fcfa;
+    --gem-border: rgba(3, 168, 124, 0.16);
+    --gem-border-strong: rgba(3, 168, 124, 0.28);
+    --gem-ink: #20312b;
+    --gem-muted: #66756e;
+    --gem-shadow: 0 18px 42px rgba(11, 59, 46, 0.08);
+}
+body {
+    color: var(--gem-ink) !important;
+    background:
+        radial-gradient(circle at top left, rgba(3, 168, 124, 0.08), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdfc 100%);
+}
+.topnav { box-shadow: 0 8px 24px rgba(11, 59, 46, 0.05); }
+.project-page { padding-top: 94px; padding-bottom: 56px; }
+.page-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--gem-border-strong);
+    color: var(--gem-accent-dark);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 22px rgba(11, 59, 46, 0.05);
+}
+.back-link:hover,
+.jump-link:hover,
+.link-row a:hover,
+.hero-chip:hover {
+    color: var(--gem-accent-dark);
+    text-decoration: none;
+}
+.jump-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.jump-link,
+.hero-chip,
+.link-row a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--gem-border);
+    color: var(--gem-accent-dark);
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hero-card,
+.story-card,
+.info-card,
+.content-card,
+.media-card,
+.paper-card,
+.code-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--gem-border);
+    border-radius: 20px;
+    box-shadow: var(--gem-shadow);
+}
+.hero-card {
+    padding: 32px;
+    margin-bottom: 18px;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+    gap: 24px;
+    align-items: center;
+}
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(3, 168, 124, 0.08);
+    border: 1px solid var(--gem-border);
+    color: var(--gem-accent-dark);
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.hero-title {
+    margin-bottom: 14px;
+    color: var(--gem-accent-dark);
+    font-size: clamp(2.1rem, 4vw, 3.2rem);
+    line-height: 1.08;
+}
+.hero-summary,
+.lead-text,
+.text-card p,
+.story-intro,
+.paper-meta,
+.media-note,
+.code-card p {
+    color: rgba(32, 49, 43, 0.84);
+}
+.hero-summary {
+    margin-bottom: 0;
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+.hero-visual-stack {
+    display: grid;
+    gap: 16px;
+}
+.image-stage,
+.demo-stage {
+    padding: 12px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #f9fcfb 0%, #f3f9f6 100%);
+    border: 1px solid rgba(3, 168, 124, 0.08);
+}
+.hero-image-stage {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-stage img {
+    width: auto;
+    max-width: 100%;
+    max-height: 620px;
+    margin: 0 auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+.demo-stage img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.info-card {
+    padding: 22px 20px;
+}
+.info-label,
+.story-kicker,
+.card-label {
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gem-accent);
+    font-weight: 700;
+}
+.info-value {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--gem-accent-dark);
+    font-weight: 700;
+    white-space: pre-line;
+}
+.story-section {
+    margin-bottom: 18px;
+}
+.story-card {
+    padding: 24px;
+}
+.story-head {
+    margin-bottom: 18px;
+}
+.story-title {
+    margin: 0;
+    color: var(--gem-accent-dark);
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+.story-intro {
+    margin: 10px 0 0;
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+.module-shell,
+.overview-grid,
+.media-grid,
+.paper-grid {
+    display: grid;
+    gap: 18px;
+    align-items: start;
+}
+.overview-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.95fr);
+}
+.module-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+}
+.module-copy,
+.overview-copy,
+.overview-side {
+    display: grid;
+    gap: 16px;
+}
+.lead-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+.content-card,
+.paper-card,
+.code-card,
+.media-card {
+    padding: 18px;
+}
+.text-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+.text-card p + p {
+    margin-top: 14px;
+}
+.content-card p:first-letter,
+.hero-summary:first-letter,
+.lead-text:first-letter,
+.paper-card h3:first-letter,
+.paper-meta:first-letter,
+.code-card p:first-letter {
+    float: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+    font-family: inherit !important;
+}
+.direction-panel {
+    padding: 18px;
+    border-radius: 18px;
+    background: var(--gem-surface-soft);
+    border: 1px solid var(--gem-border);
+}
+.direction-stack {
+    display: grid;
+    gap: 14px;
+}
+.direction-card {
+    padding: 18px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid rgba(3, 168, 124, 0.14);
+}
+.direction-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.18rem;
+    color: var(--gem-accent-dark);
+}
+.direction-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: rgba(32, 49, 43, 0.8);
+}
+.demo-card {
+    padding: 18px;
+}
+.demo-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.demo-dots {
+    display: inline-flex;
+    gap: 7px;
+}
+.demo-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(3, 168, 124, 0.22);
+}
+.demo-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: rgba(3, 168, 124, 0.08);
+    color: var(--gem-accent-dark);
+    border: 1px solid var(--gem-border);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.figure-note {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--gem-muted);
+}
+.link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.scope-list {
+    display: grid;
+    gap: 12px;
+}
+.scope-item {
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: var(--gem-surface-soft);
+    border: 1px solid var(--gem-border);
+    color: var(--gem-accent-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.paper-grid {
+    grid-template-columns: 1fr;
+}
+.paper-card h3 {
+    margin: 0 0 10px;
+    color: var(--gem-accent-dark);
+    font-size: 1.45rem;
+    line-height: 1.35;
+}
+.paper-meta {
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+.paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+.code-card pre {
+    margin: 0;
+    padding: 18px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(32, 49, 43, 0.84);
+    border-radius: 16px;
+    background: #f8fcfa;
+    border: 1px solid rgba(3, 168, 124, 0.1);
+}
+.copy-btn {
+    margin-top: 14px;
+}
+@media (max-width: 991.98px) {
+    .project-page { padding-top: 88px; }
+    .hero-grid,
+    .overview-grid,
+    .module-shell,
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+    .page-tools {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+@media (max-width: 767.98px) {
+    .hero-card,
+    .story-card {
+        padding: 22px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+<body>
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html" style="color: green;"><img src="../gem_logopng.png" style="height:50px" alt="IMCL"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Homepage</a></li>
+                <li class="nav-item"><a class="nav-link" href="../all_research.html">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Publication2025.html">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Team.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Demo_show.html">Demo-solutions</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Vancancies.html">Vacancies</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Partners.html">Partners</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="project-page">
+    <div class="container">
+        <div class="page-tools">
+            <a class="back-link" href="../all_research.html"><i class="fas fa-arrow-left"></i>Back to Research</a>
+            <div class="jump-links">
+                <a class="jump-link" href="#overview"><i class="fas fa-align-left"></i>Overview</a>
+                <a class="jump-link" href="#demo"><i class="fas fa-play-circle"></i>Demo</a>
+                <a class="jump-link" href="#architecture"><i class="fas fa-project-diagram"></i>Architecture</a>
+                <a class="jump-link" href="#publications"><i class="fas fa-book-open"></i>Publications</a>
+            </div>
+        </div>
+
+        <section class="hero-card">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow"><i class="fas fa-heartbeat"></i><span>Research Project</span></div>
+                    <h1 class="hero-title secondfont">Remote Multi-Vital Signs Monitoring and Analysis</h1>
+                    <p class="hero-summary">A research project on robust remote physiological sensing, focusing on multi-region video analysis, rPPG-based vital signs estimation, and reliable monitoring under diverse real-world conditions.</p>
+                    <div class="hero-links">
+                        <a class="hero-chip" href="#demo"><i class="fas fa-play-circle"></i>Live Demo</a>
+                        <a class="hero-chip" href="https://mpurppg.pages.dev/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>Open Demo Site</a>
+                        <a class="hero-chip" href="https://doi.org/10.1109/BIBM66473.2025.11356675" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>SHIELDNet</a>
+                        <a class="hero-chip" href="https://doi.org/10.1038/s41597-026-07310-3" target="_blank" rel="noopener"><i class="fas fa-database"></i>MPU-rPPG</a>
+                    </div>
+                </div>
+                <div class="hero-visual-stack">
+                    <div class="image-stage hero-image-stage">
+                        <img src="../Chenzhengxuan_research/image_1.png" alt="Remote Multi-Vital Signs Monitoring and Analysis pipeline">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <div class="info-label">Authors</div>
+                <div class="info-value">Zhengxuan Chen
+Jie Gao
+Kaiwen Yang
+Tao Tan
+Chan Tong Lam
+Yue Sun
+Zitong Yu
+Haitao Jiang
+Keguang Wang</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Affiliation</div>
+                <div class="info-value">Macao Polytechnic University and collaborators</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Recovered Signal</div>
+                <div class="info-value">rPPG</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Project Directions</div>
+                <div class="info-value">SHIELDNet
+MPU-rPPG
+Remote physiological sensing</div>
+            </div>
+        </section>
+
+        <section class="story-section" id="overview">
+            <div class="story-card">
+                <div class="story-head">
+                    <div class="story-kicker">Overview</div>
+                    <h2 class="story-title">Toward robust and generalizable remote health monitoring</h2>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-copy">
+                        <article class="content-card text-card">
+                            <p>This project investigates <strong>remote multi-vital signs monitoring and analysis</strong> using videos captured under diverse conditions. Our goal is to support non-contact physiological sensing by jointly studying signal extraction, multi-region observation, data collection, and analysis robustness. Rather than centering on a single paper, this page summarizes a broader research line, in which <strong>SHIELDNet</strong> represents the model-design direction and <strong>MPU-rPPG</strong> represents the dataset and benchmark direction.</p>
+                        </article>
+                        <div class="link-row">
+                            <a href="#demo"><i class="fas fa-desktop"></i>View Demo Section</a>
+                            <a href="https://mpurppg.pages.dev/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>Launch Demo</a>
+                        </div>
+                    </div>
+                    <aside class="overview-side">
+                        <div class="direction-panel">
+                            <div class="card-label">Three Core Directions</div>
+                            <div class="direction-stack">
+                                <div class="direction-card">
+                                    <h3>Multi-region physiological sensing</h3>
+                                    <p>Explore informative body regions beyond the face and study how multi-region fusion improves signal stability and robustness.</p>
+                                </div>
+                                <div class="direction-card">
+                                    <h3>Vital signs monitoring and analysis</h3>
+                                    <p>Recover physiological waveforms and analyze downstream indicators such as heart rate and temporal physiological dynamics.</p>
+                                </div>
+                                <div class="direction-card">
+                                    <h3>Dataset and evaluation</h3>
+                                    <p>Build high-fidelity datasets and benchmarks for evaluation across lighting, motion, activity intensity, and demographic diversity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" id="demo">
+            <div class="story-card">
+                <div class="story-head">
+                    <div class="story-kicker">Demo Showcase</div>
+                    <h2 class="story-title">Interactive project demo</h2>
+                    <p class="story-intro">A live demo page is available for this project. You can preview it below or open the full demo in a new tab.</p>
+                </div>
+                <div class="module-shell">
+                    <div class="module-copy">
+                        <p class="lead-text">The project emphasizes robust signal recovery from multiple anatomical regions and supports the analysis of physiological dynamics under motion, illumination variation, and subject diversity.</p>
+                        <article class="content-card text-card">
+                            <p>Use the preview on the right to inspect the demo interface, or open the full demo page in a new tab for direct interaction.</p>
+                        </article>
+                        <div class="link-row">
+                            <a href="https://mpurppg.pages.dev/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>Open Full Demo</a>
+                            <a href="#publications"><i class="fas fa-book-open"></i>Related Publications</a>
+                        </div>
+                    </div>
+                    <div class="media-card demo-card">
+                        <div class="demo-toolbar">
+                            <div class="demo-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                            <div class="demo-badge">Demo Preview</div>
+                        </div>
+                        <div class="demo-stage">
+                            <img src="../Chenzhengxuan_research/image_3.png" alt="MPU-rPPG demo preview">
+                        </div>
+                        <p class="figure-note">Preview captured from the online demo page. Use the external demo link above to open the full interactive experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" id="architecture">
+            <div class="story-card">
+                <div class="story-head">
+                    <div class="story-kicker">Architecture</div>
+                    <h2 class="story-title">Model architecture and research scope</h2>
+                </div>
+                <div class="module-shell">
+                    <div class="module-copy">
+                        <p class="lead-text">The project emphasizes robust signal recovery from multiple anatomical regions and supports the analysis of physiological dynamics under motion, illumination variation, and subject diversity.</p>
+                        <div class="scope-list">
+                            <div class="scope-item">Multi-region physiological sensing</div>
+                            <div class="scope-item">Vital signs monitoring and analysis</div>
+                            <div class="scope-item">Dataset and evaluation</div>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <div class="image-stage">
+                            <img src="../Chenzhengxuan_research/image_2.png" alt="Model architecture diagram">
+                        </div>
+                        <p class="figure-note">Architecture figure supplied for the project page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" id="publications">
+            <div class="story-card">
+                <div class="story-head">
+                    <div class="story-kicker">Related Publications</div>
+                    <h2 class="story-title">Representative works in this project</h2>
+                </div>
+                <div class="paper-grid">
+                    <article class="paper-card">
+                        <h3>SHIELDNet: Multi-Region Fusion and Denoising for Enhanced rPPG Signal Extraction in Healthcare Monitoring</h3>
+                        <div class="paper-meta">
+                            Zhengxuan Chen, Jie Gao, Kaiwen Yang, Tao Tan, Chan Tong Lam, Yue Sun<br/>
+                            <em>IEEE BIBM 2025</em>
+                        </div>
+                        <div class="paper-links">
+                            <a class="hero-chip" href="https://doi.org/10.1109/BIBM66473.2025.11356675" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Paper</a>
+                        </div>
+                    </article>
+                    <article class="paper-card">
+                        <h3>MPU-rPPG: A Comprehensive and High-Fidelity Dataset for Remote Photoplethysmography Across Diverse Conditions and Demographics</h3>
+                        <div class="paper-meta">
+                            Zhengxuan Chen, Tao Tan, Zitong Yu, Haitao Jiang, Keguang Wang, Jie Gao, Yue Sun<br/>
+                            <em>Scientific Data 2026</em>
+                        </div>
+                        <div class="paper-links">
+                            <a class="hero-chip" href="https://doi.org/10.1038/s41597-026-07310-3" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Paper</a>
+                            <a class="hero-chip" href="https://doi.org/10.6084/m9.figshare.29377835" target="_blank" rel="noopener"><i class="fas fa-database"></i>Sample Dataset</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" id="bibtex">
+            <div class="story-card">
+                <div class="story-head">
+                    <div class="story-kicker">BibTeX</div>
+                    <h2 class="story-title">Citation</h2>
+                </div>
+                <article class="code-card">
+                    <p>You can cite the representative publications below.</p>
+                    <pre id="bibBlock">@inproceedings{chen2025shieldnet,
+  title     = {SHIELDNet: Multi-Region Fusion and Denoising for Enhanced rPPG Signal Extraction in Healthcare Monitoring},
+  author    = {Chen, Zhengxuan and Gao, Jie and Yang, Kaiwen and Tan, Tao and Lam, Chan Tong and Sun, Yue},
+  booktitle = {Proceedings of the IEEE International Conference on Bioinformatics and Biomedicine},
+  year      = {2025},
+  pages     = {2074--2079},
+  doi       = {10.1109/BIBM66473.2025.11356675}
+}
+
+@article{chen2026mpurppg,
+  title   = {MPU-rPPG: A Comprehensive and High-Fidelity Dataset for Remote Photoplethysmography Across Diverse Conditions and Demographics},
+  author  = {Chen, Zhengxuan and Tan, Tao and Yu, Zitong and Jiang, Haitao and Wang, Keguang and Gao, Jie and Sun, Yue},
+  journal = {Scientific Data},
+  year    = {2026},
+  doi     = {10.1038/s41597-026-07310-3}
+}</pre>
+                    <button class="back-link copy-btn" id="copyBibBtn" type="button"><i class="far fa-copy"></i>Copy BibTeX</button>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div class="container mt-5">
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="row align-items-center justify-content-between">
+            <div>
+                <span class="navbar-brand mr-2" style="color: #03A87C;"><strong>IMCL (Intelligent Medical Computing Laboratory)</strong></span>
+            </div>
+            <div>
+                IMCL (Intelligent Medical Computing Laboratory) is part of the Macao Polytechnic University.
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/functions.js" type="text/javascript"></script>
+<script>
+const copyBtn = document.getElementById('copyBibBtn');
+copyBtn.addEventListener('click', async () => {
+    const text = document.getElementById('bibBlock').innerText;
+    try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>Copied';
+    } catch (error) {
+        copyBtn.innerHTML = '<i class="fas fa-times"></i>Copy failed';
+    }
+    setTimeout(() => {
+        copyBtn.innerHTML = '<i class="far fa-copy"></i>Copy BibTeX';
+    }, 1400);
+});
+</script>
+</body>
+</html>
+
