@@ -1,4 +1,7 @@
 window.HISTORY_NEWS = [
+  {"title":"MPU IMCL Student Team Wins Third Place in the Physical AI Track at BEYOND Hack Day 2026","href":"./New20260610.html","date":"Jun. 10 2026, Wed.","img":"./news_20260610/image_4.jpeg"},
+  {"title":"We Sincerely Welcome Your Attention to and Participation in UUSIVC 2026!","href":"./new20260406.html","date":"Apr. 06 2026, Mon.","img":"./news_20260407/image1.png"},
+  {"title":"IMCL (Intelligent Medical Computing Laboratory) Publishes Three New Research Achievements in Leading International Journals","href":"./New20260310.html","date":"Mar. 10 2026, Tue.","img":"./news_20260310/image.png"},
   {"title":"Interpretation of medical image prompt mechanism in the intelligent medical Computing Laboratory of Macao Polytechnic University","href":"./New20260210.html","date":"Feb. 10 2026, Tue.","img":"./news_20260210/image.png"},
   {"title":"DRFMamba Accepted for Publication in IEEE Transactions on Multimedia","href":"./New20260131.html","date":"Jan. 31 2026, Fri.","img":"./news_20260131/image.png"},
   {"title":"The laboratory added two more international journal papers: promoting fair and credible medical imaging AI and intelligent radiotherapy","href":"./New20260121_2.html","date":"Jan. 21 2026, Wed.","img":"./news_20260121/image2.png"},

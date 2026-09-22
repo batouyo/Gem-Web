@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="76x76" href="./web_logo.png">
+<link rel="icon" type="image/png" href="./web_logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>MSQG-3DNet Selected for MICCAI 2026</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="./assets/css/main.css" rel="stylesheet"/>
+<style>
+  .article-post { color: rgba(0,0,0,.82); line-height: 1.9; font-size: 16.5px; }
+  .article-post .lead { font-size: 18px; line-height: 1.9; margin-bottom: 1.25rem; }
+  .article-post .section-title { font-size: 1.45rem; font-weight: 700; margin-top: 2.2rem; margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid rgba(3,168,124,.2); }
+  .article-post p { margin-bottom: 1rem; }
+  .article-figure { text-align: center; margin: 1.6rem 0; }
+  .article-figure img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+  .article-figure figcaption { margin-top: .65rem; color: #6c757d; font-size: .95rem; }
+</style>
+</head>
+<body>
+<nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="./index.html"><img src="./gem_logopng.png" style="height:50px" alt="IMCL logo"></a>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="navbar-collapse collapse" id="navbarColor02"><ul class="navbar-nav mr-auto d-flex align-items-center">
+    <li class="nav-item"><a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="./all_research.html">Research</a></li>
+    <li class="nav-item"><a class="nav-link" href="./publications2024.html">Publications</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Team.html">Team</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Demo_show.html">Demo-solutions</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Vancancies.html">Vacancies</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Partners.html">Partners</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Education.html">Education</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+  </ul></div>
+</div>
+</nav>
+
+<div class="container"><div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative"><div class="h-100 tofront"><div class="row justify-content-between">
+  <div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
+    <p class="text-danger" style="font-size:24px;">News</p>
+    <h1 class="display-4 secondfont mb-3 font-weight-bold">MSQG-3DNet Selected for MICCAI 2026: Multi-Scale Modeling for 3D Breast Ultrasound Classification</h1>
+    <div class="d-flex align-items-center"><small class="ml-2"><span class="text-muted d-block">Sep. 22 2026, Tue.</span></small></div>
+  </div>
+  <div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height:100%; padding-top:6%; padding-bottom:6%;"><img src="./news_20260922/cover.png" alt="MICCAI 2026" style="width:100%; max-width:560px; height:auto;"></div>
+</div></div></div></div>
+
+<div class="container pt-4 pb-4"><div class="row justify-content-center"><div class="col-md-12 col-lg-8">
+<article class="article-post">
+  <p class="lead">The Intelligent Medical Computing Laboratory (IMCL, also known as GEMLab) has highlighted MSQG-3DNet, a new CNN-Transformer hybrid framework for benign-versus-malignant classification of lesions in three-dimensional automated breast ultrasound (ABUS). The work has been selected for MICCAI 2026.</p>
+  <p>Medical image computing is moving beyond two-dimensional analysis toward more challenging three-dimensional interpretation. ABUS provides comprehensive volumetric information about breast tissue and offers an important data foundation for lesion screening, assessment, and computer-aided diagnosis. In real-world ABUS data, however, differences in voxel spacing, anisotropic artefacts, and weak or spatially dispersed malignant signs make reliable classification difficult.</p>
+
+  <h2 class="section-title">A framework for local detail and global evidence</h2>
+  <p>MSQG-3DNet stands for <em>Multi-Scale Token Selection with Query-Decoder and Gated Fusion for 3D Breast Tumor Classification</em>. The framework combines multi-scale three-dimensional feature extraction, informative token selection, query-guided global evidence aggregation, and adaptive feature fusion.</p>
+  <p>The design addresses a central challenge in 3D breast ultrasound classification: how to preserve fine-grained lesion morphology while efficiently integrating diagnostic evidence distributed across the full volume. A 3D convolutional network is effective at learning local texture and structure, but repeated downsampling can weaken subtle boundary and heterogeneity cues. A Transformer can model long-range relationships, yet processing a complete 3D volume directly creates many tokens and substantial computational cost.</p>
+  <figure class="article-figure"><img src="./news_20260922/msqg_framework.png" alt="MSQG-3DNet framework diagram"><figcaption>Overview of the MSQG-3DNet architecture for 3D breast tumor classification.</figcaption></figure>
+
+  <h2 class="section-title">From multi-scale features to task-relevant tokens</h2>
+  <p>The model first uses an enhanced 3D residual encoder to extract lesion features at multiple levels and scales. Breast tumors are characterized not only by individual textures, but also by boundaries, internal echo heterogeneity, and structural changes across spatial scales. Multi-scale learning therefore helps the model retain local details while representing the broader lesion morphology needed for global analysis.</p>
+  <p>MSQG-3DNet then converts the multi-scale features into tokens and applies an informative token pruning module. Each token receives an importance score, allowing the model to reduce redundant background information before the Transformer stage. This makes global reasoning more efficient and helps focus computation on evidence that is more relevant to the classification task.</p>
+  <p>A query-decoder further extracts task-related information through cross-attention. Instead of treating every region equally or simply averaging all tokens, multiple learnable queries actively search the 3D features for evidence that supports a benign or malignant prediction. This is particularly useful when malignant signs are weak or distributed across different parts of an ABUS lesion.</p>
+
+  <h2 class="section-title">Adaptive fusion of complementary evidence</h2>
+  <p>Different feature types describe a lesion from different perspectives. The framework therefore combines four global descriptors: the global feature from the convolutional network, the Transformer class token, token-pooled features, and task-related features produced by the query-decoder.</p>
+  <p>For each case, the model dynamically predicts fusion weights for these complementary sources. This gated fusion strategy allows the final decision to draw on the most useful evidence in a given case, reducing the instability that can arise when classification depends on a single pathway.</p>
+
+  <h2 class="section-title">Results on internal and external data</h2>
+  <p>On the institutional ABUS dataset, the study used 8,627 cases for training and 859 cases for testing. The complete MSQG-3DNet achieved an AUC of 96.23%, an accuracy of 91.27%, and a specificity of 100.00% on the test set, outperforming the comparison methods under the same experimental setting.</p>
+  <p>The study also evaluated the model on the public TDSC-ABUS dataset. Under the domain shift caused by differences in acquisition and data distribution, MSQG-3DNet achieved an AUC of 71.55%, which was 7.24 and 7.76 percentage points higher than SAMASK-CLTR and 3DGAUnet, respectively. These results indicate stronger threshold-independent discrimination across datasets.</p>
+  <p>At the same time, sensitivity and specificity on external data remain dependent on the operating threshold. The study notes that clinical deployment will require calibration for different application settings. The external result should therefore be understood as evidence of cross-domain discrimination potential, rather than a claim that all cross-centre deployment challenges have been solved.</p>
+
+  <h2 class="section-title">A practical role in computer-aided diagnosis</h2>
+  <p>MSQG-3DNet addresses three challenges in 3D breast ultrasound classification: subtle local malignant signs, redundant volumetric background information, and spatially dispersed diagnostic evidence. It provides a complete pipeline from multi-scale feature learning and informative token selection to query-based global evidence aggregation and adaptive fusion.</p>
+  <p>In a clinical workflow, the method is positioned as an ROI-level benign-versus-malignant analysis module after lesion localization. The lesion region may be delineated by a physician or obtained from a preceding detection or segmentation system, after which MSQG-3DNet performs further characterization. This positioning enables the method to connect naturally with existing breast-ultrasound computer-aided diagnosis pipelines.</p>
+  <p>With broader validation across centres and devices, together with further calibration of clinical decision thresholds, approaches that combine local morphology modeling with global evidence reasoning may provide more stable and comprehensive support for intelligent breast-tumor assessment.</p>
+  <p><strong>Paper:</strong> <em>MSQG-3DNet: Multi-Scale Token Selection with Query-Decoder and Gated Fusion for 3D Breast Tumor Classification</em></p>
+  <p><strong>Authors:</strong> Zefeng Liu, Yaofei Duan, Zhikai Yang, Xiaojing Xu, Jie Gao, Jiaju Huang, Yue Sun, Kaiwen Yang, Lingyun Bao, and Tao Tan.</p>
+</article>
+<div class="border p-5 bg-lightblue"><div class="row justify-content-between"><div class="col-md-12 mt-2"><a href="index.html" class="btn btn-success btn-block">Return</a></div></div></div>
+</div></div></div>
+
+<div class="container mt-5"><footer class="bg-white border-top p-3 text-muted small"><div class="row align-items-center justify-content-between"><div><span class="navbar-brand mr-2" style="color:#03A87C"><strong>IMCL (Intelligent Medical Computing Laboratory)</strong></span></div><div>IMCL (Intelligent Medical Computing Laboratory) is part of the Macao Polytechnic University.</div></div></footer></div>
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>
