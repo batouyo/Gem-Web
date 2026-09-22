@@ -1,4 +1,5 @@
 window.HISTORY_NEWS = [
+  {"title":"Congratulations to Dr. Yue Sun on Receiving an NSFC Young Scientists Fund (Category C) Project","href":"./New20260829.html","date":"Aug. 29 2026, Sat.","img":"./news_20260829/cover.jpg"},
   {"title":"MPU IMCL Student Team Wins Third Place in the Physical AI Track at BEYOND Hack Day 2026","href":"./New20260610.html","date":"Jun. 10 2026, Wed.","img":"./news_20260610/image_4.jpeg"},
   {"title":"We Sincerely Welcome Your Attention to and Participation in UUSIVC 2026!","href":"./new20260406.html","date":"Apr. 06 2026, Mon.","img":"./news_20260407/image1.png"},
   {"title":"IMCL (Intelligent Medical Computing Laboratory) Publishes Three New Research Achievements in Leading International Journals","href":"./New20260310.html","date":"Mar. 10 2026, Tue.","img":"./news_20260310/image.png"},
