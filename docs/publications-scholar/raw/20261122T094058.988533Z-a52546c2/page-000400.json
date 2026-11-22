@@ -1,0 +1,430 @@
+{
+  "search_metadata": {
+    "id": "6b02b8b8d65b8c6913aad207",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c61AVECRg7TDzSphWZn08jhuYsBW8fo94BD3QH_Iz7k/6b02b8b8d65b8c6913aad207.json",
+    "markdown_endpoint": "https://serpapi.com/searches/c61AVECRg7TDzSphWZn08jhuYsBW8fo94BD3QH_Iz7k/6b02b8b8d65b8c6913aad207.md",
+    "created_at": "2026-11-22 09:41:12 UTC",
+    "processed_at": "2026-11-22 09:41:12 UTC",
+    "google_scholar_author_url": "https://scholar.google.com/citations?user=lLg3WRkAAAAJ&hl=en&cstart=400&pagesize=100",
+    "raw_html_file": "https://serpapi.com/searches/c61AVECRg7TDzSphWZn08jhuYsBW8fo94BD3QH_Iz7k/6b02b8b8d65b8c6913aad207.html",
+    "total_time_taken": 0.75
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "lLg3WRkAAAAJ",
+    "hl": "en",
+    "start": 400,
+    "num": "100"
+  },
+  "author": {
+    "name": "Tao Tan",
+    "affiliations": "FCA MPU",
+    "email": "Verified email at mpu.edu.mo",
+    "website": "http://www.gemlab.site/",
+    "interests": [
+      {
+        "title": "Medical Imaging AI",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:medical_imaging_ai",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amedical_imaging_ai"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=lLg3WRkAAAAJ&citpid=6"
+  },
+  "articles": [
+    {
+      "title": "Computer aided detection in automated breast ultrasound screening: a pilot study",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:sSrBHYA8nusC",
+      "citation_id": "lLg3WRkAAAAJ:sSrBHYA8nusC",
+      "authors": "J van Zelst, T Tan, M Mourits, MDF de Jong, AR Grivegnee, ...",
+      "publication": "European Congress of Radiology-ECR 2015, 2015",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Computer-aided detection of breast cancers using Haar-like features in automated 3D breast ultrasound Computer-aided detection of breast cancers using Haar-like features in …",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:738O_yMBCRsC",
+      "citation_id": "lLg3WRkAAAAJ:738O_yMBCRsC",
+      "authors": "T Tan, J Mordang, JV Zelst, A Grivegnée, A Gubern-mérida, J Melendez, ...",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Pectoral muscle surface segmentation in automated 3D breast ultrasound using cylindrical transform and atlas information",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:ns9cj8rnVeAC",
+      "citation_id": "lLg3WRkAAAAJ:ns9cj8rnVeAC",
+      "authors": "A Gubern-Mérida, T Tan, J van Zelst, RM Mann, BPN Karssemeijer",
+      "publication": "MICCAI Workshop: Breast Image Analysis, 2015",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Mismatch-Aware Spatiotemporal Learning with MinIP Structural Supervision for Frame-Wise Vessel Segmentation in DSA Sequences",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:X0DADzN9RKwC",
+      "citation_id": "lLg3WRkAAAAJ:X0DADzN9RKwC",
+      "authors": "Z He, B Zheng, T Tan, J Ma, Z He, H Chen, M Zhu, Y Xu, W Zhao, L Shi, ...",
+      "publication": "Available at SSRN 7272193, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Deep-Learning-based Segmentation of Organs-at-Risk in the Head for MR-assisted Radiation Therapy Planning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:G1UMdFYMoxkC",
+      "citation_id": "lLg3WRkAAAAJ:G1UMdFYMoxkC",
+      "authors": "RJ Maxwell, Z Végváry, R Kószó, B Gyalai, K Hideghéty, E Borzási, ...",
+      "publication": "Proceedings of the 14th International Joint Conference on Biomedical …, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Hierarchical Tissue-Specific Modeling of Pathology Images Predicts Response in HER2+ Breast Cancer",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:T_ojBgVMvoEC",
+      "citation_id": "lLg3WRkAAAAJ:T_ojBgVMvoEC",
+      "authors": "W Cui, T Tan, M Fan, L Li",
+      "publication": "Cyborg and Bionic Systems, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Contrastive learning through randomly generated dynamic supervision signals",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:eO3_k5sD8BwC",
+      "citation_id": "lLg3WRkAAAAJ:eO3_k5sD8BwC",
+      "authors": "S Wang, Y Duan, Z Ma, KH Chan, Y Sun, T Tong, Q Gao, G Zhai, X Liu, ...",
+      "publication": "Available at SSRN 5458388, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "A Patch-Based Hankel Low-Rank Method for MRI Reconstruction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:DkZNVXde3BIC",
+      "citation_id": "lLg3WRkAAAAJ:DkZNVXde3BIC",
+      "authors": "X Zhang, H Lu, Y Huang, L Rao, T Tan, T Tong",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "3MT-Net: A Multi-modal Multi-task Ensemble Model for Breast Cancer and Lesion Type Classification Based on a Multicentre Study",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:WAzi4Gm8nLoC",
+      "citation_id": "lLg3WRkAAAAJ:WAzi4Gm8nLoC",
+      "authors": "Y Duan, PCI Pang, P He, R Wang, Y Sun, CT Liu, XR Zhang, XR Yuan, ...",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Sdformer: Similarity-Guided Dynamic Frequency Enhancement for Multi-Modality Image Fusion",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:YsrPvlHIBpEC",
+      "citation_id": "lLg3WRkAAAAJ:YsrPvlHIBpEC",
+      "authors": "X Xie, Z Yu, J Zhao, Q Ye, B Zheng, X Zheng, X Zhang, T Tan",
+      "publication": "Available at SSRN 4905993, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "One-Uvics: A High Performance One-Stage Model for Ultrasound Video Classification and Segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:uVUOdF_882EC",
+      "citation_id": "lLg3WRkAAAAJ:uVUOdF_882EC",
+      "authors": "H Yao, X Pang, M He, Y Sun, X Yin, L Cui, Z Gao, T Tan",
+      "publication": "Available at SSRN 5290432, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Exploring the future of breast cancer screening in Macao",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:kw52XkFRtyQC",
+      "citation_id": "lLg3WRkAAAAJ:kw52XkFRtyQC",
+      "authors": "TAM Kwong Ho, YF DUAN, EPL LAO, CIP Patrick, TAN Tao",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "HyperDisGAN: A Controllable Variety Generative Model Via Hyperplane Distances for Downstream Classifications",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:F1b5ZUV5XREC",
+      "citation_id": "lLg3WRkAAAAJ:F1b5ZUV5XREC",
+      "authors": "X Xiong, Y Sun, X Liu, W Ke, CT Lam, J Chen, M Jiang, M Wang, H Xie, ...",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Towards Idea Mining: Problem-Solution Phrase Extraction fromText",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:Bg7qf7VwUHIC",
+      "citation_id": "lLg3WRkAAAAJ:Bg7qf7VwUHIC",
+      "authors": "H Liu, T Brailsford, J Goulding, T Maul, T Tan, D Chaudhuri",
+      "publication": "Springer Verlag, 0",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "VIDEO-BASED DISCOMFORT MONITORING FOR PREMATURE INFANTS IN NICU",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:D_sINldO8mEC",
+      "citation_id": "lLg3WRkAAAAJ:D_sINldO8mEC",
+      "authors": "Y Sun, D Kommers, W Wang, R Joshi, C Shan, T Tan, R Aarts, C van Pul, ...",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    },
+    {
+      "title": "Technical Committee of KBEI-2019",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=400&pagesize=100&citation_for_view=lLg3WRkAAAAJ:B3FOqHPlNUQC",
+      "citation_id": "lLg3WRkAAAAJ:B3FOqHPlNUQC",
+      "authors": "J Vahidi, B Minaei, M Sharifi, X Xu, T Tan, CY Lee, A Ghafouri, ...",
+      "cited_by": {
+        "value": null
+      },
+      "year": ""
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 7241,
+          "since_2021": 6335
+        }
+      },
+      {
+        "h_index": {
+          "all": 41,
+          "since_2021": 38
+        }
+      },
+      {
+        "i10_index": {
+          "all": 139,
+          "since_2021": 133
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": 2014,
+        "citations": 31
+      },
+      {
+        "year": 2015,
+        "citations": 28
+      },
+      {
+        "year": 2016,
+        "citations": 39
+      },
+      {
+        "year": 2017,
+        "citations": 67
+      },
+      {
+        "year": 2018,
+        "citations": 88
+      },
+      {
+        "year": 2019,
+        "citations": 206
+      },
+      {
+        "year": 2020,
+        "citations": 379
+      },
+      {
+        "year": 2021,
+        "citations": 506
+      },
+      {
+        "year": 2022,
+        "citations": 582
+      },
+      {
+        "year": 2023,
+        "citations": 611
+      },
+      {
+        "year": 2024,
+        "citations": 887
+      },
+      {
+        "year": 2025,
+        "citations": 1650
+      },
+      {
+        "year": 2026,
+        "citations": 2052
+      }
+    ]
+  },
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=lLg3WRkAAAAJ",
+    "available": 75,
+    "not_available": 26
+  },
+  "co_authors": [
+    {
+      "name": "Ritse Mann",
+      "link": "https://scholar.google.com/citations?user=vPwW_6EAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=vPwW_6EAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "vPwW_6EAAAAJ",
+      "affiliations": "Breast and Interventional Radiologist, Radboudumc",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=vPwW_6EAAAAJ&citpid=1"
+    },
+    {
+      "name": "Nico Karssemeijer",
+      "link": "https://scholar.google.com/citations?user=ca7SqLQAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=ca7SqLQAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "ca7SqLQAAAAJ",
+      "affiliations": "Professor of Computer Aided Diagnosis, Radboud University Nijmegen",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=ca7SqLQAAAAJ&citpid=2"
+    },
+    {
+      "name": "Bram Platel, PhD",
+      "link": "https://scholar.google.com/citations?user=W13cBesAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=W13cBesAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "W13cBesAAAAJ",
+      "affiliations": "Director of Stichting MS in Beeld (Foundation for MS patients)",
+      "email": "Verified email at msinbeeld.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=W13cBesAAAAJ&citpid=4"
+    },
+    {
+      "name": "Albert Gubern-Mérida",
+      "link": "https://scholar.google.com/citations?user=O94MoL0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=O94MoL0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "O94MoL0AAAAJ",
+      "affiliations": "Product Manager at Philips Precision Diagnosis",
+      "email": "Verified email at screenpointmed.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=O94MoL0AAAAJ&citpid=2"
+    },
+    {
+      "name": "Bart ter Haar Romeny",
+      "link": "https://scholar.google.com/citations?user=SAhuln0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=SAhuln0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "SAhuln0AAAAJ",
+      "affiliations": "Em. Professor in Biomedical Image Analysis, Eindhoven University of Technology, the Netherlands",
+      "email": "Verified email at tue.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=SAhuln0AAAAJ&citpid=2"
+    },
+    {
+      "name": "Henkjan Huisman",
+      "link": "https://scholar.google.com/citations?user=zkMmvCwAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=zkMmvCwAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "zkMmvCwAAAAJ",
+      "affiliations": "Professor Medical Imaging AI, Radboud University Medical Centre Nijmegen and NTNU Norway",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=zkMmvCwAAAAJ&citpid=3"
+    },
+    {
+      "name": "Rashindra Manniesing",
+      "link": "https://scholar.google.com/citations?user=7q7x7QcAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=7q7x7QcAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "7q7x7QcAAAAJ",
+      "affiliations": "Founder at XDMD",
+      "email": "Verified email at xdmd.ai",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=7q7x7QcAAAAJ&citpid=27"
+    },
+    {
+      "name": "Clara I. Sánchez",
+      "link": "https://scholar.google.com/citations?user=YxMfdYEAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=YxMfdYEAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "YxMfdYEAAAAJ",
+      "affiliations": "Full Professor, Informatics Institute, University of Amsterdam",
+      "email": "Verified email at uva.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=YxMfdYEAAAAJ&citpid=2"
+    },
+    {
+      "name": "Jaime Melendez",
+      "link": "https://scholar.google.com/citations?user=rys3HXUAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=rys3HXUAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "rys3HXUAAAAJ",
+      "affiliations": "Radboud University Medical Center",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Thomas L.A. van den Heuvel",
+      "link": "https://scholar.google.com/citations?user=tcPB7ogAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=tcPB7ogAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "tcPB7ogAAAAJ",
+      "affiliations": "Postdoc, Radboud university medical center, Nijmegen, The Netherlands",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Mohsen Ghafoorian",
+      "link": "https://scholar.google.com/citations?user=989WL-wAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=989WL-wAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "989WL-wAAAAJ",
+      "affiliations": "Sr. Staff Machine Learning Research Scientist, Qualcomm",
+      "email": "Verified email at qti.qualcomm.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=989WL-wAAAAJ&citpid=5"
+    },
+    {
+      "name": "Robert Martí Marly (ORCID 0000-0002...",
+      "link": "https://scholar.google.com/citations?user=M_sM6x8AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=M_sM6x8AAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "M_sM6x8AAAAJ",
+      "affiliations": "Associate Professor. University of Girona",
+      "email": "Verified email at udg.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=M_sM6x8AAAAJ&citpid=12"
+    },
+    {
+      "name": "Yago Diez",
+      "link": "https://scholar.google.com/citations?user=lVdYAn0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=lVdYAn0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "lVdYAn0AAAAJ",
+      "affiliations": "Associate Professor, Yamagata University",
+      "email": "Verified email at sci.kj.yamagata-u.ac.jp",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=lVdYAn0AAAAJ&citpid=1"
+    },
+    {
+      "name": "Jan-Jurre Mordang",
+      "link": "https://scholar.google.com/citations?user=fb4HUMgAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=fb4HUMgAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "fb4HUMgAAAAJ",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=fb4HUMgAAAAJ&citpid=4"
+    },
+    {
+      "name": "Julia Schwaab",
+      "link": "https://scholar.google.com/citations?user=oyIjy1IAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=oyIjy1IAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "oyIjy1IAAAAJ",
+      "affiliations": "Research associate, mediri GmbH",
+      "email": "Verified email at mediri.com",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Armin Razavi",
+      "link": "https://scholar.google.com/citations?user=G9yK2_oAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=G9yK2_oAAAAJ&engine=google_scholar_author&hl=en&num=100&start=400",
+      "author_id": "G9yK2_oAAAAJ",
+      "affiliations": "University of Bremen",
+      "email": "Verified email at iat.uni-bremen.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=G9yK2_oAAAAJ&citpid=2"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "20261122T094058.988533Z-a52546c2",
+  "author_id": "lLg3WRkAAAAJ",
+  "started_at": "2026-11-22T09:40:58Z",
+  "updated_at": "2026-11-22T09:41:13Z",
+  "status": "published",
+  "pages": {
+    "0": {
+      "article_count": 100,
+      "data_acquired_at": "2026-11-22T09:41:07Z"
+    },
+    "100": {
+      "article_count": 100,
+      "data_acquired_at": "2026-11-22T09:41:08Z"
+    },
+    "200": {
+      "article_count": 100,
+      "data_acquired_at": "2026-11-22T09:41:10Z"
+    },
+    "300": {
+      "article_count": 100,
+      "data_acquired_at": "2026-11-22T09:41:12Z"
+    },
+    "400": {
+      "article_count": 16,
+      "data_acquired_at": "2026-11-22T09:41:13Z"
+    }
+  },
+  "request_attempts": 5,
+  "last_error": "",
+  "published_at": "2026-11-22T09:41:13Z"
+}

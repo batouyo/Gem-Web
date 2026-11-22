@@ -1,0 +1,1661 @@
+{
+  "search_metadata": {
+    "id": "6b02b8b488f291d1dedd6759",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/yEbSRwdPPbCyk0TK84K2tMy9FS5qF0mwGLDMeoMv87U/6b02b8b488f291d1dedd6759.json",
+    "markdown_endpoint": "https://serpapi.com/searches/yEbSRwdPPbCyk0TK84K2tMy9FS5qF0mwGLDMeoMv87U/6b02b8b488f291d1dedd6759.md",
+    "created_at": "2026-11-22 09:41:08 UTC",
+    "processed_at": "2026-11-22 09:41:08 UTC",
+    "google_scholar_author_url": "https://scholar.google.com/citations?user=lLg3WRkAAAAJ&hl=en&cstart=200&pagesize=100",
+    "raw_html_file": "https://serpapi.com/searches/yEbSRwdPPbCyk0TK84K2tMy9FS5qF0mwGLDMeoMv87U/6b02b8b488f291d1dedd6759.html",
+    "total_time_taken": 1.71
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "lLg3WRkAAAAJ",
+    "hl": "en",
+    "start": 200,
+    "num": "100"
+  },
+  "author": {
+    "name": "Tao Tan",
+    "affiliations": "FCA MPU",
+    "email": "Verified email at mpu.edu.mo",
+    "website": "http://www.gemlab.site/",
+    "interests": [
+      {
+        "title": "Medical Imaging AI",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:medical_imaging_ai",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amedical_imaging_ai"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=lLg3WRkAAAAJ&citpid=6"
+  },
+  "articles": [
+    {
+      "title": "Anatomy-guided Prompting with Cross-Modal Self-Alignment for Whole-body PET-CT Breast Cancer Segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:X9ykpCP0fEIC",
+      "citation_id": "lLg3WRkAAAAJ:X9ykpCP0fEIC",
+      "authors": "J Huang, X Yang, X Liang, S Chen, Y Sun, GS Mok, S Li, Y Wang, T Tan",
+      "publication": "Medical Image Analysis, 103956, 2026",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8986569849479634813",
+        "serpapi_link": "https://serpapi.com/search.json?cites=8986569849479634813&engine=google_scholar&hl=en",
+        "cites_id": "8986569849479634813"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Less is More: Efficient PET/CT Segmentation and Multimodal Prediction of Recurrence-Free Survival and HPV Status in Head and Neck Cancer",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:kJDgFkosVoMC",
+      "citation_id": "lLg3WRkAAAAJ:kJDgFkosVoMC",
+      "authors": "L Cai, X Liang, T Zhang, J Huang, T Tan, Y Yin",
+      "publication": "Fourth Head and Neck Cancer Tumor Lesion Segmentation, Diagnosis and Prognosis, 2026",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12491268337350735107",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12491268337350735107&engine=google_scholar&hl=en",
+        "cites_id": "12491268337350735107"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Parallel Multimodal Language Model: Enhanced Breast Nodule Diagnosis through Parallel Multimodal Representations and Large Language Models",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:raTqNPD5sRQC",
+      "citation_id": "lLg3WRkAAAAJ:raTqNPD5sRQC",
+      "authors": "D Zheng, PCI Pang, P He, Y Sun, H Yan, X Xiong, L Cui, T Tan, L Bao",
+      "publication": "Advanced Intelligent Systems 8 (1), 2500085, 2026",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12956659959873994467",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12956659959873994467&engine=google_scholar&hl=en",
+        "cites_id": "12956659959873994467"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "SAMASK-CLTR: A Spatial-Aware Mask Guided Learning Model for Benign and Malignant Tumor Classification in ABUS",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:PkcyUWeTMh0C",
+      "citation_id": "lLg3WRkAAAAJ:PkcyUWeTMh0C",
+      "authors": "P Xu, L Zhu, J Chen, X Qian, Y Sun, L Bao, T Tan",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2025",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15697600620274757363",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15697600620274757363&engine=google_scholar&hl=en",
+        "cites_id": "15697600620274757363"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "ADAptation: Reconstruction-based Unsupervised Active Learning for Breast Ultrasound Diagnosis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:F2UWTTQJPOcC",
+      "citation_id": "lLg3WRkAAAAJ:F2UWTTQJPOcC",
+      "authors": "Y Duan, Y Huang, X Yang, L Han, X Xie, Z Zhu, P He, KH Chan, L Cui, ...",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2025",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11136512227463820755",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11136512227463820755&engine=google_scholar&hl=en",
+        "cites_id": "11136512227463820755"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Self-Adaptive Illumination Enhancement for Neonatal Remote Physiological Measurement in NICUs",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:2l5NCbZemmgC",
+      "citation_id": "lLg3WRkAAAAJ:2l5NCbZemmgC",
+      "authors": "K Yang, N Long, K Cao, B Huang, Z Chen, Y Zeng, T Tan, C Shan, J Jiang, ...",
+      "publication": "IEEE Transactions on Consumer Electronics, 2025",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14609385956733576563",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14609385956733576563&engine=google_scholar&hl=en",
+        "cites_id": "14609385956733576563"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "VariMix: A variety-guided data mixing framework for explainable medical image classifications",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BrOSOlqYqPUC",
+      "citation_id": "lLg3WRkAAAAJ:BrOSOlqYqPUC",
+      "authors": "X Xiong, Y Sun, X Liu, W Ke, CT Lam, Q Gao, T Tong, S Li, T Tan",
+      "publication": "Computer Methods and Programs in Biomedicine, 109016, 2025",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7373167773447904443",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7373167773447904443&engine=google_scholar&hl=en",
+        "cites_id": "7373167773447904443"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "A universal parameter-efficient fine-tuning approach for stereo image super-resolution",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:jE2MZjpN3IcC",
+      "citation_id": "lLg3WRkAAAAJ:jE2MZjpN3IcC",
+      "authors": "Y Zhou, Y Xue, X Zhang, W Deng, T Wang, T Tan, Q Gao, T Tong",
+      "publication": "Engineering Applications of Artificial Intelligence 151, 110703, 2025",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15146194863228769922",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15146194863228769922&engine=google_scholar&hl=en",
+        "cites_id": "15146194863228769922"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "A novel heart rate estimation framework with self-correcting face detection for Neonatal Intensive Care Unit",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:7wO8s98CvbsC",
+      "citation_id": "lLg3WRkAAAAJ:7wO8s98CvbsC",
+      "authors": "K Cao, T Tan, Z Chen, K Yang, Y Sun",
+      "publication": "Displays 85, 102852, 2024",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13377839993594888043",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13377839993594888043&engine=google_scholar&hl=en",
+        "cites_id": "13377839993594888043"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Dose prediction for cervical cancer in radiotherapy based on the beam channel generative adversarial network",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:7BrZ7Jt4UNcC",
+      "citation_id": "lLg3WRkAAAAJ:7BrZ7Jt4UNcC",
+      "authors": "H Xie, T Tan, H Zhang, Q Li",
+      "publication": "Heliyon 10 (18), 2024",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5457921915816152749",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5457921915816152749&engine=google_scholar&hl=en",
+        "cites_id": "5457921915816152749"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Quantification of Hypsarrhythmia in Infantile Spasmatic EEG: A Large Cohort Study",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:u-coK7KVo8oC",
+      "citation_id": "lLg3WRkAAAAJ:u-coK7KVo8oC",
+      "authors": "R Hou, Q Guo, Q Wu, Z Zhao, X Hu, Y Yan, W He, P Lyu, R Su, T Tan, ...",
+      "publication": "IEEE Transactions on Neural Systems and Rehabilitation Engineering 32, 350-357, 2024",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11504463995068562450",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11504463995068562450&engine=google_scholar&hl=en",
+        "cites_id": "11504463995068562450"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Mass Segmentation in Automated 3-D Breast Ultrasound Using Dual-Path U-net",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:k8Z6L05lTy4C",
+      "citation_id": "lLg3WRkAAAAJ:k8Z6L05lTy4C",
+      "authors": "H Fayyaz, E Kozegar, T Tan, M Soryani",
+      "publication": "arXiv preprint arXiv:2109.08330, 2021",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14099006606698095994",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14099006606698095994&engine=google_scholar&hl=en",
+        "cites_id": "14099006606698095994"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Image quality in automated breast ultrasound images: a preliminary study for the development of automated image quality assessment",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:maZDTaKrznsC",
+      "citation_id": "lLg3WRkAAAAJ:maZDTaKrznsC",
+      "authors": "J Schwaab, Y Diez, JMR Martı, J van Zelst, BPT Tan, J Gregori, S Wirtz, ...",
+      "publication": "MICCAI Workshop: Breast Image Analysis, 2013",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17918216720968280397",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17918216720968280397&engine=google_scholar&hl=en",
+        "cites_id": "17918216720968280397"
+      },
+      "year": "2013"
+    },
+    {
+      "title": "Finding lesion correspondences in different views of automated 3D breast ultrasound",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:4JMBOYKVnBMC",
+      "citation_id": "lLg3WRkAAAAJ:4JMBOYKVnBMC",
+      "authors": "T Tan, B Platel, M Hicks, RM Mann, N Karssemeijer",
+      "publication": "Medical Imaging 2013: Computer-Aided Diagnosis 8670, 424-429, 2013",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13915316277612875833",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13915316277612875833&engine=google_scholar&hl=en",
+        "cites_id": "13915316277612875833"
+      },
+      "year": "2013"
+    },
+    {
+      "title": "An Efficient Frequency-Aware Network with Local-Global Dynamics Fusion for Memory-Constrained Clinical Medical Image Classification",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:s9ia6_kGH2AC",
+      "citation_id": "lLg3WRkAAAAJ:s9ia6_kGH2AC",
+      "authors": "K Yang, Y Duan, N Long, Y Sun, J Han, T Tan",
+      "publication": "Information Fusion, 104551, 2026",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3310192573741444234",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3310192573741444234&engine=google_scholar&hl=en",
+        "cites_id": "3310192573741444234"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Tumor-preserving Deformable Registration of Longitudinal DCE Breast MRI during Neoadjuvant Chemotherapy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:KWzIFqRkAKkC",
+      "citation_id": "lLg3WRkAAAAJ:KWzIFqRkAKkC",
+      "authors": "L Han, T Tan, T Zhang, Y Gao, X Wang, V Longo, S Ventura-Díaz, ...",
+      "publication": "Radiology: Artificial Intelligence 8 (4), e250789, 2026",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17865193655843966181",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17865193655843966181&engine=google_scholar&hl=en",
+        "cites_id": "17865193655843966181"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Synergistic perception: Fusing expert knowledge and foundation models for semi-supervised mammogram segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:SGW5VrABaM0C",
+      "citation_id": "lLg3WRkAAAAJ:SGW5VrABaM0C",
+      "authors": "J Huang, X Wang, X Xiong, S Chen, Y Sun, KH Chan, T Tong, Q Gao, ...",
+      "publication": "Biomedical Signal Processing and Control 112, 108633, 2026",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4110927254879533897",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4110927254879533897&engine=google_scholar&hl=en",
+        "cites_id": "4110927254879533897"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "SGAFNet: Robust brain tumor segmentation via learnable sequence-guided adaptive fusion in available MRI acquisitions",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:v6i8RKmR8ToC",
+      "citation_id": "lLg3WRkAAAAJ:v6i8RKmR8ToC",
+      "authors": "Z Zhang, L Han, D Jia, T Zhang, Z Lin, K Chen, J Huang, S Chen, X Xiong, ...",
+      "publication": "Computerized Medical Imaging and Graphics, 102703, 2026",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13806552257235337138",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13806552257235337138&engine=google_scholar&hl=en",
+        "cites_id": "13806552257235337138"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Interpretable Machine Learning for the Design of (K, Na)NbO3-Based Piezoceramics Using Combinatorial and Knowledge-Embedded Descriptors",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:aIdbFUkbNIkC",
+      "citation_id": "lLg3WRkAAAAJ:aIdbFUkbNIkC",
+      "authors": "H Hu, B Wang, D Zhang, K Yan, T Tan, D Wu",
+      "publication": "ACS Applied Materials & Interfaces 17 (43), 59583-59593, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10272926929887252562",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10272926929887252562&engine=google_scholar&hl=en",
+        "cites_id": "10272926929887252562"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "AI in breast imaging: A systematic review of reader studies evaluating design, performance, and clinical impact",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:QsaTk4IG4EwC",
+      "citation_id": "lLg3WRkAAAAJ:QsaTk4IG4EwC",
+      "authors": "C Lu, T Tan, L Yu, P MohammadiNasab, T Zhang, H Zhang, M Soryani, ...",
+      "publication": "Medical Physics 52 (10), e70018, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2441440132100053920",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2441440132100053920&engine=google_scholar&hl=en",
+        "cites_id": "2441440132100053920"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "BioVFM-21M: Benchmarking and Scaling Self-supervised Vision Foundation Models for Biomedical Image Analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:w1MjKQ0l0TYC",
+      "citation_id": "lLg3WRkAAAAJ:w1MjKQ0l0TYC",
+      "authors": "J Liu, HY Zhou, W Huang, H Yang, D Song, T Tan, Y Liang, S Wang",
+      "publication": "International Workshop on Foundation Models for General Medical AI, 23-33, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3737028113888263547",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3737028113888263547&engine=google_scholar&hl=en",
+        "cites_id": "3737028113888263547"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Bi-branch bidirectional coupled interaction fusion network for multi-retinal diseases diagnosis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:HhcuHIWmDEUC",
+      "citation_id": "lLg3WRkAAAAJ:HhcuHIWmDEUC",
+      "authors": "S Chen, T Tan, X Zhao, W Ke, X Xu, Y Xu, G Zhang, CT Lam, Y Sun",
+      "publication": "Knowledge-Based Systems 326, 114069, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9447481211947050678",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9447481211947050678&engine=google_scholar&hl=en",
+        "cites_id": "9447481211947050678"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Training Set Diversity: A Key Factor in AI-Driven Breast Ultrasound Classification",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:UuEBAcK4md4C",
+      "citation_id": "lLg3WRkAAAAJ:UuEBAcK4md4C",
+      "authors": "R Mes, M Wijkhuizen, LM van Karnenbeek, T Tan, R Mann, T Ruers, ...",
+      "publication": "Deep Breast Workshop on AI and Imaging for Diagnostic and Treatment …, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15555723034845423477",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15555723034845423477&engine=google_scholar&hl=en",
+        "cites_id": "15555723034845423477"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Advancing early detection of sepsis with physiological variable interactions and temporal contrastive learning in critical care",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:Dem6FJhTUoYC",
+      "citation_id": "lLg3WRkAAAAJ:Dem6FJhTUoYC",
+      "authors": "D Huang, T Tan, Y Sun",
+      "publication": "Biomedical Signal Processing and Control 107, 107827, 2025",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13503434001603293505",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13503434001603293505&engine=google_scholar&hl=en",
+        "cites_id": "13503434001603293505"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Comprehensive Mendelian randomization analysis of low-density lipoprotein cholesterol and multiple cancers",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:prdVHNxh-e8C",
+      "citation_id": "lLg3WRkAAAAJ:prdVHNxh-e8C",
+      "authors": "H Liang, C Tang, Y Sun, M Wang, T Tong, Q Gao, H Xie, T Tan",
+      "publication": "Discover Oncology 15 (1), 798, 2024",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18360196504105570240",
+        "serpapi_link": "https://serpapi.com/search.json?cites=18360196504105570240&engine=google_scholar&hl=en",
+        "cites_id": "18360196504105570240"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "DuEU-Net: Dual Encoder UNet with Modality-Agnostic Training for PET-CT Multi-modal Organ and Lesion Segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:SjuI4pbJlxcC",
+      "citation_id": "lLg3WRkAAAAJ:SjuI4pbJlxcC",
+      "authors": "J Song, X Yang, X Liang, J Huang, J Ma, Y Sun, W Luo, SP Mok, Y Wang, ...",
+      "publication": "Deep Breast Workshop on AI and Imaging for Diagnostic and Treatment …, 2024",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10106459784807390335",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10106459784807390335&engine=google_scholar&hl=en",
+        "cites_id": "10106459784807390335"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Benchmarking Machine Learning Algorithms for Epilepsy Detection on Multi-Age Datasets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BzfGm06jWhQC",
+      "citation_id": "lLg3WRkAAAAJ:BzfGm06jWhQC",
+      "authors": "M Liu, X Xie, K Cao, X Wang, T Tan, CT Lam, Y Sun",
+      "publication": "2024 IEEE International Symposium on Medical Measurements and Applications …, 2024",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5539484772022832410",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5539484772022832410&engine=google_scholar&hl=en",
+        "cites_id": "5539484772022832410"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Predicting the risk of primary Sjögren's syndrome with key N7-methylguanosine-related genes: A novel XGBoost model",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:uDGL6kOW6j0C",
+      "citation_id": "lLg3WRkAAAAJ:uDGL6kOW6j0C",
+      "authors": "H Xie, Y Deng, J Li, K Xie, T Tao, J Zhang",
+      "publication": "Heliyon 10 (10), 2024",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5157350703047231996",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5157350703047231996&engine=google_scholar&hl=en",
+        "cites_id": "5157350703047231996"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "To deform or not: treatment-aware longitudinal registration for breast DCE-MRI during neoadjuvant chemotherapy via unsupervised keypoints detection",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:Aul-kAQHnToC",
+      "citation_id": "lLg3WRkAAAAJ:Aul-kAQHnToC",
+      "authors": "L Han, T Tan, T Zhang, Y Gao, X Wang, V Longo, S Ventura-Díaz, ...",
+      "publication": "arXiv preprint arXiv:2401.09336, 2024",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11401398336265802705",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11401398336265802705&engine=google_scholar&hl=en",
+        "cites_id": "11401398336265802705"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Visualize what you learn: a well-explainable joint-learning framework based on multi-view mammograms and associated reports",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:DUooU5lO8OsC",
+      "citation_id": "lLg3WRkAAAAJ:DUooU5lO8OsC",
+      "authors": "Y Gao, HY Zhou, X Wang, T Zhang, R Tan, L Han, L Estacio, A D’Angelo, ...",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9867203426866530410",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9867203426866530410&engine=google_scholar&hl=en",
+        "cites_id": "9867203426866530410"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Current Status, Prospect and Bottleneck of Ultrasound AI Development: A Systemic Review.",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:0izLItjtcgwC",
+      "citation_id": "lLg3WRkAAAAJ:0izLItjtcgwC",
+      "authors": "S Xun, W Ke, M Jiang, H Chen, H Chen, C Lam, L Cui, T Tan",
+      "publication": "Advanced Ultrasound in Diagnosis & Therapy (AUDT) 7 (2), 61, 2023",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7150961052864434666",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7150961052864434666&engine=google_scholar&hl=en",
+        "cites_id": "7150961052864434666"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Double-Camera Fusion System for Animal-Position Awareness in Farming Pens",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:hCrLmN-GePgC",
+      "citation_id": "lLg3WRkAAAAJ:hCrLmN-GePgC",
+      "authors": "S Huo, Y Sun, Q Guo, T Tan, JE Bolhuis, P Bijma, PHN de With",
+      "publication": "Foods 12 (1), 84, 2022",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3257002707221293856",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3257002707221293856&engine=google_scholar&hl=en",
+        "cites_id": "3257002707221293856"
+      },
+      "year": "2022"
+    },
+    {
+      "title": "基于卷积神经网络和多信息融合的三维乳腺超声分类方法",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:0N-VGjzr574C",
+      "citation_id": "lLg3WRkAAAAJ:0N-VGjzr574C",
+      "authors": "孔小函， 檀韬， 包凌云， 王广志",
+      "publication": "中国生物医学工程学报 37 (4), 414-422, 2018",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9263561241094229730",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9263561241094229730&engine=google_scholar&hl=en",
+        "cites_id": "9263561241094229730"
+      },
+      "year": "2018"
+    },
+    {
+      "title": "Novel morphological features for non-mass-like breast lesion classification on DCE-MRI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:g5m5HwL7SMYC",
+      "citation_id": "lLg3WRkAAAAJ:g5m5HwL7SMYC",
+      "authors": "M Razavi, L Wang, T Tan, N Karssemeijer, L Linsen, U Frese, HK Hahn, ...",
+      "publication": "International Workshop on Machine Learning in Medical Imaging, 305-312, 2016",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5860506831025685295",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5860506831025685295&engine=google_scholar&hl=en",
+        "cites_id": "5860506831025685295"
+      },
+      "year": "2016"
+    },
+    {
+      "title": "Automated linking of suspicious findings between automated 3D breast ultrasound volumes",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:O3NaXMp0MMsC",
+      "citation_id": "lLg3WRkAAAAJ:O3NaXMp0MMsC",
+      "authors": "A Gubern-Mérida, T Tan, J van Zelst, RM Mann, N Karssemeijer",
+      "publication": "SPIE Medical Imag, 97850N-97850N-6, 2016",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6334850745608942532",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6334850745608942532&engine=google_scholar&hl=en",
+        "cites_id": "6334850745608942532"
+      },
+      "year": "2016"
+    },
+    {
+      "title": "Automatic nipple detection on 3D images of an automated breast ultrasound system (ABUS)",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:TFP_iSt0sucC",
+      "citation_id": "lLg3WRkAAAAJ:TFP_iSt0sucC",
+      "authors": "MJ Moghaddam, T Tan, N Karssemeijer, B Platel",
+      "publication": "Medical Imaging 2014: Image Processing 9034, 24-29, 2014",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2914760126948610617",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2914760126948610617&engine=google_scholar&hl=en",
+        "cites_id": "2914760126948610617"
+      },
+      "year": "2014"
+    },
+    {
+      "title": "Leveraging modality-guided pre-training for dual-prompt-driven multi-cancer PET-CT segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BJrgspguQaEC",
+      "citation_id": "lLg3WRkAAAAJ:BJrgspguQaEC",
+      "authors": "X Liang, J Huang, T Zhang, L Han, X Wang, Y Gao, C Lu, Y Sun, ...",
+      "publication": "Medical Image Analysis, 104182, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14578916918901660644",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14578916918901660644&engine=google_scholar&hl=en",
+        "cites_id": "14578916918901660644"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "UKAN+: Enhancing medical image segmentation via fusion attention with Kolmogorov-Arnold Networks",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:D_tqNUsBuKoC",
+      "citation_id": "lLg3WRkAAAAJ:D_tqNUsBuKoC",
+      "authors": "L Tian, X Wu, Y Wang, X Xu, T Tan, X Yang, Z Li, MH Wang, J Song, ...",
+      "publication": "Biomedical Signal Processing and Control 119, 109789, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1806117317022530508",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1806117317022530508&engine=google_scholar&hl=en",
+        "cites_id": "1806117317022530508"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Adaptive multi-teacher knowledge distillation framework with foundation models for medical image analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:z6xuaG2dYH0C",
+      "citation_id": "lLg3WRkAAAAJ:z6xuaG2dYH0C",
+      "authors": "D Liu, Y Gao, N Zhang, X Wang, T Zhang, M Fan, Y Sun, S Li, T Tan",
+      "publication": "Computerized Medical Imaging and Graphics 130, 102739, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17018875823799640048",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17018875823799640048&engine=google_scholar&hl=en",
+        "cites_id": "17018875823799640048"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "MOTDNet: Multi Organ Task Decoupling Network for Cell Segmentation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:__bU50VfleQC",
+      "citation_id": "lLg3WRkAAAAJ:__bU50VfleQC",
+      "authors": "J Yang, X Pang, C Lin, T Tan",
+      "publication": "Medical Image Analysis, 104045, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12642714176390870674",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12642714176390870674&engine=google_scholar&hl=en",
+        "cites_id": "12642714176390870674"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Incorporating global-local tissue changes to predict future breast cancer from longitudinal screening mammograms",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:qE4H1tSSYIIC",
+      "citation_id": "lLg3WRkAAAAJ:qE4H1tSSYIIC",
+      "authors": "X Wang, T Tan, Y Gao, E Marcus, HY Zhou, C Lu, L Han, A Portaluri, R Su, ...",
+      "publication": "Medical Image Analysis, 103990, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4154616378032985944",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4154616378032985944&engine=google_scholar&hl=en",
+        "cites_id": "4154616378032985944"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "FLOW: Optimal Transport-Driven Feature Warping for Generalized Remote Physiological Measurement",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:_AeoHAGD03cC",
+      "citation_id": "lLg3WRkAAAAJ:_AeoHAGD03cC",
+      "authors": "B Zhao, J Cao, D Guo, D Huang, W Wang, T Tan, Y Sun, Z Yu",
+      "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3150110058461688607",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3150110058461688607&engine=google_scholar&hl=en",
+        "cites_id": "3150110058461688607"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "UA-MAE: An Uncertainty-Aware Masked Autoencoder for Breast Lesion Segmentation in Ultrasound Images",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:1tZ8xJnm2c8C",
+      "citation_id": "lLg3WRkAAAAJ:1tZ8xJnm2c8C",
+      "authors": "X Xiong, Y Sun, J Huang, D Huang, S Chen, Z Zhang, T Tan",
+      "publication": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM …, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1412742768876762080",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1412742768876762080&engine=google_scholar&hl=en",
+        "cites_id": "1412742768876762080"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "SABPI-Net: A Novel Structure-Aware Network for Accurate and Domain-Invariant Retinopathy of Prematurity Diagnosis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:rbm3iO8VlycC",
+      "citation_id": "lLg3WRkAAAAJ:rbm3iO8VlycC",
+      "authors": "S Chen, X Zhao, H Fu, T Tan, J Huang, X Xiong, Z Wu, B Dashtbozorg, ...",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5276170036366416445",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5276170036366416445&engine=google_scholar&hl=en",
+        "cites_id": "5276170036366416445"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Paired Image Generation with Diffusion-Guided Diffusion Models",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:TlpoogIpr_IC",
+      "citation_id": "lLg3WRkAAAAJ:TlpoogIpr_IC",
+      "authors": "H Zhang, W Cui, Y Cao, T Tan, J Liu, Y Peng, J Zheng",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16144924845244106325",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16144924845244106325&engine=google_scholar&hl=en",
+        "cites_id": "16144924845244106325"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Synthetizing SWI from 3T to 7T by generative diffusion network for deep medullary veins visualization",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:pS0ncopqnHgC",
+      "citation_id": "lLg3WRkAAAAJ:pS0ncopqnHgC",
+      "authors": "S Li, X Deng, Q Li, Z Zhen, L Han, K Chen, C Zhou, F Chen, P Huang, ...",
+      "publication": "NeuroImage, 121475, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17761928837423417968",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17761928837423417968&engine=google_scholar&hl=en",
+        "cites_id": "17761928837423417968"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Singular value decomposition based under‐sampling pattern optimization for MRI reconstruction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-jrNzM816MMC",
+      "citation_id": "lLg3WRkAAAAJ:-jrNzM816MMC",
+      "authors": "X Liang, L Han, X Zhang, X Li, Y Sun, T Tong, T Tan, R Mann",
+      "publication": "Medical Physics 52 (7), e17860, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12656764218082212646",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12656764218082212646&engine=google_scholar&hl=en",
+        "cites_id": "12656764218082212646"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "CMMIQA: a prompt-driven cross-modality multi-organ medical image quality assessment model",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-95Q15plzcUC",
+      "citation_id": "lLg3WRkAAAAJ:-95Q15plzcUC",
+      "authors": "S Xun, Y Sun, Y Wang, M Wang, M Wu, X Liu, T Tan",
+      "publication": "Quantitative Imaging in Medicine and Surgery 15 (7), 6326, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15235573754321601001",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15235573754321601001&engine=google_scholar&hl=en",
+        "cites_id": "15235573754321601001"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "MSAN-Net: An End-to-End Multi-Scale Attention Network for Universal Industrial Defect Detection",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:VN7nJs4JPk0C",
+      "citation_id": "lLg3WRkAAAAJ:VN7nJs4JPk0C",
+      "authors": "Z Wang, M Luo, X Xie, Y Sun, X Tian, Z Chen, J Xie, Q Gao, T Tong, Y Liu, ...",
+      "publication": "IEEE Access 13, 122603-122612, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8946305072098638785",
+        "serpapi_link": "https://serpapi.com/search.json?cites=8946305072098638785&engine=google_scholar&hl=en",
+        "cites_id": "8946305072098638785"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Auto-detection of hypsarrhythmia eeg in west syndrome by dedicated feature fusion and machine learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:mKu_rENv82IC",
+      "citation_id": "lLg3WRkAAAAJ:mKu_rENv82IC",
+      "authors": "Y Yan, Q Wu, W He, Q Guo, R Hou, R Su, T Tan, X Wang, Y Li, D He, L Xu",
+      "publication": "IEEE Sensors Journal 25 (13), 24863-24872, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9333614494400041683",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9333614494400041683&engine=google_scholar&hl=en",
+        "cites_id": "9333614494400041683"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Artificial intelligence-based dual energy x-ray image motion correction training method and system",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:0CzhzZyukY4C",
+      "citation_id": "lLg3WRkAAAAJ:0CzhzZyukY4C",
+      "authors": "BP Cziria, GGV Gonzalez, T Tan, P Tegzes, JM Wanek, GB Avinash, ...",
+      "publication": "US Patent 12,274,575, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3370182650503339921",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3370182650503339921&engine=google_scholar&hl=en",
+        "cites_id": "3370182650503339921"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Parameter map guided explainable segmentation framework for breast cancer using amide proton transfer weighted imaging",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:yxmsSjX2EkcC",
+      "citation_id": "lLg3WRkAAAAJ:yxmsSjX2EkcC",
+      "authors": "Q Yang, M Wang, W Dou, Y Ren, T Zhang, L Qian, Y Xu, K Li, M Wang, ...",
+      "publication": "Medical Physics 52 (4), 2384-2398, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=45360492482197546",
+        "serpapi_link": "https://serpapi.com/search.json?cites=45360492482197546&engine=google_scholar&hl=en",
+        "cites_id": "45360492482197546"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "DiffSteISR: Harnessing diffusion prior for superior real-world stereo image super-resolution",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:cK4Rrx0J3m0C",
+      "citation_id": "lLg3WRkAAAAJ:cK4Rrx0J3m0C",
+      "authors": "Y Zhou, X Zhang, W Deng, T Wang, T Tan, Q Gao, T Tong",
+      "publication": "Neurocomputing 623, 129437, 2025",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4012968280125262044",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4012968280125262044&engine=google_scholar&hl=en",
+        "cites_id": "4012968280125262044"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Variational Field Constraint Learning for Degree of Coronary Artery Ischemia Assessment",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:FiytvqdAVhgC",
+      "citation_id": "lLg3WRkAAAAJ:FiytvqdAVhgC",
+      "authors": "Q Zhang, X Liu, H Zhang, C Xu, G Yang, Y Yuan, T Tan, Z Gao",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2024",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3129698562007871109",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3129698562007871109&engine=google_scholar&hl=en",
+        "cites_id": "3129698562007871109"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Automatic detection of breast lesions in automated 3D breast ultrasound with cross-organ transfer learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:1taIhTC69MYC",
+      "citation_id": "lLg3WRkAAAAJ:1taIhTC69MYC",
+      "authors": "BAO Lingyun, Z HUANG",
+      "publication": "Virtual Reality & Intelligent Hardware 6 (3), 239-251, 2024",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=593438883490122648",
+        "serpapi_link": "https://serpapi.com/search.json?cites=593438883490122648&engine=google_scholar&hl=en",
+        "cites_id": "593438883490122648"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Light mixed‐supervised segmentation for 3D medical image data",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:yMeIxYmEMEAC",
+      "citation_id": "lLg3WRkAAAAJ:yMeIxYmEMEAC",
+      "authors": "H Yang, T Tan, P Tegzes, X Dong, R Tamada, L Ferenczi, G Avinash",
+      "publication": "Medical Physics 51 (1), 167-178, 2024",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7545164746247721209",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7545164746247721209&engine=google_scholar&hl=en",
+        "cites_id": "7545164746247721209"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Is There a Difference between Paper and Electronic Chinese Signatures?",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:OcBU2YAGkTUC",
+      "citation_id": "lLg3WRkAAAAJ:OcBU2YAGkTUC",
+      "authors": "JF Luo, YZ Pu, JY Yin, X Liu, T Tan, Y Zhang, M Hu",
+      "publication": "Advanced Intelligent Systems 5 (12), 2300439, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16455568461888026632",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16455568461888026632&engine=google_scholar&hl=en",
+        "cites_id": "16455568461888026632"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Predicting long term breast cancer risk using longitudinal mammographic screening history",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:OR75R8vi5nAC",
+      "citation_id": "lLg3WRkAAAAJ:OR75R8vi5nAC",
+      "authors": "T Tan, X Wang, Y Gao, R Su, T Zhang, L Han, J Teuwen, J Kroes, ...",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=706066299729314985",
+        "serpapi_link": "https://serpapi.com/search.json?cites=706066299729314985&engine=google_scholar&hl=en",
+        "cites_id": "706066299729314985"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Few-Shot Image Semantic Segmentation based on Contextual Information Encoding Strategy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:fbc8zXXH2BUC",
+      "citation_id": "lLg3WRkAAAAJ:fbc8zXXH2BUC",
+      "authors": "H Chen, X Zhou, X Nie, T Tong, T Tan",
+      "publication": "2023 Asia Conference on Advanced Robotics, Automation, and Control …, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=672512128357759779",
+        "serpapi_link": "https://serpapi.com/search.json?cites=672512128357759779&engine=google_scholar&hl=en",
+        "cites_id": "672512128357759779"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Synthesis of Contrast-Enhanced Breast MRI Using Multi-b-Value DWI-based Hierarchical Fusion Network with Attention Mechanism",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BJbdYPG6LGMC",
+      "citation_id": "lLg3WRkAAAAJ:BJbdYPG6LGMC",
+      "authors": "T Zhang, L Han, A D'Angelo, X Wang, Y Gao, C Lu, J Teuwen, ...",
+      "publication": "arXiv preprint arXiv:2307.00895, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2404777679821117778",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2404777679821117778&engine=google_scholar&hl=en",
+        "cites_id": "2404777679821117778"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Reduced plasma cholesterol in Plasmodium falciparum infection: A meta-analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:NXb4pA-qfm4C",
+      "citation_id": "lLg3WRkAAAAJ:NXb4pA-qfm4C",
+      "authors": "Y You, H Fan, S Zhang, S Hu, J Tang, C Chen, W Wen, C Wang, Y Cheng, ...",
+      "publication": "Journal of Infection 87 (1), e19-e21, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8368603089057156662",
+        "serpapi_link": "https://serpapi.com/search.json?cites=8368603089057156662&engine=google_scholar&hl=en",
+        "cites_id": "8368603089057156662"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Joint conditional generative adversarial networks for eyelash artifact removal in ultra-wide-field fundus images",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:a9-T7VOCCH8C",
+      "citation_id": "lLg3WRkAAAAJ:a9-T7VOCCH8C",
+      "authors": "J Zhang, D Sha, Y Ma, D Zhang, T Tan, X Xu, Q Yi, Y Zhao",
+      "publication": "Frontiers in Cell and Developmental Biology 11, 1181305, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15505023851104949879",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15505023851104949879&engine=google_scholar&hl=en",
+        "cites_id": "15505023851104949879"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "IMPORTANT-Net: Integrated MRI Multi-Parameter Reinforcement Fusion Generator with Attention Network for Synthesizing Absent Data",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:4fGpz3EwCPoC",
+      "citation_id": "lLg3WRkAAAAJ:4fGpz3EwCPoC",
+      "authors": "T Zhang, T Tan, L Han, X Wang, Y Gao, J Teuwen, R Beets-Tan, R Mann",
+      "publication": "arXiv preprint arXiv:2302.01788, 2023",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17705858666924453379",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17705858666924453379&engine=google_scholar&hl=en",
+        "cites_id": "17705858666924453379"
+      },
+      "year": "2023"
+    },
+    {
+      "title": "Automated discomfort detection for premature infants in NICU using time-frequency feature-images and CNNs",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BrmTIyaxlBUC",
+      "citation_id": "lLg3WRkAAAAJ:BrmTIyaxlBUC",
+      "authors": "Y Sun, D Kommers, T Tan, W Wang, X Long, C Shan, C van Pul, RM Aarts, ...",
+      "publication": "Medical Imaging 2020: Computer-Aided Diagnosis 11314, 1018-1024, 2020",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8180842379107665372",
+        "serpapi_link": "https://serpapi.com/search.json?cites=8180842379107665372&engine=google_scholar&hl=en",
+        "cites_id": "8180842379107665372"
+      },
+      "year": "2020"
+    },
+    {
+      "title": "2.75 D convolutional neural network for pulmonary nodule classification in chest CT",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:mvPsJ3kp5DgC",
+      "citation_id": "lLg3WRkAAAAJ:mvPsJ3kp5DgC",
+      "authors": "R Su, W Xie, T Tan",
+      "publication": "arXiv, 2020",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3037000667045532782",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3037000667045532782&engine=google_scholar&hl=en",
+        "cites_id": "3037000667045532782"
+      },
+      "year": "2020"
+    },
+    {
+      "title": "Chest-wall segmentation in automated 3D breast ultrasound images using thoracic volume classification",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:RGFaLdJalmkC",
+      "citation_id": "lLg3WRkAAAAJ:RGFaLdJalmkC",
+      "authors": "T Tan, J van Zelst, W Zhang, RM Mann, B Platel, N Karssemeijer",
+      "publication": "SPIE 9035, Medical Imaging 2014, 2014",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2744277362703902280",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2744277362703902280&engine=google_scholar&hl=en",
+        "cites_id": "2744277362703902280"
+      },
+      "year": "2014"
+    },
+    {
+      "title": "Hippocampus Region Segmentation for Alzheimer’s Disease Detection",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:8k81kl-MbHgC",
+      "citation_id": "lLg3WRkAAAAJ:8k81kl-MbHgC",
+      "authors": "T Tan",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3448576999076272436",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3448576999076272436&engine=google_scholar&hl=en",
+        "cites_id": "3448576999076272436"
+      },
+      "year": "2009"
+    },
+    {
+      "title": "医科生学习素质在年级与性别上的差异研究",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:XvxMoLDsR5gC",
+      "citation_id": "lLg3WRkAAAAJ:XvxMoLDsR5gC",
+      "authors": "马立骥， 李国柱， 檀韬， 姚应水",
+      "publication": "海南医学 17 (9), 159-160, 2006",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18027719700616884621",
+        "serpapi_link": "https://serpapi.com/search.json?cites=18027719700616884621&engine=google_scholar&hl=en",
+        "cites_id": "18027719700616884621"
+      },
+      "year": "2006"
+    },
+    {
+      "title": "PW-GAN: Pseudo-Warping Field Guided GAN for Unsupervised Denoising of Fetal Brain MRI Images",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:wLxue7F8ec0C",
+      "citation_id": "lLg3WRkAAAAJ:wLxue7F8ec0C",
+      "authors": "L Chen, G Fu, P Yang, J Lin, K Ning, Z Chen, Y Liu, T Tan, H Liu, B Liu, ...",
+      "publication": "Journal of Imaging Informatics in Medicine, 1-22, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13981775686537410200",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13981775686537410200&engine=google_scholar&hl=en",
+        "cites_id": "13981775686537410200"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Conditional diffusion models for high-fidelity synthetic CT generation from CBCT in nasopharyngeal carcinoma adaptive radiotherapy: a multi-center study",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:s85pQhAUCrAC",
+      "citation_id": "lLg3WRkAAAAJ:s85pQhAUCrAC",
+      "authors": "H Xie, H Chen, Q Li, Z Chen, Y Sun, T Tan",
+      "publication": "Physics in Medicine & Biology 71 (18), 185013, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1671878704063138922",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1671878704063138922&engine=google_scholar&hl=en",
+        "cites_id": "1671878704063138922"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "ClinRAG-GRAPH: Clinical-Prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:YTuZlYwrTOUC",
+      "citation_id": "lLg3WRkAAAAJ:YTuZlYwrTOUC",
+      "authors": "Y Duan, Y Huang, T Zhang, Y Gao, L Han, X Wang, X Xie, X Liang, C Lu, ...",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4985482104959935565",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4985482104959935565&engine=google_scholar&hl=en",
+        "cites_id": "4985482104959935565"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Multi-task Specialized Expert Model for Hierarchical Aspect-based Sentiment Analysis in Consumer Healthcare",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:BmWJbWwHJAwC",
+      "citation_id": "lLg3WRkAAAAJ:BmWJbWwHJAwC",
+      "authors": "J Li, J Guo, P Pang, BK Ng, T Tan",
+      "publication": "Expert Systems with Applications, 133419, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4782359432519028465",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4782359432519028465&engine=google_scholar&hl=en",
+        "cites_id": "4782359432519028465"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "SemanticST: Semantics-enhanced Spatio-Temporal Modeling for Ejection Fraction Estimation in Echocardiography",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:RtRctb2lSbAC",
+      "citation_id": "lLg3WRkAAAAJ:RtRctb2lSbAC",
+      "authors": "D Zheng, J Li, M Meng, T Ma, W Li, Z Gao, P Pang, T Tan",
+      "publication": "IEEE Journal of Biomedical and Health Informatics, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6606140907365933978",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6606140907365933978&engine=google_scholar&hl=en",
+        "cites_id": "6606140907365933978"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Multi-modal segment anything model (mmSAM) for tumor segmentation in multi-tracer oncologic PET/CT",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:hvmnpdAuIbkC",
+      "citation_id": "lLg3WRkAAAAJ:hvmnpdAuIbkC",
+      "authors": "Z Fang, Y Liu, T Tan, F Wang, GSP Mok",
+      "publication": "EJNMMI physics, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9868614408496165443",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9868614408496165443&engine=google_scholar&hl=en",
+        "cites_id": "9868614408496165443"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "HiFi-Mesh: High-Fidelity Efficient 3D Mesh Generation via Compact Autoregressive Dependence",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-yGd096yOn8C",
+      "citation_id": "lLg3WRkAAAAJ:-yGd096yOn8C",
+      "authors": "Y Li, T Tan, Q Gao, Z Cao, X Liu, Y Sun",
+      "publication": "Proceedings of the AAAI Conference on Artificial Intelligence 40 (8), 6566-6574, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3942272304000600932",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3942272304000600932&engine=google_scholar&hl=en",
+        "cites_id": "3942272304000600932"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "LUMIN: A Longitudinal Multi-modal Knowledge Decomposition Network for Predicting Breast Cancer Recurrence",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:c1e4I3QdEKYC",
+      "citation_id": "lLg3WRkAAAAJ:c1e4I3QdEKYC",
+      "authors": "C Lu, T Zhang, X Liang, Y Gao, L Han, X Wang, N Rasoolzadeh, T Tan, ...",
+      "publication": "Proceedings of the AAAI Conference on Artificial Intelligence 40 (9), 7530-7538, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12786261014947151003",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12786261014947151003&engine=google_scholar&hl=en",
+        "cites_id": "12786261014947151003"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "PhysVLM: Vision-language Model for Generalizable Multi-task Remote Physiological Measurement",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-6RzNnnwWf8C",
+      "citation_id": "lLg3WRkAAAAJ:-6RzNnnwWf8C",
+      "authors": "J Gao, IW San, X Luo, Z Chen, Z Yu, T Tan, Y Sun",
+      "publication": "IEEE Transactions on Instrumentation and Measurement, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11821997660205261498",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11821997660205261498&engine=google_scholar&hl=en",
+        "cites_id": "11821997660205261498"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "M SegNet: A Multi-Modal and Multi-Branch Framework for Nasopharyngeal Carcinoma Segmentation in Radiotherapy Planning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:ghEM2AJqZyQC",
+      "citation_id": "lLg3WRkAAAAJ:ghEM2AJqZyQC",
+      "authors": "J Ma, L Han, HHY Tong, D Jia, H Xie, AWM Lee, HM Hung, T Tan, ...",
+      "publication": "IEEE Journal of Biomedical and Health Informatics, 2026",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17599429198098443549",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17599429198098443549&engine=google_scholar&hl=en",
+        "cites_id": "17599429198098443549"
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Vision-Language Semantic Guidance for Ejection Fraction Assessment in Echocardiography",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:eAlLMO4JVmQC",
+      "citation_id": "lLg3WRkAAAAJ:eAlLMO4JVmQC",
+      "authors": "D Zheng, PCI Pang, J Li, W Li, Y Zhang, EPL Lao, Y Wang, Z Gao, T Tan",
+      "publication": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM …, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13547024956358209596",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13547024956358209596&engine=google_scholar&hl=en",
+        "cites_id": "13547024956358209596"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Grad-MTSeg: Mitigating Multi-Task Gradient Conflicts via Hierarchical Gradient Optimization for NPC Radiotherapy Delineation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:RJOyoaXV5v8C",
+      "citation_id": "lLg3WRkAAAAJ:RJOyoaXV5v8C",
+      "authors": "J Ma, L Han, D Jia, H Xie, T Tan, HHY Tong, AWM Lee, SI Soong, Y Sun",
+      "publication": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM …, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10354613686868972974",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10354613686868972974&engine=google_scholar&hl=en",
+        "cites_id": "10354613686868972974"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Tree-Diffusion: Octree-Based Conditional Diffusion Model for Small Bowel Skeleton Generation with Geometric Direction Modeling",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:0aBXIfxlw9sC",
+      "citation_id": "lLg3WRkAAAAJ:0aBXIfxlw9sC",
+      "authors": "Z Liang, F Li, D Jia, Y Duan, X Xie, K Sun, Z Cui, T Tan, D Shen",
+      "publication": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM …, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2387058271650389165",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2387058271650389165&engine=google_scholar&hl=en",
+        "cites_id": "2387058271650389165"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Enhancing breast cancer diagnosis: non-invasive prediction of MKI-67 (Ki67) expression using ultrasound images",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:Xz60mAmATU4C",
+      "citation_id": "lLg3WRkAAAAJ:Xz60mAmATU4C",
+      "authors": "H Xie, J Zhang, Q Li, T Tan",
+      "publication": "BMC cancer 26 (1), 102, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16765069438599753771",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16765069438599753771&engine=google_scholar&hl=en",
+        "cites_id": "16765069438599753771"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "MRICombo: a deep-learning-based framework for universal volume segmentation, grading-staging, and malignancy detection across heterogeneous MRI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:UmS_249rOGwC",
+      "citation_id": "lLg3WRkAAAAJ:UmS_249rOGwC",
+      "authors": "T Tan, Z Zhang, L Han, D Jia, C Yan, T Zhang, J Huang, D Huang, ...",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7651830571919667226",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7651830571919667226&engine=google_scholar&hl=en",
+        "cites_id": "7651830571919667226"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Multi-Granularity Query Network With Adaptive Category Feature Embedding for Behavior Recognition",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:27LrP4qxOz0C",
+      "citation_id": "lLg3WRkAAAAJ:27LrP4qxOz0C",
+      "authors": "N Long, Y Dang, K Yang, C Xiong, S Chen, T Tan, W Ke, CT Lam, J Yin, ...",
+      "publication": "IEEE Transactions on Multimedia 28, 878-890, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6476379102544950500",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6476379102544950500&engine=google_scholar&hl=en",
+        "cites_id": "6476379102544950500"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "RefineNet: Elevating Medical Foundation Models Through Quality-Centric Data Curation by MLLM-Annotated Proxy Distillation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:69ZgNCALVd0C",
+      "citation_id": "lLg3WRkAAAAJ:69ZgNCALVd0C",
+      "authors": "N Zhang, Y Gao, X Wang, KH Chan, J Wu, CT Lam, S Wang, Y Sun, SK Im, ...",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted …, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7307138108435426928",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7307138108435426928&engine=google_scholar&hl=en",
+        "cites_id": "7307138108435426928"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "HRMamba: Fusing Luminance Information for Remote Physiological Measurement in Varied Lighting Conditions",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:DrR-2ekChdkC",
+      "citation_id": "lLg3WRkAAAAJ:DrR-2ekChdkC",
+      "authors": "K Yang, N Long, W Ke, CT Lam, T Tan, Z Yu, Y Sun",
+      "publication": "IEEE Journal of Biomedical and Health Informatics, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494794879593727679",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2494794879593727679&engine=google_scholar&hl=en",
+        "cites_id": "2494794879593727679"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Conditional Diffusion Model with Anatomical-Dose Dual Constraints for End-to-End Multi-Tumor Dose Prediction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:mWEH9CqjF64C",
+      "citation_id": "lLg3WRkAAAAJ:mWEH9CqjF64C",
+      "authors": "H Xie, H Hu, L Ding, Q Li, Y Sun, T Tan",
+      "publication": "arXiv preprint arXiv:2508.02043, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3608069381797000700",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3608069381797000700&engine=google_scholar&hl=en",
+        "cites_id": "3608069381797000700"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Image harmonization and de-harmonization based on singular value decomposition (SVD) in medical domain",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-nhnvRiOwuoC",
+      "citation_id": "lLg3WRkAAAAJ:-nhnvRiOwuoC",
+      "authors": "H Chen, X Li, KH Chan, Y Sun, R Wang, Q Gao, T Tong, T Tan",
+      "publication": "Quantitative Imaging in Medicine and Surgery 15 (8), 7062, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7561902505947972575",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7561902505947972575&engine=google_scholar&hl=en",
+        "cites_id": "7561902505947972575"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "A deep learning framework for reconstructing Breast Amide Proton Transfer weighted imaging sequences from sparse frequency offsets to dense frequency offsets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:U_HPUtbDl20C",
+      "citation_id": "lLg3WRkAAAAJ:U_HPUtbDl20C",
+      "authors": "Q Yang, S Su, T Zhang, M Wang, W Dou, K Li, Y Ren, Y Zheng, M Wang, ...",
+      "publication": "Computerized Medical Imaging and Graphics 123, 102563, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10932912916647123003",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10932912916647123003&engine=google_scholar&hl=en",
+        "cites_id": "10932912916647123003"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Systems and methods for segmenting objects in medical images",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:3htObqc8RwsC",
+      "citation_id": "lLg3WRkAAAAJ:3htObqc8RwsC",
+      "authors": "L Ruskó, V Czipczer, B Kolozsvári, R Zsámboki, T Tan, BP Cziria, ...",
+      "publication": "US Patent 12,307,675, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12889419081634143673",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12889419081634143673&engine=google_scholar&hl=en",
+        "cites_id": "12889419081634143673"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Guest Editorial: Multi-Modal Joint Learning in Healthcare Imaging",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:O0nohqN1r9EC",
+      "citation_id": "lLg3WRkAAAAJ:O0nohqN1r9EC",
+      "authors": "T Tan, Z Li, Y Sun, S Wu",
+      "publication": "IEEE Journal of Biomedical and Health Informatics 29 (5), 3083-3085, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16750928484063879813",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16750928484063879813&engine=google_scholar&hl=en",
+        "cites_id": "16750928484063879813"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "System and method for visualizing placement of a medical tube or line",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:sNmaIFBj_lkC",
+      "citation_id": "lLg3WRkAAAAJ:sNmaIFBj_lkC",
+      "authors": "P Tegzes, Z Herczeg, T Tan, BP Cziria, AJ Baenen, GC Rao, L Ferenczi, ...",
+      "publication": "US Patent 12,229,953, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11065285453719532074",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11065285453719532074&engine=google_scholar&hl=en",
+        "cites_id": "11065285453719532074"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Prediction of PD-L1 and EBV expression in gastric cancer from H&E-stained Whole Slide Imaging using deep learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:Br1UauaknNIC",
+      "citation_id": "lLg3WRkAAAAJ:Br1UauaknNIC",
+      "authors": "T Wang, H Zhang, J Lan, Z Wu, X Zhang, J Wang, Y Zhou, Y Chen, L Zhao, ...",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17780875468934286324",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17780875468934286324&engine=google_scholar&hl=en",
+        "cites_id": "17780875468934286324"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Multi-layer image registration",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:-mN3Mh-tlDkC",
+      "citation_id": "lLg3WRkAAAAJ:-mN3Mh-tlDkC",
+      "authors": "T Tan, BP Cziria, P Tegzes, GB Avinash, GGV Gonzalez, LM Ferenczi, ...",
+      "publication": "US Patent App. 18/814,832, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7334757751847649725",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7334757751847649725&engine=google_scholar&hl=en",
+        "cites_id": "7334757751847649725"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Semisupervised Breast MRI Density Segmentation Integrating Fine and Rough Annotations",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:owLR8QvbtFgC",
+      "citation_id": "lLg3WRkAAAAJ:owLR8QvbtFgC",
+      "authors": "T Xie, Y Sun, H Yang, S Li, J Song, Q Yang, H Chen, M Wu, T Tan",
+      "publication": "IEEE Transactions on Artificial Intelligence 6 (3), 690-699, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17019435144754024940",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17019435144754024940&engine=google_scholar&hl=en",
+        "cites_id": "17019435144754024940"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Knee cartilage estimation based on knee bone geometry using posterior shape model",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:7Hz3ACDFbsoC",
+      "citation_id": "lLg3WRkAAAAJ:7Hz3ACDFbsoC",
+      "authors": "H Chen, T Tan, Y Kang, Y Sun, H Xie, XY Wang, N Verdonschot",
+      "publication": "IEEE Sensors Journal 24 (19), 30600-30607, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3868485282211977325",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3868485282211977325&engine=google_scholar&hl=en",
+        "cites_id": "3868485282211977325"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Enhancing Video Grounding with Dual-Path Modality Fusion on Animal Kingdom Datasets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:PaBasH6fAo0C",
+      "citation_id": "lLg3WRkAAAAJ:PaBasH6fAo0C",
+      "authors": "C Xiong, Z Chen, N Long, KS Un, Z Li, S Chen, T Tan, CT Lam, Y Sun",
+      "publication": "2024 IEEE International Conference on Multimedia and Expo Workshops (ICMEW), 1-6, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18000492054785127582",
+        "serpapi_link": "https://serpapi.com/search.json?cites=18000492054785127582&engine=google_scholar&hl=en",
+        "cites_id": "18000492054785127582"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "A Multimodal Behavior Recognition Network with Interconnected Architectures",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:MpfHP-DdYjUC",
+      "citation_id": "lLg3WRkAAAAJ:MpfHP-DdYjUC",
+      "authors": "N Long, KS Un, C Xiong, Z Li, S Chen, T Tan, CT Lam, Y Sun",
+      "publication": "2024 IEEE International Conference on Multimedia and Expo Workshops (ICMEW), 1-6, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4846308783444915005",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4846308783444915005&engine=google_scholar&hl=en",
+        "cites_id": "4846308783444915005"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Controllable Quality Improvement of Mobile Ultrasound",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:U4n9YNQMCAIC",
+      "citation_id": "lLg3WRkAAAAJ:U4n9YNQMCAIC",
+      "authors": "H Chen, Y Guo, Y Sun, X Li, H Song, T Tan",
+      "publication": "2024 IEEE International Symposium on Medical Measurements and Applications …, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15520810526544789672",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15520810526544789672&engine=google_scholar&hl=en",
+        "cites_id": "15520810526544789672"
+      },
+      "year": "2024"
+    },
+    {
+      "title": "Combining machine and deep transfer learning for mediastinal lymph node evaluation in patients with lung cancer",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lLg3WRkAAAAJ&cstart=200&pagesize=100&citation_for_view=lLg3WRkAAAAJ:jgBuDB5drN8C",
+      "citation_id": "lLg3WRkAAAAJ:jgBuDB5drN8C",
+      "authors": "XIE Hui, J ZHANG, D Lijuan, TAN Tao, LI Qing",
+      "publication": "Virtual Reality & Intelligent Hardware 6 (3), 226-238, 2024",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16566103980538376324",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16566103980538376324&engine=google_scholar&hl=en",
+        "cites_id": "16566103980538376324"
+      },
+      "year": "2024"
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 7241,
+          "since_2021": 6335
+        }
+      },
+      {
+        "h_index": {
+          "all": 41,
+          "since_2021": 38
+        }
+      },
+      {
+        "i10_index": {
+          "all": 139,
+          "since_2021": 133
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": 2014,
+        "citations": 31
+      },
+      {
+        "year": 2015,
+        "citations": 28
+      },
+      {
+        "year": 2016,
+        "citations": 39
+      },
+      {
+        "year": 2017,
+        "citations": 67
+      },
+      {
+        "year": 2018,
+        "citations": 88
+      },
+      {
+        "year": 2019,
+        "citations": 206
+      },
+      {
+        "year": 2020,
+        "citations": 379
+      },
+      {
+        "year": 2021,
+        "citations": 506
+      },
+      {
+        "year": 2022,
+        "citations": 582
+      },
+      {
+        "year": 2023,
+        "citations": 611
+      },
+      {
+        "year": 2024,
+        "citations": 887
+      },
+      {
+        "year": 2025,
+        "citations": 1650
+      },
+      {
+        "year": 2026,
+        "citations": 2052
+      }
+    ]
+  },
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=lLg3WRkAAAAJ",
+    "available": 75,
+    "not_available": 26
+  },
+  "co_authors": [
+    {
+      "name": "Ritse Mann",
+      "link": "https://scholar.google.com/citations?user=vPwW_6EAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=vPwW_6EAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "vPwW_6EAAAAJ",
+      "affiliations": "Breast and Interventional Radiologist, Radboudumc",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=vPwW_6EAAAAJ&citpid=1"
+    },
+    {
+      "name": "Nico Karssemeijer",
+      "link": "https://scholar.google.com/citations?user=ca7SqLQAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=ca7SqLQAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "ca7SqLQAAAAJ",
+      "affiliations": "Professor of Computer Aided Diagnosis, Radboud University Nijmegen",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=ca7SqLQAAAAJ&citpid=2"
+    },
+    {
+      "name": "Bram Platel, PhD",
+      "link": "https://scholar.google.com/citations?user=W13cBesAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=W13cBesAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "W13cBesAAAAJ",
+      "affiliations": "Director of Stichting MS in Beeld (Foundation for MS patients)",
+      "email": "Verified email at msinbeeld.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=W13cBesAAAAJ&citpid=4"
+    },
+    {
+      "name": "Albert Gubern-Mérida",
+      "link": "https://scholar.google.com/citations?user=O94MoL0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=O94MoL0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "O94MoL0AAAAJ",
+      "affiliations": "Product Manager at Philips Precision Diagnosis",
+      "email": "Verified email at screenpointmed.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=O94MoL0AAAAJ&citpid=2"
+    },
+    {
+      "name": "Bart ter Haar Romeny",
+      "link": "https://scholar.google.com/citations?user=SAhuln0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=SAhuln0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "SAhuln0AAAAJ",
+      "affiliations": "Em. Professor in Biomedical Image Analysis, Eindhoven University of Technology, the Netherlands",
+      "email": "Verified email at tue.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=SAhuln0AAAAJ&citpid=2"
+    },
+    {
+      "name": "Henkjan Huisman",
+      "link": "https://scholar.google.com/citations?user=zkMmvCwAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=zkMmvCwAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "zkMmvCwAAAAJ",
+      "affiliations": "Professor Medical Imaging AI, Radboud University Medical Centre Nijmegen and NTNU Norway",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=zkMmvCwAAAAJ&citpid=3"
+    },
+    {
+      "name": "Rashindra Manniesing",
+      "link": "https://scholar.google.com/citations?user=7q7x7QcAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=7q7x7QcAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "7q7x7QcAAAAJ",
+      "affiliations": "Founder at XDMD",
+      "email": "Verified email at xdmd.ai",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=7q7x7QcAAAAJ&citpid=27"
+    },
+    {
+      "name": "Clara I. Sánchez",
+      "link": "https://scholar.google.com/citations?user=YxMfdYEAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=YxMfdYEAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "YxMfdYEAAAAJ",
+      "affiliations": "Full Professor, Informatics Institute, University of Amsterdam",
+      "email": "Verified email at uva.nl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=YxMfdYEAAAAJ&citpid=2"
+    },
+    {
+      "name": "Jaime Melendez",
+      "link": "https://scholar.google.com/citations?user=rys3HXUAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=rys3HXUAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "rys3HXUAAAAJ",
+      "affiliations": "Radboud University Medical Center",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Thomas L.A. van den Heuvel",
+      "link": "https://scholar.google.com/citations?user=tcPB7ogAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=tcPB7ogAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "tcPB7ogAAAAJ",
+      "affiliations": "Postdoc, Radboud university medical center, Nijmegen, The Netherlands",
+      "email": "Verified email at radboudumc.nl",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Mohsen Ghafoorian",
+      "link": "https://scholar.google.com/citations?user=989WL-wAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=989WL-wAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "989WL-wAAAAJ",
+      "affiliations": "Sr. Staff Machine Learning Research Scientist, Qualcomm",
+      "email": "Verified email at qti.qualcomm.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=989WL-wAAAAJ&citpid=5"
+    },
+    {
+      "name": "Robert Martí Marly (ORCID 0000-0002...",
+      "link": "https://scholar.google.com/citations?user=M_sM6x8AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=M_sM6x8AAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "M_sM6x8AAAAJ",
+      "affiliations": "Associate Professor. University of Girona",
+      "email": "Verified email at udg.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=M_sM6x8AAAAJ&citpid=12"
+    },
+    {
+      "name": "Yago Diez",
+      "link": "https://scholar.google.com/citations?user=lVdYAn0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=lVdYAn0AAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "lVdYAn0AAAAJ",
+      "affiliations": "Associate Professor, Yamagata University",
+      "email": "Verified email at sci.kj.yamagata-u.ac.jp",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=lVdYAn0AAAAJ&citpid=1"
+    },
+    {
+      "name": "Jan-Jurre Mordang",
+      "link": "https://scholar.google.com/citations?user=fb4HUMgAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=fb4HUMgAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "fb4HUMgAAAAJ",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=fb4HUMgAAAAJ&citpid=4"
+    },
+    {
+      "name": "Julia Schwaab",
+      "link": "https://scholar.google.com/citations?user=oyIjy1IAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=oyIjy1IAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "oyIjy1IAAAAJ",
+      "affiliations": "Research associate, mediri GmbH",
+      "email": "Verified email at mediri.com",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Armin Razavi",
+      "link": "https://scholar.google.com/citations?user=G9yK2_oAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=G9yK2_oAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+      "author_id": "G9yK2_oAAAAJ",
+      "affiliations": "University of Bremen",
+      "email": "Verified email at iat.uni-bremen.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=G9yK2_oAAAAJ&citpid=2"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?author_id=lLg3WRkAAAAJ&engine=google_scholar_author&hl=en&num=100&start=300",
+    "current": "https://serpapi.com/search.json?author_id=lLg3WRkAAAAJ&engine=google_scholar_author&hl=en&num=100&start=200",
+    "previous": "https://serpapi.com/search.json?author_id=lLg3WRkAAAAJ&engine=google_scholar_author&hl=en&num=100&start=100"
+  }
+}
