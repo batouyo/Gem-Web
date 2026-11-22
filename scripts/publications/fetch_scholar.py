@@ -31,6 +31,7 @@ from typing import Any
 ENDPOINT = "https://serpapi.com/search"
 AUTHOR_ID = "lLg3WRkAAAAJ"
 PAGE_SIZE = 100
+MIN_PUBLICATION_YEAR = 2021
 FIELDS = (
     "title",
     "authors",
@@ -191,6 +192,17 @@ def read_cached_page(run_dir: Path, start: int) -> dict[str, Any] | None:
     return data
 
 
+def choose_published_run(raw_dir: Path, run_id: str) -> tuple[Path, dict[str, Any]]:
+    states = [item for item in list_run_states(raw_dir) if item[1].get("status") == "published"]
+    selected = next(
+        ((path, state) for path, state in states if run_id == "latest" or state.get("run_id") == run_id),
+        None,
+    )
+    if selected is None:
+        raise CollectionError(f"No completed raw collection found for: {run_id}")
+    return selected
+
+
 def request_page(api_key: str, start: int, timeout: float, retries: int, state: dict[str, Any], max_requests: int) -> dict[str, Any]:
     query = urllib.parse.urlencode(
         {
@@ -255,6 +267,32 @@ def next_offset(data: dict[str, Any], start: int, count: int) -> int | None:
     if count >= PAGE_SIZE:
         return start + PAGE_SIZE
     return None
+
+
+def load_published_pages(state_path: Path, state: dict[str, Any]) -> list[tuple[int, str, dict[str, Any]]]:
+    run_dir = state_path.parent
+    pages: list[tuple[int, str, dict[str, Any]]] = []
+    start = 0
+    visited: set[int] = set()
+    while True:
+        if start in visited:
+            raise CollectionError(f"Cached pagination loop detected at start={start}")
+        visited.add(start)
+        metadata = state.get("pages", {}).get(str(start))
+        data = read_cached_page(run_dir, start)
+        if not metadata or data is None:
+            raise CollectionError(f"Completed raw run is missing a valid cached page at start={start}")
+        if data.get("search_parameters", {}).get("engine") != "google_scholar_author":
+            raise CollectionError(f"Cached page at start={start} has an unexpected API engine")
+        pages.append((start, metadata.get("data_acquired_at", ""), data))
+        following = next_offset(data, start, len(data.get("articles", [])))
+        if following is None:
+            break
+        start = following
+    cached_starts = {int(value) for value in state.get("pages", {})}
+    if cached_starts != visited:
+        raise CollectionError("Cached raw pages do not match the complete pagination sequence")
+    return pages
 
 
 def fetch_all(
@@ -380,6 +418,31 @@ def build_records(pages: list[tuple[int, str, dict[str, Any]]]) -> tuple[list[di
     return publications, duplicate_records, csv_rows
 
 
+def publication_year(record: dict[str, Any]) -> int | None:
+    value = str(record.get("year", "")).strip()
+    if not re.fullmatch(r"\d{4}", value):
+        return None
+    return int(value)
+
+
+def filter_publications(
+    publications: list[dict[str, Any]],
+    duplicate_records: list[dict[str, Any]],
+    csv_rows: list[dict[str, Any]],
+    min_year: int,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], int, int]:
+    def is_retained(record: dict[str, Any]) -> bool:
+        year = publication_year(record)
+        return year is not None and year >= min_year
+
+    retained = [record for record in publications if is_retained(record)]
+    retained_duplicates = [record for record in duplicate_records if is_retained(record)]
+    retained_rows = [record for record in csv_rows if is_retained(record)]
+    excluded_older = sum(1 for record in publications if (year := publication_year(record)) is not None and year < min_year)
+    excluded_missing_year = sum(1 for record in publications if publication_year(record) is None)
+    return retained, retained_duplicates, retained_rows, excluded_older, excluded_missing_year
+
+
 def missing_counts(publications: list[dict[str, Any]]) -> dict[str, int]:
     data_fields = FIELDS[:-1]
     result = {}
@@ -440,6 +503,7 @@ def csv_bytes(rows: list[dict[str, Any]]) -> bytes:
 
 def markdown_report(
     fetched_at: str,
+    generated_at: str,
     run_id: str,
     pages: list[tuple[int, str, dict[str, Any]]],
     publications: list[dict[str, Any]],
@@ -449,6 +513,9 @@ def markdown_report(
     comparison: dict[str, Any],
     request_attempts: int,
     previous_count: int,
+    min_year: int,
+    excluded_older: int,
+    excluded_missing_year: int,
 ) -> str:
     years = Counter(str(record.get("year", "")).strip() or "（缺失）" for record in publications)
     raw_count = sum(len(page.get("articles", [])) for _, _, page in pages)
@@ -481,16 +548,19 @@ def markdown_report(
 - 作者：檀韬（Tao Tan）
 - Google Scholar ID：`{AUTHOR_ID}`
 - 数据获取时间：{fetched_at}
+- 报告生成时间：{generated_at}
 - 采集轮次：`{run_id}`
-- 原始条目数：{raw_count}
-- 去重后论文数：{len(publications)}
+- 原始 API 条目数：{raw_count}
+- 清洗后保留论文数（{min_year} 年及之后）：{len(publications)}
+- 排除的早期论文数（年份早于 {min_year}）：{excluded_older}
+- 排除的年份缺失或无效论文数：{excluded_missing_year}
 - CSV 审核行数：{len(csv_rows)}
 - 疑似重复记录数：{len(duplicate_records)}
-- 与上次完整快照比较：{previous_count} 篇旧记录
+- 与上次快照中符合年份条件的记录比较：{previous_count} 篇
 
-## 分页完整性
+## 分页完整性与年份清洗
 
-共获取 {len(pages)} 页；每页最多 {PAGE_SIZE} 条。采集在下一页不存在且末页不足 {PAGE_SIZE} 条时结束。SerpApi 文档说明单次最多返回 100 条，`start` 为结果偏移量。
+共获取 {len(pages)} 页原始响应；每页最多 {PAGE_SIZE} 条。原始响应保留所有年份，审核数据仅保留发表年份为 {min_year} 或之后的论文。缺失或无法识别年份的记录不进入清洗后文件，年份字段不推测、不补造。采集在下一页不存在时结束。
 
 | start | API 条数 | 数据获取时间 |
 |---:|---:|---|
@@ -504,7 +574,7 @@ def markdown_report(
 
 ## 字段缺失情况
 
-统计口径为去重后的 {len(publications)} 条论文；缺失字段保持为空，没有推测或补造。
+统计口径为清洗后去重的 {len(publications)} 条论文；缺失字段保持为空，没有推测或补造。
 
 | 字段 | 缺失数 / 论文总数 |
 |---|---:|
@@ -512,7 +582,7 @@ def markdown_report(
 
 ## 重复记录供人工核验
 
-按 `citation_id` 去重；相同标题和年份但不同 `citation_id` 的记录仍保留，并标记为疑似重复。CSV 包含所有原始论文条目，JSON 的 `publications` 为去重结果，`duplicate_records` 保留重复条目。
+按 `citation_id` 去重；相同标题和年份但不同 `citation_id` 的记录仍保留，并标记为疑似重复。CSV 保留清洗后所有论文条目，JSON 的 `publications` 为去重结果，`duplicate_records` 保留疑似重复条目。
 
 | 原因 | 标题 | 年份 | citation_id | 对照 citation_id |
 |---|---|---:|---|---|
@@ -545,7 +615,7 @@ def markdown_report(
 - 已完成分页的本地缓存命中不发起 API 请求，因而不增加本轮请求数。
 - SerpApi 服务端缓存命中可能免费；本报告按每次 HTTP 尝试一次搜索请求估算，实际扣额以账户面板为准。
 
-报告生成时间：{fetched_at}
+报告生成时间：{generated_at}
 """
 
 
@@ -603,35 +673,56 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--max-requests", type=int, default=20, help="Maximum HTTP attempts in this run (default: 20; 0 is unlimited)")
     parser.add_argument("--resume", nargs="?", const="latest", help="Resume the latest incomplete run or a specific run ID")
     parser.add_argument("--new-run", action="store_true", help="Start a new crawl instead of auto-resuming an incomplete run")
+    parser.add_argument("--min-year", type=int, default=MIN_PUBLICATION_YEAR, help="Keep articles from this year onward (default: 2021)")
+    parser.add_argument("--clean-existing", nargs="?", const="latest", help="Rebuild cleaned files from a completed cached run without API requests")
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     api_key = os.environ.get("SERPAPI_API_KEY", "").strip()
-    if not api_key:
+    if args.clean_existing and (args.resume or args.new_run):
+        print("--clean-existing cannot be combined with --resume or --new-run.", file=sys.stderr)
+        return 2
+    if not args.clean_existing and not api_key:
         print("SERPAPI_API_KEY is required; the key is never written to files or output.", file=sys.stderr)
         return 2
-    if args.timeout <= 0 or args.retries < 0 or args.max_requests < 0:
-        print("timeout must be positive; retries and max-requests cannot be negative.", file=sys.stderr)
+    if args.timeout <= 0 or args.retries < 0 or args.max_requests < 0 or args.min_year < 1000 or args.min_year > 9999:
+        print("timeout must be positive; limits cannot be negative; min-year must be a four-digit year.", file=sys.stderr)
         return 2
 
     output_dir = args.output_dir
     raw_dir = output_dir / "raw"
     try:
-        state_path, state = choose_run(raw_dir, args.resume, args.new_run)
-        print(f"[INFO] Run {state['run_id']} started from cached progress where available.", flush=True)
-        pages = fetch_all(api_key, state_path, state, args.timeout, args.retries, args.max_requests)
+        if args.clean_existing:
+            state_path, state = choose_published_run(raw_dir, args.clean_existing)
+            print(f"[INFO] Cleaning completed cached run {state['run_id']} without API requests.", flush=True)
+            pages = load_published_pages(state_path, state)
+        else:
+            state_path, state = choose_run(raw_dir, args.resume, args.new_run)
+            print(f"[INFO] Run {state['run_id']} started from cached progress where available.", flush=True)
+            pages = fetch_all(api_key, state_path, state, args.timeout, args.retries, args.max_requests)
         if not pages:
             raise CollectionError("No pages were returned; refusing to publish an empty snapshot")
 
-        publications, duplicate_records, csv_rows = build_records(pages)
-        fetched_at = iso_now()
-        previous = load_previous(output_dir / "publications.json")
+        all_publications, all_duplicates, all_csv_rows = build_records(pages)
+        publications, duplicate_records, csv_rows, excluded_older, excluded_missing_year = filter_publications(
+            all_publications, all_duplicates, all_csv_rows, args.min_year
+        )
+        if not publications:
+            raise CollectionError(f"No publications meet the minimum year filter ({args.min_year}); refusing to publish an empty snapshot")
+        fetched_at = state.get("published_at") or iso_now()
+        generated_at = iso_now()
+        previous = [
+            record
+            for record in load_previous(output_dir / "publications.json")
+            if (year := publication_year(record)) is not None and year >= args.min_year
+        ]
         comparison = compare_snapshots(previous, publications)
         missing = missing_counts(publications)
         report = markdown_report(
             fetched_at,
+            generated_at,
             state["run_id"],
             pages,
             publications,
@@ -641,6 +732,9 @@ def main(argv: list[str] | None = None) -> int:
             comparison,
             state["request_attempts"],
             len(previous),
+            args.min_year,
+            excluded_older,
+            excluded_missing_year,
         )
         structured = {
             "schema_version": 1,
@@ -649,6 +743,12 @@ def main(argv: list[str] | None = None) -> int:
             "profile_url": f"https://scholar.google.com/citations?user={AUTHOR_ID}&hl=en",
             "fetched_at": fetched_at,
             "run_id": state["run_id"],
+            "year_filter": {
+                "minimum_inclusive": args.min_year,
+                "excluded_older_unique_count": excluded_older,
+                "excluded_missing_or_invalid_year_unique_count": excluded_missing_year,
+                "raw_responses_preserved": True,
+            },
             "pagination": {
                 "page_size": PAGE_SIZE,
                 "page_starts": [start for start, _, _ in pages],
@@ -661,9 +761,10 @@ def main(argv: list[str] | None = None) -> int:
             "missing_fields": missing,
             "api_request_attempts": state["request_attempts"],
         }
-        state["status"] = "ready_to_publish"
-        state["last_error"] = ""
-        save_state(state_path, state)
+        if not args.clean_existing:
+            state["status"] = "ready_to_publish"
+            state["last_error"] = ""
+            save_state(state_path, state)
         transactional_publish(
             output_dir,
             {
@@ -672,24 +773,26 @@ def main(argv: list[str] | None = None) -> int:
                 "fetch-report.md": report.encode("utf-8"),
             },
         )
-        state["status"] = "published"
-        state["published_at"] = fetched_at
-        save_state(state_path, state)
+        if not args.clean_existing:
+            state["status"] = "published"
+            state["published_at"] = fetched_at
+            save_state(state_path, state)
         print(
-            f"[INFO] Complete: {len(publications)} unique publications from {len(pages)} pages; "
-            f"{len(duplicate_records)} suspected duplicate record(s).",
+            f"[INFO] Complete: retained {len(publications)} unique publications from {args.min_year} onward; "
+            f"excluded {excluded_older} older and {excluded_missing_year} with missing/invalid year; "
+            f"{len(duplicate_records)} retained suspected duplicate record(s).",
             flush=True,
         )
         return 0
     except CollectionError as error:
-        if "state" in locals() and "state_path" in locals():
+        if "state" in locals() and "state_path" in locals() and not args.clean_existing:
             state["status"] = "failed"
             state["last_error"] = safe_error(error, api_key)
             save_state(state_path, state)
         print(f"[ERROR] {safe_error(error, api_key)}", file=sys.stderr)
         return 1
     except Exception as error:
-        if "state" in locals() and "state_path" in locals():
+        if "state" in locals() and "state_path" in locals() and not args.clean_existing:
             state["status"] = "failed"
             state["last_error"] = safe_error(error, api_key)
             save_state(state_path, state)
